@@ -1,0 +1,125 @@
+/* Ejemplo de asignación de color de fondo y fuente por defecto*/
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Ejemplo de estilizar un botón */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Ejemplo de estilizar una tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Ejemplo de estilizar una form */
+form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+/* Ejemplo de estilizar un dropdown menu */
+select {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Ejemplo de estilizar una checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Ejemplo de asignar estilos de fuente */
+h1,
+h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+#fruitList {
+    font-weight: bold;
+}
+
+/* Ejemplo de estilo de una imágen */
+img {
+    display: block;
+    margin-bottom: 10px;
+    width: auto;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: auto;
+    padding: 5px;
+}
+
+/* Ejemplo que permite modificar una etiqueta cambiando su clase */
+.highlight {
+    background-color: yellow !important;
+    font-weight: bold;
+}

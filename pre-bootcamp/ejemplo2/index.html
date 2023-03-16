@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Mi página web</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<h1>Bienvenidos a mi página web</h1>
+	<p>Esta página contiene ejemplos de cosas que podrán hacer en <strong>HTML, CSS y Javascript</strong></p>
+
+	<!-- Ejemplo de imágenes -->
+	<div class="row">
+		<div class="column">
+			<img src="https://via.placeholder.com/140" alt="Sample image">
+		</div>
+		<div class="column">
+			<img src="https://via.placeholder.com/240" alt="Sample image">
+		</div>
+		<div class="column">
+			<img src="https://via.placeholder.com/360" alt="Sample image">
+		</div>
+	</div>
+
+	<!-- Ejemplo de Form -->
+	<form onsubmit="addRow(); return false;" id="myForm">
+		<label for="name">Nombre:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="last-name">Apellido:</label>
+		<input type="text" id="last-name" name="last-name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<input type="submit" value="Agregar a la tabla">
+	</form>
+
+	<!-- Ejemplo de tabla -->
+	<table>
+		<thead>
+			<tr>
+				<th>Header 1</th>
+				<th>Header 2</th>
+				<th>Header 3</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Fila 1, Columna 1</td>
+				<td>Fila 1, Columna 2</td>
+				<td>Fila 1, Columna 3</td>
+			</tr>
+			<tr>
+				<td>Fila 2, Columna 1</td>
+				<td>Fila 2, Columna 2</td>
+				<td>Fila 2, Columna 3</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<!-- Ejemplo de botón con funcionalidad Javascript -->
+	<button onclick="changeColor()">Click aquí</button>
+
+	<!-- Ejemplo de un menú dropdown -->
+	<h2>Selecciona un color:</h2>
+	<select id="colors" onchange="changeColor()">
+		<option value="red">Rojo</option>
+		<option value="green">Verde</option>
+		<option value="blue">Azul</option>
+	</select>
+
+	<!-- Ejemplo de una checkbox con funcionalidad Javascript -->
+	<h2>Selecciona tu fruta favorita:</h2>
+	<input type="checkbox" id="manzana" name="fruit" value="Manzana" onchange="updateFruitList()">
+	<label for="manzana">Manzana</label>
+	<input type="checkbox" id="platano" name="fruit" value="Plátano" onchange="updateFruitList()">
+	<label for="plátano">Plátano</label>
+	<input type="checkbox" id="naranja" name="fruit" value="Naranja" onchange="updateFruitList()">
+	<label for="naranja">Naranja</label>
+	<p id="fruitList"></p>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
