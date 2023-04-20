@@ -1,0 +1,114 @@
+ /* Styles for the header */
+ header {
+     background-color: #212121;
+     color: white;
+     padding: 10px 20px;
+ }
+
+ header h1 {
+     margin: 0;
+ }
+
+ /* Styles for the main content */
+
+ h2 {
+     margin-top: 50px;
+ }
+
+ /* Styles for the hover animation */
+ .hover {
+     transition: all 0.3s ease;
+ }
+
+ .hover:hover {
+     transform: scale(1.1);
+     cursor: pointer;
+ }
+
+ /* Styles for the sliding animation */
+ .slide {
+     position: relative;
+     animation: slide 4s infinite;
+ }
+
+ @keyframes slide {
+     0% {
+         left: -100%;
+     }
+
+     90% {
+         left: 0%;
+     }
+
+     100% {
+         left: 0%;
+     }
+ }
+
+ /* Styles for the visual elements */
+ .visuals {
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: 50px;
+ }
+
+ .visuals div {
+     flex-basis: calc(33.33% - 30px);
+     margin: 15px;
+     background-color: #2196F3;
+     color: white;
+     text-align: center;
+     padding: 50px 0;
+     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+     transition: all 0.3s ease;
+ }
+
+ .visuals div:hover {
+     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+     transform: translateY(-10px);
+ }
+
+ .hero-section {
+     position: relative;
+     z-index: 1;
+     transition: all 0.3s ease;
+ }
+ 
+ .hero-section:hover {
+    transform: scale(1.01);
+}
+
+ .hero-image {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     overflow: hidden;
+ }
+
+ .hero-image img {
+     position: absolute;
+     top: -40px;
+     object-fit: cover;
+     z-index: -2;
+     width: 100%;
+ }
+
+ #welcome-text h1 {
+     font-size: 72px;
+     background: linear-gradient(to right, #333 0%, #eee 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+
+
+ .gradient-overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+ }

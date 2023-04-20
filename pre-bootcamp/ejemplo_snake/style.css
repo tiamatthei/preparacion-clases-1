@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.difficulties {
+    display: flex;
+}
+
+#easy {
+    color: green;
+}
+
+#medium {
+    color: coral;
+}
+
+#hard {
+    color: red;
+}
+
+#game-board {
+    width: 400px;
+}
+
+canvas {
+    background-color: black;
+}

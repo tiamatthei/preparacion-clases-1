@@ -1,0 +1,114 @@
+@media screen and (max-width: 768px) {
+    /* Estilos para pantallas de 768px o menos */
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* Estilos para pantallas de 768px a 992px */
+}
+
+@media screen and (min-width: 992px) {
+    /* Estilos para pantallas mayores de 992px */
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex-basis: 33.33%;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ejemplo de uso de flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+
+.box-flex {
+    width: 100px;
+    height: 100px;
+    background-color: #f1c40f;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* Ejemplo de uso de Grid */
+
+.grid-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    /*150px */
+    gap: 10px;
+}
+
+.box-grid {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    line-height: 150px;
+    /*150px */
+}
+
+
+/* Ejemplo de de uso de clases */
+
+.mi-clase {
+    /* estilos */
+}
+
+
+/* Ejemplo de de uso de ID */
+#mi-id {
+    /* estilos */
+}
+
+
+p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/*navbar*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #3498db;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item {
+    padding: 0px 10px;
+    list-style: none;
+}
