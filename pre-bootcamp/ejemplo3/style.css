@@ -39,6 +39,7 @@ header {
 
 nav ul {
     display: flex;
+    padding: 2vw;
 }
 
 nav li {
@@ -158,6 +159,7 @@ nav a:hover {
 
 .menu-item img {
     max-width: 100%;
+    width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
