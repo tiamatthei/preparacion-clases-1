@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <style type="text/css">
+        #ocean {
+            background-image: url("ocean.jpg");
+            width: 900px;
+            height: 700px;
+        }
+
+        .player {
+            position: absolute;
+            background-image: url("player.png");
+            width: 70px;
+            height: 75px;
+        }
+
+        .enemy {
+            position: absolute;
+            background-image: url("enemy.png");
+            width: 70px;
+            height: 75px;
+        }
+
+        .misil {
+            position: absolute;
+            background-color: red;
+            width: 2px;
+            height: 10px;
+        }
+    </style>
+    <div id="ocean">
+        <div id="players">
+            <div id="player"></div>
+        </div>
+        <div id="enemies">
+            <div class="enemy"></div>
+        </div>
+        <div id="misiles">
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        var player = {
+            left: 450,
+            top: 620
+        }
+        var enemies = [
+            { left: 350, top: 200 },
+            { left: 450, top: 250 },
+            { left: 650, top: 200 },
+            { left: 550, top: 250 },
+        ]
+
+        function drawPlayer() {
+            var content = '';
+            content += '<div class="player" style="left:' + player.left + 'px; top:' + player.top + 'px;"></div>';
+            document.getElementById('players').innerHTML = content;
+        }
+
+        function drawEnemies() {
+            var content = '';
+            for (let i = 0; i < enemies.length; i++) {
+                content += '<div class="enemy" style="left:' + enemies[i].left + 'px; top:' + enemies[i].top + 'px;"></div>';
+            }
+            document.getElementById('enemies').innerHTML = content;
+
+        }
+        var misiles = [];
+
+        function dibujarMisiles() {
+            content = "";
+            for (let i = 0; i < misiles.length; i++) {
+                content += "<div class='misil' style='left:" + misiles[i].left + "px; top:" + misiles[i].top + "px;'></div>";
+            }
+            document.getElementById("misiles").innerHTML = content;
+        }
+        function moveEnemies() {
+            for (let i = 0; i < enemies.length; i++) {
+                enemies[i].top = enemies[i].top + 5;
+            }
+        }
+        function moveMissiles() {
+            for (let i = 0; i < misiles.length; i++) {
+                misiles[i].top = misiles[i].top - 5;
+            }
+        }
+
+        document.onkeydown = function (e) {
+            if (e.keyCode == 37) {
+                player.left = player.left - 10;
+            }
+            if (e.keyCode == 38) {
+                player.top = player.top - 10;
+            }
+            if (e.keyCode == 39) {
+                player.left = player.left + 10;
+            }
+            if (e.keyCode == 40) {
+                player.top = player.top + 10;
+            }
+            if (e.keyCode == 32) {
+                misiles.push({ left: player.left + 34, top: player.top - 8 });
+            }
+            drawPlayer();
+        }
+
+        drawPlayer();
+        drawEnemies();
+
+
+        function missileCollision(params) {
+            for (let i = 0; i < enemies.length; i++) {
+                for (let j = 0; j < misiles.length; j++) {
+                    if (misiles[j].top < enemies[i].top + 75
+                        && misiles[j].top > enemies[i].top
+                        && misiles[j].left > enemies[i].left
+                        && misiles[j].left < enemies[i].left + 70) {
+                        enemies.splice(i, 1);
+                        misiles.splice(j, 1);
+                        
+                        //AGREGAR CODIGO AQUI
+                    }
+                }
+            }
+        }
+        function checkScore() {
+
+        }
+
+        function gameLoop() {
+            moveEnemies();
+            drawEnemies();
+            moveMissiles();
+            dibujarMisiles();
+            missileCollision();
+
+        }
+        setInterval(gameLoop, 100);
+
+
+
+
+
+    </script>
+</body>
+
+</html>
