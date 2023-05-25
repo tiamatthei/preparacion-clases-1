@@ -17,6 +17,7 @@
             min-height: 100vh;
             background-color: #f5f5f5;
         }
+
         .weather-container {
             display: flex;
             align-items: center;
@@ -25,27 +26,33 @@
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         .weather-icon-container {
             margin-right: 20px;
         }
+
         .weather-details {
             text-align: left;
         }
+
         #temperature {
             font-size: 48px;
             font-weight: bold;
             margin: 0;
             color: #333;
         }
+
         #location {
             font-size: 20px;
             margin: 0;
             color: #666;
         }
+
         .time-container {
             margin-top: 30px;
             text-align: center;
         }
+
         #time {
             font-size: 36px;
             font-weight: bold;
@@ -54,6 +61,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="weather-container">
         <div class="weather-icon-container">
@@ -69,14 +77,14 @@
     </div>
 </body>
 <script>
-    // Elementos del DOM
+    // Elementos del DOM (NO TOCAR)
     var timeElement;
     var temperatureElement;
 
-    // URL API datos del clima
+    // URL API datos del clima (NO TOCAR)
     var weatherApiUrl = "https://api.open-meteo.com/v1/forecast?latitude=-33.54&longitude=-70.65&daily=temperature_2m_max,temperature_2m_min&forecast_days=1&timezone=America/Santiago";
 
-    // Función de la API del clima
+    // Función de la API del clima (NO TOCAR)
     async function getWeatherData() {
         try {
             const response = await fetch(weatherApiUrl);
@@ -91,7 +99,7 @@
             return null;
         }
     }
-    // Función para obtener la hora
+    // Función para obtener la hora (NO TOCAR)
     function time() {
         var d = new Date();
         var s = d.getSeconds();
@@ -101,8 +109,8 @@
             ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
     }
 
-    var temperatura;
-    var icono;
+    var temperatura; // NO TOCAR
+    var icono; // NO TOCAR
 
     // Función para inicializar la aplicación
     function initApp() {
@@ -111,31 +119,39 @@
     getWeatherData().then(function (result) { // NO TOCAR
         temperatura = result;
         console.log(temperatura); // PISTA
+        /*
+        EJERCICIO 1:
+        Esta es una página que muestra el tiempo en san ramón y la hora actual en chile.
+        El tiempo se muestra en grados celsius y la hora en formato hh:mm:ss.
+        La hora se actualiza a cada segundo.
+        El tiempo sólo se actualiza cuando se recarga la página.
+
+        El código de esta página está incompleto, por lo que se necesita lo siguiente:
+        1. Agregar el código necesario para que la página muestre el tiempo en grados celsius.
+        2. Agregar el código necesario para que la página muestre el icono del clima.
+            El ícono que se muestra depende de la temperatura, si hacen más de 17 grados, 
+            debe mostrarse el ícono de sol, de lo contrario, debe mostrarse el ícono de nubes.
+        3. Agregar el código necesario para que la página muestre el texto "El tiempo en san ramón:".
+        4. Agregar el código necesario para que la página muestre el texto "Hora actual en chile:".
+        5. Agregar la hora actual
+        
+        Finalmente, para la entrega, su nombre y apellido debe estar contenido en la parte superior de la página con la sintaxis correcta. 
+        PUNTOS BONUS: Todos los elementos de texto (nombre, temperatura, hora, entre otros) deben tener un estilo visual distintivo (color, tamaño, etc).
+
+        */
         ////////////////
         // RESPUESTA: //
         ////////////////
 
-        temperatureElement = document.getElementById('temperature');
-        timeElement = document.getElementById('time');
-        temperatureElement.textContent = `${temperatura}°C`;
 
-        if (temperatura < 10) {
-            icono = "nubes";
-        } else if (temperatura < 20) {
-            icono = "sol";
-        }
+        
 
-        document.getElementById("weather-icon").src = icono + ".png";
-        document.getElementById("weather-icon").height = 50;
-        document.getElementById("weather-icon").width = 50;
-
-        //FALTA Agregar texto decorativo 
-        // Ejemplos:
-        // El tiempo en san ramón: 
-        // Otro texto que diga hora actual:
-        // Entre otros
+        ///////////////
+        //    FIN    //
+        ///////////////
 
     }); // NO TOCAR
+
     // Inicializar aplicación (NO TOCAR)    
     initApp();
 

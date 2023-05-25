@@ -17,6 +17,7 @@
             min-height: 100vh;
             background-color: #f5f5f5;
         }
+
         .weather-container {
             display: flex;
             align-items: center;
@@ -25,27 +26,33 @@
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         .weather-icon-container {
             margin-right: 20px;
         }
+
         .weather-details {
             text-align: left;
         }
+
         #temperature {
             font-size: 48px;
             font-weight: bold;
             margin: 0;
             color: #333;
         }
+
         #location {
             font-size: 20px;
             margin: 0;
             color: #666;
         }
+
         .time-container {
             margin-top: 30px;
             text-align: center;
         }
+
         #time {
             font-size: 36px;
             font-weight: bold;
@@ -65,21 +72,19 @@
             <p id="location"></p>
         </div>
     </div>
-
     <div class="time-container">
         <p id="time"></p>
     </div>
 </body>
-
 <script>
-    // Elementos del DOM
+    // Elementos del DOM (NO TOCAR)
     var timeElement;
     var temperatureElement;
 
-    // URL API datos del clima
+    // URL API datos del clima (NO TOCAR)
     var weatherApiUrl = "https://api.open-meteo.com/v1/forecast?latitude=-33.54&longitude=-70.65&daily=temperature_2m_max,temperature_2m_min&forecast_days=1&timezone=America/Santiago";
 
-    // Función de la API del clima
+    // Función de la API del clima (NO TOCAR)
     async function getWeatherData() {
         try {
             const response = await fetch(weatherApiUrl);
@@ -94,18 +99,18 @@
             return null;
         }
     }
-    // Función para obtener la hora
+    // Función para obtener la hora (NO TOCAR)
     function time() {
         var d = new Date();
         var s = d.getSeconds();
         var m = d.getMinutes();
         var h = d.getHours();
-        timeElement.textContent =
+        timeElement.innerHTML =
             ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
     }
 
-    var temperatura;
-    var icono;
+    var temperatura; // NO TOCAR
+    var icono; // NO TOCAR
 
     // Función para inicializar la aplicación
     function initApp() {
@@ -120,11 +125,11 @@
 
         temperatureElement = document.getElementById('temperature');
         timeElement = document.getElementById('time');
-        temperatureElement.textContent = `${temperatura}°C`;
+        temperatureElement.innerHTML = `${temperatura}°C`;
 
-        if (temperatura < 10) {
+        if (temperatura < 17) {
             icono = "nubes";
-        } else if (temperatura < 20) {
+        } else {
             icono = "sol";
         }
 
@@ -132,13 +137,19 @@
         document.getElementById("weather-icon").height = 50;
         document.getElementById("weather-icon").width = 50;
 
-        //FALTA Agregar texto decorativo 
+
+        // FALTA Agregar texto decorativo 
         // Ejemplos:
-        // El tiempo en san ramón: 
-        // Otro texto que diga hora actual:
-        // Entre otros
+        // "El tiempo en san ramón:" 
+        // "Hora actual en chile:"
+        // Entre otros...
+
+        ///////////////
+        //    FIN    //
+        ///////////////
 
     }); // NO TOCAR
+
     // Inicializar aplicación (NO TOCAR)    
     initApp();
 

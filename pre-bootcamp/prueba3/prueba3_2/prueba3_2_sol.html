@@ -42,8 +42,8 @@
             <div class="enemy"></div>
         </div>
         <div id="misiles">
-
         </div>
+        <h1>Puntuación actual: <span id="puntaje"></span></h1>
     </div>
     <script type="text/javascript">
         var player = {
@@ -53,44 +53,50 @@
         var enemies = [
             { left: 350, top: 200 },
             { left: 450, top: 250 },
-            { left: 650, top: 200 },
-            { left: 550, top: 250 },
+            { left: 650, top: 200 }, // SOL
+            { left: 550, top: 250 }, // SOL
         ]
 
-        function drawPlayer() {
+        function dibujarJugador() {
             var content = '';
             content += '<div class="player" style="left:' + player.left + 'px; top:' + player.top + 'px;"></div>';
             document.getElementById('players').innerHTML = content;
         }
-
-        function drawEnemies() {
+        function dibujarEnemigos() {
             var content = '';
-            for (let i = 0; i < enemies.length; i++) {
+            for (var i = 0; i < enemies.length; i++) {
                 content += '<div class="enemy" style="left:' + enemies[i].left + 'px; top:' + enemies[i].top + 'px;"></div>';
             }
             document.getElementById('enemies').innerHTML = content;
 
         }
         var misiles = [];
-
         function dibujarMisiles() {
-            content = "";
-            for (let i = 0; i < misiles.length; i++) {
+            var content = "";
+            for (var i = 0; i < misiles.length; i++) {
                 content += "<div class='misil' style='left:" + misiles[i].left + "px; top:" + misiles[i].top + "px;'></div>";
             }
             document.getElementById("misiles").innerHTML = content;
         }
-        function moveEnemies() {
-            for (let i = 0; i < enemies.length; i++) {
+        function moverEnemigos() {
+            for (var i = 0; i < enemies.length; i++) {
                 enemies[i].top = enemies[i].top + 5;
             }
         }
-        function moveMissiles() {
-            for (let i = 0; i < misiles.length; i++) {
+        function moverMisiles() {
+            // SOL
+            //////
+            for (var i = 0; i < misiles.length; i++) {
                 misiles[i].top = misiles[i].top - 5;
             }
+            //////
         }
-
+        function borrarEnemigo(idxEnemigo) {
+            enemies.splice(idxEnemigo, 1);
+        }
+        function borrarMisil(idxMisil) {
+            misiles.splice(idxMisil, 1);
+        }
         document.onkeydown = function (e) {
             if (e.keyCode == 37) {
                 player.left = player.left - 10;
@@ -98,50 +104,52 @@
             if (e.keyCode == 38) {
                 player.top = player.top - 10;
             }
+            // SOL
+            //////
             if (e.keyCode == 39) {
                 player.left = player.left + 10;
             }
             if (e.keyCode == 40) {
                 player.top = player.top + 10;
             }
-            if (e.keyCode == 32) {
-                misiles.push({ left: player.left + 34, top: player.top - 8 });
+            //////
+
+            if (e.keyCode == 32) { // TECLA ESPACIO
+                misiles.push({ left: player.left + 34, top: player.top - 8 }); // Agrega un misil a la lista de misiles (dispara un misil) (NO TOCAR) 
             }
-            drawPlayer();
+            dibujarJugador(); // Vuelve a dibujar el jugador cuando se mueve (NO TOCAR)
         }
+        dibujarJugador(); // Dibuja el jugador (NO TOCAR)
+        dibujarEnemigos(); // Dibuja los enemigos (NO TOCAR)
 
-        drawPlayer();
-        drawEnemies();
+        var puntos = 0;
 
-
-        function missileCollision(params) {
-            for (let i = 0; i < enemies.length; i++) {
-                for (let j = 0; j < misiles.length; j++) {
+        function contactoMisil(params) {
+            for (var i = 0; i < enemies.length; i++) {
+                for (var j = 0; j < misiles.length; j++) {
                     if (misiles[j].top < enemies[i].top + 75
                         && misiles[j].top > enemies[i].top
                         && misiles[j].left > enemies[i].left
                         && misiles[j].left < enemies[i].left + 70) {
-                        enemies.splice(i, 1);
-                        misiles.splice(j, 1);
-                        
-                        //AGREGAR CODIGO AQUI
+                        borrarEnemigo(i); // SOL
+                        borrarMisil(j); // SOL
+                        puntos = puntos + 1; // SOL
+                        document.getElementById("puntaje").innerHTML = puntos; // SOL
                     }
                 }
             }
         }
-        function checkScore() {
 
-        }
 
-        function gameLoop() {
-            moveEnemies();
-            drawEnemies();
-            moveMissiles();
+        function motorDelJuego() {
+            moverEnemigos();
+            dibujarEnemigos();
+            moverMisiles();
             dibujarMisiles();
-            missileCollision();
+            contactoMisil();
 
         }
-        setInterval(gameLoop, 100);
+        setInterval(motorDelJuego, 100);
 
 
 

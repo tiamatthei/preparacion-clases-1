@@ -42,10 +42,41 @@
             <div class="enemy"></div>
         </div>
         <div id="misiles">
-
         </div>
+        <h1>Puntuación actual: <span id="puntaje"></span></h1>
     </div>
     <script type="text/javascript">
+        /*
+        EJERCICIO 2:
+        Este es el código final del desafío Avión, pero como pueden ver, no funciona del todo, le faltan algunas partes y tiene algunos errores
+        que hacen que no funcione al 100%.
+        Usted como diseñador de videojuegos profesional, debe corregir los errores y agregar las funcionalidades que faltan para que el juego
+        funcione de manera esperada.
+        Las funcionalidades por agregar y los errores existentes son:
+        1. El jugador no se puede mover correctamente para todas las direcciones, identifique hacia donde se puede mover y hacia donde no
+            y corrijalo
+        2. El jugador no puede disparar misiles, debe agregar la funcionalidad para que el jugador pueda disparar misiles
+        3. Agregue la funcionalidad de la función moverMisiles(), para que los misiles se muevan hacia arriba (PISTA: A QUE FUNCIÓN SE PARECE?)
+        4. La función contactoMisil() no está funcionando correctamente
+            - Debe reordenar los elementos de esta función para que funcione correctamente
+            - Esta función debe eliminar el misil que impactó al enemigo
+            - Esta función debe eliminar el enemigo que fue impactado
+
+        Otras cosas que debe agregar al juego son:
+        - Agregue 2 enemigos más, para que sean 4 en total y queden en formación en V
+        - Agregue un contador de puntos, que se incremente cada vez que un misil impacte a un enemigo, EL HTML DE ESTO YA ESTÁ INCLUIDO
+                    NOTA: ¿Donde debe ir esto? ¿En que función?
+
+        
+        PUNTOS BONUS: 
+        - Explique el código QUE USTED EDITÓ por medio de comentarios, qué hace cada función, cada línea de código, etc. 
+        - Defina el comportamiento de la función: mePasePo. La cual se encuentra al final de este código.
+            Esta función debe eliminar a un enemigo si este se pasa del límite inferior de la pantalla
+            NOTA: Utilice la función ya creada borrarEnemigo() para eliminar al enemigo
+
+        */
+
+
         var player = {
             left: 450,
             top: 620
@@ -53,44 +84,44 @@
         var enemies = [
             { left: 350, top: 200 },
             { left: 450, top: 250 },
-            { left: 650, top: 200 },
-            { left: 550, top: 250 },
         ]
 
-        function drawPlayer() {
+        function dibujarJugador() {
             var content = '';
             content += '<div class="player" style="left:' + player.left + 'px; top:' + player.top + 'px;"></div>';
             document.getElementById('players').innerHTML = content;
         }
-
-        function drawEnemies() {
+        function dibujarEnemigos() {
             var content = '';
-            for (let i = 0; i < enemies.length; i++) {
+            for (var i = 0; i < enemies.length; i++) {
                 content += '<div class="enemy" style="left:' + enemies[i].left + 'px; top:' + enemies[i].top + 'px;"></div>';
             }
             document.getElementById('enemies').innerHTML = content;
 
         }
         var misiles = [];
-
         function dibujarMisiles() {
-            content = "";
-            for (let i = 0; i < misiles.length; i++) {
+            var content = "";
+            for (var i = 0; i < misiles.length; i++) {
                 content += "<div class='misil' style='left:" + misiles[i].left + "px; top:" + misiles[i].top + "px;'></div>";
             }
             document.getElementById("misiles").innerHTML = content;
         }
-        function moveEnemies() {
-            for (let i = 0; i < enemies.length; i++) {
+        function moverEnemigos() {
+            for (var i = 0; i < enemies.length; i++) {
                 enemies[i].top = enemies[i].top + 5;
             }
         }
-        function moveMissiles() {
-            for (let i = 0; i < misiles.length; i++) {
-                misiles[i].top = misiles[i].top - 5;
-            }
-        }
+        function moverMisiles() {
+            /// AGREGAR CODIGO AQUI
 
+        }
+        function borrarEnemigo(idxEnemigo) {
+            enemies.splice(idxEnemigo, 1);
+        }
+        function borrarMisil(idxMisil) {
+            misiles.splice(idxMisil, 1);
+        }
         document.onkeydown = function (e) {
             if (e.keyCode == 37) {
                 player.left = player.left - 10;
@@ -98,54 +129,43 @@
             if (e.keyCode == 38) {
                 player.top = player.top - 10;
             }
-            if (e.keyCode == 39) {
-                player.left = player.left + 10;
+
+            if (e.keyCode == 32) { // TECLA ESPACIO
+                misiles.push({ left: player.left + 34, top: player.top - 8 }); // Agrega un misil a la lista de misiles (dispara un misil) (NO TOCAR) 
             }
-            if (e.keyCode == 40) {
-                player.top = player.top + 10;
-            }
-            if (e.keyCode == 32) {
-                misiles.push({ left: player.left + 34, top: player.top - 8 });
-            }
-            drawPlayer();
+            dibujarJugador(); // Vuelve a dibujar el jugador cuando se mueve (NO TOCAR)
         }
+        dibujarJugador(); // Dibuja el jugador (NO TOCAR)
+        dibujarEnemigos(); // Dibuja los enemigos (NO TOCAR)
 
-        drawPlayer();
-        drawEnemies();
+        var puntos = 0;
 
-
-        function missileCollision(params) {
-            for (let i = 0; i < enemies.length; i++) {
-                for (let j = 0; j < misiles.length; j++) {
-                    if (misiles[j].top < enemies[i].top + 75
-                        && misiles[j].top > enemies[i].top
-                        && misiles[j].left > enemies[i].left
-                        && misiles[j].left < enemies[i].left + 70) {
-                        enemies.splice(i, 1);
-                        misiles.splice(j, 1);
-                        
-                        //AGREGAR CODIGO AQUI
-                    }
-                }
+        function contactoMisil(params) { // Arreglar esta función
+            for (var i = 0; i < enemies.length; i++) {
+            }
+            for (var j = 0; j < misiles.length; j++) {
+            }
+            if (misiles[j].top < enemies[i].top + 75
+                && misiles[j].top > enemies[i].top
+                && misiles[j].left > enemies[i].left
+                && misiles[j].left < enemies[i].left + 70) {
             }
         }
-        function checkScore() {
+        function mePasePo() {
+            /// BONUS
 
         }
 
-        function gameLoop() {
-            moveEnemies();
-            drawEnemies();
-            moveMissiles();
+        function motorDelJuego() { // Esta función se encarga estar atenta a todos los cambios en el juego, como el movimiento de los enemigos y otras cosas (NO TOCAR)
+            moverEnemigos();
+            dibujarEnemigos();
+            moverMisiles();
             dibujarMisiles();
-            missileCollision();
+            contactoMisil();
+            mePasePo();
 
         }
-        setInterval(gameLoop, 100);
-
-
-
-
+        setInterval(motorDelJuego, 100);
 
     </script>
 </body>
