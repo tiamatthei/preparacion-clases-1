@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .product-card {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .product-title {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            font-size: 16px;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .sale-price {
+            text-decoration: none;
+            color: red;
+        }
+
+        .exclusive-price {
+            background-color: #ffc107;
+            text-decoration: none;
+            color: #000;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product-card">
+        <h2 class="product-title">Product Name</h2>
+        <p class="product-description">Product description goes here.</p>
+        <p class="product-price">$149.990</p>
+        <p class="product-price sale-price">$129.990</p>
+        <button class="product-price exclusive-price">$99.990 (CMR)</button>
+    </div>
+</body>
+
+</html>

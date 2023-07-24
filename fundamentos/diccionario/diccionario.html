@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: blue;
+            padding-top: 100px;
+        }
+
+        div>h1 {
+            color: green;
+        }
+
+        input {
+            padding: 5px;
+            width: 100px;
+            height: 50px;
+            border-color: blue;
+        }
+
+        input[type="text"] {
+            border: 10px solid rebeccapurple;
+            border-bottom: 2px solid rebeccapurple;
+        }
+
+        input[type="submit"] {
+            color: red;
+            background-color: black;
+            border: 2px solid red;
+        }
+
+        img[alt="hola"] {
+            width: 100px;
+            height: 100px;
+            color: brown;
+            background-color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <img src="" alt="hola">
+    <div>
+        <form action="/process" method="post">
+            <input type="text" name="username" value="Rebecca">
+            <input type="submit" value="Enter Username">
+        </form>
+        <section>
+            <h1>este es un titulo</h1>
+        </section>
+    </div>
+    <div id="dentro-div">
+        <h1>ninja</h1>
+        <h1>este es otro h1</h1>
+        <img src="pronunciation.png">
+    </div>
+    <div>
+        <h2><em>noun</em></h2>
+        <ol>
+            <li>A practicioner skilled in the Japanese art of ninjutsu</li>
+            <li>A programmer who breaks down problems with zen-like focus</li>
+        </ol>
+    </div>
+</body>
+
+</html>
