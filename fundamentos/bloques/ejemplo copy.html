@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .flex-item {
+            flex:150px;
+            margin:10px;
+        }
+
+        .flex-container a {
+            background-color: antiquewhite;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        .inline-nav li {
+            display: inline;
+            width: 200px;
+            /*no respeta el tamaño*/
+        }
+
+        .inline-block-nav li {
+            display: inline-block;
+            width: 20%;
+            /*si respeta*/
+        }
+
+        .block-nav {
+            display: block;
+        }
+
+        li {
+            list-style: none;
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin: 1px;
+            background-color: antiquewhite;
+        }
+
+        li:hover {
+            background-color: aliceblue;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Ejemplo de flex</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <a href="#">Inicio</a>
+        </div>
+        <div class="flex-item">
+            <a href="#">Ofertas</a>
+        </div>
+        <div class="flex-item">
+            <a href="#">Catálogo</a>
+        </div>
+        <div class="flex-item">
+            <a href="#">Lanzamientos</a>
+        </div>
+        <div class="flex-item">
+            <a href="#">Info</a>
+        </div>
+    </div>
+    <h2>Ejemplo de inline</h2>
+    <ul class="inline-nav">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Catálogo</a></li>
+        <li><a href="#">Lanzamientos</a></li>
+        <li><a href="#">Info</a></li>
+    </ul>
+    <h2>Ejemplo de inline-block</h2>
+    <ul class="inline-block-nav">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Catálogo</a></li>
+        <li><a href="#">Lanzamientos</a></li>
+        <li><a href="#">Info</a></li>
+    </ul>
+</body>
+
+</html>
