@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox Examples</title>
+    <style>
+        /* Example 1: Simple Horizontal Navigation Bar */
+        nav {
+            display: flex;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        /* Example 2: Vertical Centering */
+        .center-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            background-color: #f2f2f2;
+        }
+
+        /* Example 3: Equal Height Columns */
+        .column-container {
+            display: flex;
+            background-color: #f2f2f2;
+        }
+
+        .column-container div {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Example 4: Responsive Layouts */
+        .responsive-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .responsive-container div {
+            flex: 1 0 200px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        /* Example 5: Flexbox Grid */
+        .grid-container {
+            display: flex;
+        }
+
+        .grid-container div {
+            flex: 1;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Ejemplo 1: Barra de Navegación Horizontal Simple -->
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <!-- Ejemplo 2: Centrado Vertical -->
+    <div class="center-container">
+        <h2>Bienvenidos a nuestro Sitio Web</h2>
+    </div>
+
+    <!-- Ejemplo 3: Columnas de Altura Igual -->
+    <div class="column-container">
+        <div>
+            <h3>Artículo Destacado</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis nec purus blandit varius.</p>
+        </div>
+        <div>
+            <h3>Últimas Noticias</h3>
+            <p>Ut ullamcorper justo in justo commodo, nec fermentum mauris aliquet.</p>
+        </div>
+        <div>
+            <h3>Productos Populares</h3>
+            <p>Nam eu urna nec felis vestibulum fermentum. Sed id lorem ut odio varius viverra.</p>
+        </div>
+    </div>
+
+    <!-- Ejemplo 4: Diseños Responsivos -->
+    <div class="responsive-container">
+        <div>
+            <h3>Producto A</h3>
+            <p>Curabitur tempus nibh at tristique vulputate. Quisque fermentum, neque eget sagittis malesuada.</p>
+            <button>Comprar Ahora</button>
+        </div>
+        <div>
+            <h3>Producto B</h3>
+            <p>Nullam interdum augue non elit facilisis fermentum. Etiam eu rhoncus mauris.</p>
+            <button>Comprar Ahora</button>
+        </div>
+        <div>
+            <h3>Producto C</h3>
+            <p>In eu ipsum at nulla scelerisque suscipit. Integer at diam vel nulla hendrerit ullamcorper.</p>
+            <button>Comprar Ahora</button>
+        </div>
+    </div>
+
+    <!-- Ejemplo 5: Cuadrícula con Flexbox -->
+    <div class="grid-container">
+        <div>
+            <h3>Producto X</h3>
+            <p>Vestibulum sodales fermentum lectus vitae luctus. Curabitur at elementum arcu.</p>
+            <a href="#">Comprar Ahora</a>
+        </div>
+        <div>
+            <h3>Producto Y</h3>
+            <p>Aliquam erat volutpat. Donec euismod massa eu sapien fringilla laoreet.</p>
+            <a href="#">Comprar Ahora</a>
+        </div>
+    </div>
+</body>
+
+</html>

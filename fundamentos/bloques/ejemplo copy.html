@@ -6,14 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .con-flex {
+            display: flex;
+            justify-content: space-between;
+        }
+        .con-flex div{
+            color: white;
+            margin: 2px;
+        }
+
+        .con-flex #primer {
+            background-color: blue;
+            flex: 1;
+
+        }
+
+        .con-flex #segundo {
+            background-color: red;
+            flex: 1;
+        }
+
+        .con-flex #tercero {
+            background-color: purple;
+            flex: 4;
+        }
+
+
+
         .flex-container {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
         }
+
         .flex-item {
-            flex:150px;
-            margin:10px;
+            flex: 150px;
+            margin: 10px;
         }
 
         .flex-container a {
@@ -59,6 +87,12 @@
 </head>
 
 <body>
+    <h2>Ejemplo con flex</h2>
+    <div class="con-flex">
+        <div id="primer">primer div</div>
+        <div id="segundo">segundo div</div>
+        <div id="tercero">tercer div</div>
+    </div>
     <h2>Ejemplo de flex</h2>
     <div class="flex-container">
         <div class="flex-item">

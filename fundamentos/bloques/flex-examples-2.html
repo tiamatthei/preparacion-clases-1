@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Example 6: Flexbox and Alignment */
+        header {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        /* Example 7: Nested Flex Containers */
+        .nested-container {
+            display: flex;
+        }
+
+        .nested-container aside {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .nested-container main {
+            flex: 2;
+            padding: 10px;
+        }
+
+        /* Example 8: Flexbox and Order */
+        .order-container {
+            display: flex;
+        }
+
+        .order-container div {
+            padding: 10px;
+        }
+
+        .order-container div:first-child {
+            order: 2;
+        }
+
+        .order-container div:last-child {
+            order: 1;
+        }
+
+        /* Example 9: Flexbox and Flex-Grow */
+        .flex-grow-container {
+            display: flex;
+        }
+
+        .flex-grow-container div {
+            padding: 10px;
+        }
+
+        .flex-grow-container div:first-child {
+            flex: 1;
+        }
+
+        .flex-grow-container div:nth-child(2) {
+            flex: 2;
+        }
+
+        .flex-grow-container div:last-child {
+            flex: 3;
+        }
+
+        /* Example 10: Flexbox and Flex-Wrap */
+        .flex-wrap-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-wrap-container a {
+            display: block;
+            padding: 10px;
+            color: black;
+            background-color: #f2f2f2;
+            margin: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Ejemplo 6: Flexbox y Alineación -->
+    <header>
+        <h1>Soluciones Web S.A.</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Portafolio</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Ejemplo 7: Contenedores Flex Anidados -->
+    <div class="nested-container">
+        <aside>
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">Diseño Web</a></li>
+                <li><a href="#">Desarrollo Web</a></li>
+                <li><a href="#">SEO</a></li>
+            </ul>
+        </aside>
+        <main>
+            <h2>Bienvenidos a Nuestro Blog</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed ultrices lectus nec odio
+                bibendum tincidunt.</p>
+        </main>
+    </div>
+
+    <!-- Ejemplo 8: Flexbox y Orden -->
+    <div class="order-container">
+        <div>
+            <h3>Destacado de la Semana</h3>
+            <p>Etiam ac sem eu mi lobortis blandit. Fusce malesuada nisl nec scelerisque feugiat.</p>
+        </div>
+        <div>
+            <h3>Función Popular</h3>
+            <p>Praesent nec arcu in elit varius venenatis. Proin venenatis arcu ut elit feugiat.</p>
+        </div>
+    </div>
+
+    <!-- Ejemplo 9: Flexbox y Flex-Grow -->
+    <div class="flex-grow-container">
+        <div>
+            <h3>Noticia de Última Hora</h3>
+            <p>Proin ut purus in massa euismod suscipit ut vitae arcu. Sed bibendum, metus euismod.</p>
+        </div>
+        <div>
+            <h3>Actualizaciones Recientes</h3>
+            <p>Pellentesque mollis mi nec dui elementum, vitae cursus erat vestibulum.</p>
+        </div>
+        <div>
+            <h3>Elección del Editor</h3>
+            <p>Nam eu urna nec felis vestibulum fermentum. Sed id lorem ut odio varius viverra.</p>
+        </div>
+    </div>
+
+    <!-- Ejemplo 10: Flexbox y Flex-Wrap -->
+    <nav class="flex-wrap-container">
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de Nosotros</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+        <a href="#">Nuestro Equipo</a>
+        <a href="#">Portafolio</a>
+        <a href="#">Blog</a>
+        <a href="#">Preguntas Frecuentes</a>
+        <a href="#">Testimonios</a>
+    </nav>
+</body>
+
+</html>
