@@ -1,0 +1,119 @@
+/* Reset default margins and paddings */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+  padding: 10px;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.course {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.course h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.course img {
+  height: 100px;
+  display: inline-block;
+}
+
+.btn {
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: block;
+  width: fit-content;
+}
+
+.schedule-list {
+  list-style: none;
+}
+
+.schedule-list li {
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+/* Example 11: Flexbox Testimonials Section */
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.testimonial {
+  text-align: center;
+}
