@@ -1,6 +1,4 @@
-Claro, aquí tienes una rúbrica más centrada en el porcentaje de logro respecto a si los estudiantes pudieron replicar la página web:
-
-**Rúbrica de Evaluación - Aprende Habilidades de Programación**
+**Rúbrica de Evaluación**
 
 | Criterio                                                                   | Puntos |
 | -------------------------------------------------------------------------- | ------ |
@@ -20,5 +18,3 @@ Claro, aquí tienes una rúbrica más centrada en el porcentaje de logro respect
 | Estructura de la página (header, main, footer)                             | 5      |
 | Contenido relevante y organizado                                           | 5      |
 | **Total de Puntos: 100**                                                   |        |
-
-Esta rúbrica valora principalmente la capacidad de los estudiantes para replicar las secciones clave de la página web, incluido el uso de Flexbox para el diseño. También se considera el uso adecuado de propiedades CSS para la apariencia de la página. Se evalúa la estructura general de la página y la organización del contenido. La rúbrica proporciona un total de 100 puntos, y los estudiantes recibirán puntos según el porcentaje de logro en la replicación de la página web.
