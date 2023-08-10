@@ -1,0 +1,96 @@
+            
+body {
+    background-color: rgb(204, 204, 204);
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #464646;
+}
+
+
+.menu {
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu li {
+    margin: 0 30px;
+    color: white;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+}
+
+.titulo{
+    color: white;
+}
+.subtitulo{
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.tarjetas{
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border: 2px solid transparent;
+    background-color: white;
+    margin: 10px;
+    
+}
+.p{
+    color: rgb(56, 55, 55);
+}
+.p1{
+    color: black;
+    font-weight: bold;
+}
+.tarjetas1{
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    color: red;
+    border: 2px solid transparent;
+    background-color: white;
+    margin: 10px;
+    
+}
+.p{
+    color: rgb(56, 55, 55);
+}
+.p1{
+    color: black;
+    font-weight: bold;
+}
+.boton{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+
+
+}

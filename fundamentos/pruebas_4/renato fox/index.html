@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba :0</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: #F2F2F2;
+        }
+        nav{
+            background-color: #333333;
+        }
+        nav h1{
+            color: #ffff;
+            padding: 20px;
+        }
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            color: #ffff;
+        }
+        nav ul li{
+            margin: 20px 0px 20px 20px;
+        }
+        #nu{
+            margin: 20px;
+            border-bottom: 2px solid #333333;
+            color: #333333;
+        }
+        .target{
+            display: flex;
+            flex-direction: column;
+            background-color: #ffff;
+            margin: 20px;
+            border: 0.1px solid rgb(204, 204, 204);
+            border-radius: 5px;
+        }
+        .target h3{
+            padding: 25px 0px 0px 25px;
+        }
+        .target p{
+            padding: 25px 0px 0px 25px
+        }
+        .target img{
+            width: 270px;
+            margin: 0px 0px 0px 25px;
+        }
+        .target button{
+            background-color: #333333;
+            color: #ffff;
+            margin: 25px 1700px 25px 25px;
+            padding: 10px;
+            border-radius: 5px;
+            list-style: none;
+            border-style: none;
+            font-size: 15px;
+        }
+        #comen{
+            display: flex;
+            justify-content: center;
+        }
+        #comen h4{
+            margin-right: 250px;
+        }
+        #comen2{
+            display: flex;
+            justify-content: center;
+        }
+        #info{
+            margin: 20px;
+        }
+        #info h2{
+            margin-bottom: 10px;
+            color: #333333;
+        }
+        #info p{
+            margin-bottom: 20px;
+        }
+        #abajo{
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+        #abajo input{
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 0.1px solid rgb(204, 204, 204);
+        }
+        #abajo textarea{
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 0.1px solid rgb(204, 204, 204);
+        }
+        #abajo button{
+            background-color: #333333;
+            color: #ffff;
+            margin:25px 1700px 0px 0px;
+            padding: 10px;
+            border-radius: 5px;
+            list-style: none;
+            border-style: none;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>
+            Aprende Habilidades de Programación
+        </h1>
+        <ul>
+            <li>
+                Cursos
+            </li>
+            <li>
+                Horario
+            </li>
+            <li>
+                Contacto
+            </li>
+        </ul>
+    </nav>
+    <h1 id="nu">Nuestros Cursos</h1>
+    <div class="target">
+        <h3>
+            Desarrollo Web
+        </h3>
+        <p>Domina el arte de construir sitios web receptivos utilizando HTM, CSS y JavaScript. Aprende a crear aplicaciones web modernas con frameworks como React y Angular.</p>
+        <img src="web.png" alt="Error">
+        <button>Inscríbete Ahora</button>
+    </div>
+    <div class="target">
+        <h3>
+            Programación en Python
+        </h3>
+        <p>Comienza tu viaje en la programacion con Python. Aprende a escribir codigo limpio y eficiente, trabajar con datos y construir proyectos como raspadores web y herramientas de análisis de datos.</p>
+        <img src="python.png" alt="Error" style="width: 100px;">
+        <button>Inscríbete Ahora</button>
+    </div>
+    <div class="target">
+        <h3>
+            Desarrollo de Aplicaciones Móviles
+        </h3>
+        <p>Construye aplicaciones móviles nativas para IOS y Android utilizando frameworks populares como Flutter y React Native. Aprende a crear aplicaciones móviles atractivas y fáciles de usar. </p>
+        <img src="flutter.png" alt="Error" style=" width: 100px;">
+        <button>Inscríbete Ahora</button>
+    </div>
+    <div id="comen">
+        <h4>
+            Juan Perez
+        </h4>
+        <h4>
+            Juanita Gonzalez
+        </h4>
+    </div>
+    <div id="comen2">
+        <p>"Aprendi mucho en este curso, los profesores son sequisimos!"</p>
+        <p>"Es el mejor curso en los 7 mares,  es lo mejor que me  ha pasado, y ahora tengo trabajo"</p>
+    </div>
+    <h1 id="nu">Horario de cursos</h1>
+    <div id="info">
+        <h2>
+            Desarrollo Web
+        </h2>
+        <p>
+            Lun, Mié, Vie: 3:00 PM - 5:00 PM
+        </p>
+        <h2>
+            Programación en Python
+        </h2>
+        <p>
+            Mar, Jue: 2:00 PM - 4:00 PM
+        </p>
+        <h2>
+            Desarrollo de Aplicaciones Móviles 
+        </h2>
+        <p>
+            Lun, Mié: 6:00 PM - 8:00 PM
+        </p>
+    </div>
+    <h1 id="nu">Contactate con Nosotros</h1>
+    <div id="abajo">
+        <p>Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros.</p>
+        <input type="text" placeholder="Tu Nombre" name="name" id="">
+        <input type="text" placeholder="Tu Correo Electrónico" name="name" id="">
+        <textarea name="" id="" placeholder="Tu Mensaje" cols="30" rows="4"></textarea>
+        <button>Enviar Mensaje</button>
+    </div>
+</body>
+</html>

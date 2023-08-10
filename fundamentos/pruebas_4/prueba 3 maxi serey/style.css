@@ -1,0 +1,152 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: rgb(236, 236, 236);
+}
+nav{
+    background-color: rgb(26, 25, 25);
+    color: aliceblue;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+
+.titulo-main{
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: solid 2px;
+    margin: 10px;
+}
+
+.primera-tarjeta{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid rgb(27, 27, 27);
+}
+
+.img-lenguajes{
+    width: 25%;
+}
+
+.primera-tarjeta h2 {
+    padding: 10px
+}
+
+.primera-tarjeta p{
+    padding: 10px;
+}
+
+button{
+    background-color: black;
+    color: aliceblue;
+    padding:10px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.segunda-tarjeta{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid black;
+}
+.segunda-tarjeta h2{
+    padding: 10px;
+}
+
+.img-lenguajes-1{
+    width: 13%;
+}
+
+.segunda-tarjeta p {
+    padding: 10px;
+}
+
+.tercera-tarjeta{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid black;
+    
+}
+
+.tercera-tarjeta h2{
+    padding: 10px;
+
+}
+.tercera-tarjeta p{
+    padding: 10px;
+}
+
+.img-lenguajes-2{
+    width: 13%;
+}
+
+.primer-comentario{
+    display: inline-block;
+    padding: 50px;
+}
+.segundo-comentario{
+    display: inline-block;
+    padding: 50px;
+}
+
+.comentarios{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-footer{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    border-bottom: solid 2px;
+    margin: 20px;
+}
+
+
+.horarios{
+    padding: 20px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.horarios h4{
+    margin: 10px;
+}
+.horarios p {
+    margin: 10px;
+}
+
+.titulo-contacto{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    border-bottom: solid 2px;
+    margin: 20px;
+}
+
+.p-contacto{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    
+}
+
+input{
+    padding: 10px;
+    display: block;
+    margin: 10px;
+    width: 100%;
+    
+}

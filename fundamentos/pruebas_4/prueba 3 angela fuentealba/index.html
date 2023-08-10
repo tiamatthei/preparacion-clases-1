@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    body{
+        color: rgb(0, 128, 255);
+    }
+    nav{
+        background-color: rgb(34, 33, 33);
+        display: flex;
+        justify-content: left;
+        padding: 40px;
+    }
+    .titulonav{
+        color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: xx-large;
+    }
+    ul li{
+        list-style: none;
+        margin: opx 10px;
+        color: aliceblue;
+        display: inline-block;
+        font-size: medium;
+        padding: 70px;
+        flex-direction: row-reverse;
+            }
+    .titulo2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        color: black;
+        border-bottom: solid 3px black;
+        margin: 40px;
+    }
+    .tarjetas{
+        background-color: rgb(241, 241, 241);
+        padding: 40px;
+        margin: 10px;
+        border-radius: 10px 10px 10px 10px;
+
+    }
+    .titulotarjeta{
+        color: black;
+    }
+    .ptarjeta{
+        color: black;
+    }
+    .botones{
+        background-color: rgb(15, 15, 15);
+        color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .nombres{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .p1{
+        color: rgb(48, 48, 48); 
+        align-content: center;
+    }
+    .titulohorario{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        border-bottom: solid black;
+    }
+    .titulo3{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+    }
+    .horarios1{
+        color: rgb(48, 48, 48);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-small;
+    }
+    .partefinal{
+        padding: 50px;
+        margin: 10px;
+    }
+    .partefinal p{
+        padding: 10px;
+        margin: 10px;
+    }
+    input{
+        margin: 10px;
+        display: block;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 class="titulonav"> Aprende Habilidades de Programacion</h1>
+        <ul>
+            <li>cursos</li>
+            <li>horarios</li>
+            <li>contacto</li>
+        </ul>
+    </nav>
+    <div class="titulo2">
+        <h1>Nuestros cursos</h1>
+    </div>
+    <div class="tarjetas"> 
+        <h1 class="titulotarjeta">Desarrollo web</h1>
+        <p class="ptarjeta"> Domina el arte de contruir sitios web receptivos utilizando HTML , CSS y Javascript. Aprende a crear aplicaciones web modernas con frameworks como React y Angular.</p>
+        <img src="img/web.png" alt="" width="350px" height="200px">
+        <div>
+            <button class="botones">Inscribete Ahora</button>
+        </div>
+    </div>
+    <div class="tarjetas"> 
+        <h1 class="titulotarjeta">Programacion en Python</h1>
+        <p class="ptarjeta"> tu viaje en la programacion con Python. Aprende a escribir codigo limpio y eficiente,
+        trabajar con datos y construir proyectos como raspadores web y herrramientas de analisis de datos.</p>
+        <img src="img/python.png" alt="" width="200px" height="100px">
+        <div>
+            <button class="botones">Inscribete Ahora</button>
+
+        </div>
+    </div>
+    <div class="tarjetas"> 
+        <h1 class="titulotarjeta">Desarrollo de aplicaciones moviles</h1>
+        <p class="ptarjeta">construye aplicaciones moviles nativas para IOS utilizando frameworks populares como Flutter y React Native. Aprende a crear aplicaciones moviles atractivas y faciles de usar.</p>
+            <img src="img/flutter.png" alt="" width="200px" height="100px">
+            <div> <button class="botones">Inscribete Ahora</button></div>
+            
+        </div>
+        <div class="nombres">
+            <h1>juan perez</h1>
+            <h1> Juanita Gonzales</h1>
+            <p class="p1">"Aprendi mucho de este curso, los profesores son sequisimos!" "Es el mejor curso en de los 7 mares, es lo mejor que me ha pasado y ahora tengo trabajo"</p>
+        </div>
+        <div class="titulohorario">
+            <h1>Horarios de Cursos</h1>
+        </div>
+        <Div>
+            <h1 class="titulo3">Desarrollo Web</h1>
+            <p class="horarios1">Lun, Mie, Vie: 3:00 PM - 5:00 PM</p>
+            <h1 class="titulo3">Programacion en Python</h1>
+            <p class="horarios1">Mar, Jue: 2:00 PM - 4:00 PM</p>
+            <h1 class="titulo3">Desarrollo de aplicaciones Moviles</h1>
+            <p class="horarios1">Lun, Mie: 6:00 PM - 8:00 PM</p>
+        </Div>
+        <div class="titulohorario">
+            <h1>Contacta con Nosotros</h1>
+        </div>
+        <div class="partefinal">
+            <p>Si tienes alguna pregunta o necesitas mas informacion, no dudes en ponerte en contacto con nosotros.</p>
+            <input type="text" placeholder="Tu Nombre">
+            <input type="text" placeholder="Tu Correo Electronico">
+            <input type="text" placeholder="Tu mensaje">
+            <div>
+                <button class="botones">Enviar mensaje</button>
+
+            </div>
+        </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+</head>
+<body>
+    <nav>
+        <h1>Aprende Habilidades de Programacion</h1>
+        <ul>
+            <li>Cursos</li>
+            <li>Horario</li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
+
+    <h2>Nuestros Cursos</h2>
+    <hr align=left width=1798 size= 2 color="#2c2c2c">
+    <div class="container">
+        <div class="top-nav">
+            <p><strong>Desarrollo Web</strong></p>
+            <p>Domina el arte de construir sitios web receptivos utilizando HTML, CSS y JavaScript. Aprende a crear aplicaciones web modernas con frameworks como React y Angular.</p>
+            <img src="img/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png" alt="">
+            <button>Inscribete Ahora</button>
+        </div>
+        <div class="center-nav">
+            <p><strong>Programacion en Python</strong></p>
+            <p>Comienza tu viaje en la Programacion con Python. Aprender a escribir codigo limpio y eficiente, trabajar con datos y construir proyectos como raspadores web y herramientas de analisis de datos.</p>
+            <img src="img/python.png">
+            <button>Inscribete Ahora</button>
+        </div>
+        <div class="bottom-nav">
+            <p><strong>Desarrollo de Aplicaciones Moviles</strong></p>
+            <p>Construye aplicaciones moviles nativas para IOS y Android frameworks populares como Flutter y React Native. Aprende a crear aplicaciones moviles atractivas</p>
+            <img src="img/flutter.png" alt="">
+            <button>Inscribete Ahora</button>
+        </div>
+    </div>
+    
+    <div class="coment">
+        <div>
+            <p><strong>Juan Perez</strong></p>
+            <p>"Aprendi mucho de este curso. los profesores son sequisimos!"</p>
+        </div>
+
+    <div>
+        <p><strong>Juanita Gonzalez</strong></p>
+        <p>"Es el mejor curso en los 7 mares, es lo mejor que me ha pasado y ahora tengo trabajo"</p>
+    </div>
+    </div>
+
+    <div class="horario">
+        <h2>Horario de Cursos</h2>
+        <hr align=left width=1798 size= 2 color="#2c2c2c">
+        <p><strong>Desarrollo Web</strong></p>
+        <p>Lun, Mie, Vie: 3:00 PM - 5:00 PM</p>
+
+        <p><strong>Programacion Python</strong></p>
+        <p>Mar, Mie: 6:00 PM - 8:00 PM</p>
+
+        <p><strong>Desarrollo de Aplicaciones Moviles</strong></p>
+        <p>Lunes, Mie: 6:00 PM - 8:00 PM</p>
+    </div>
+
+    <div class="contact">
+        <h2>Contacta con Nosotros</h2>
+        <hr align=left width=1798 size= 2 color="#2c2c2c">
+        <p>Si tienes alguna pregunta o necesitas mas informacion, no dudes en ponerte en contacto con nosotros. </p>
+        <input type="text" name="name" id="">
+    </div>
+
+</body>
+</html>
+
+<style>
+*{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+body{
+        background-color: rgb(240, 239, 239);
+    }
+
+nav{
+        background-color: #2c2c2c;
+        color: white;
+    }
+
+ul{
+        display: flex;
+    }
+
+li{
+    list-style: none;
+    padding: 20px;
+    }
+
+h1{
+        padding: 20px;
+    }
+
+h2{
+        margin: 30px;
+        color: #333333;
+    }
+
+hr{
+        width: 1788px;
+        margin: 30px;
+        margin-top: -25px;
+    }
+
+.top-nav{
+        background-color: white;
+        height: 320px;
+        margin: 30px;
+        border: 1px solid #cccccc;
+        border-radius: 6px;
+    }
+
+.top-nav p{
+        margin: 20px;
+        color: #494949;
+    }
+
+img{
+        width: 300px;
+        margin: 20px;
+    }
+
+button{
+        background-color: #313131;
+        border-radius: 3px;
+        color: white;
+        width: 8%;
+        height: 40px;
+        display: block;
+        margin-left: 20px;
+        border: #494848;
+    }
+
+.center-nav{
+        background-color: white;
+        height: 300px;
+        border-radius: 6px;
+        margin: 30px;
+        border: 1px solid #cccccc;
+    }
+
+.center-nav p{
+        margin: 20px;
+    }
+
+.center-nav img{
+        width: 100px;
+    }
+
+.bottom-nav{
+        background-color: white;
+        height: 300px;
+        border-radius: 6px;
+        margin: 30px;
+        border: 1px solid #cccccc;
+    }
+
+.bottom-nav p{
+        margin: 20px;
+    }
+
+    .bottom-nav img{
+        width: 100px;
+    }
+
+
+.coment {
+    display: flex;
+}
+
+.coment div{
+    flex: 1;
+    padding: 10px;
+    margin: 20px;
+}
+
+.horario p{
+    margin: 30px;
+    padding: 0px;
+}
+
+input{
+    width: 50%;
+}
+
+.contact p{
+    margin: 30px;
+} 
+</style>

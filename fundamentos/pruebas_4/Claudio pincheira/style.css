@@ -1,0 +1,82 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(207, 207, 207);
+}
+.nav-1{
+    background-color: grey;
+    color: white;
+    height: 105px;
+}
+.nav-1 h1{
+    padding: 10px;
+}
+.nav-1 ul {
+    display: flex;
+    list-style: none;
+}
+.nav-1 li{
+    padding: 20px;
+    margin-left: -10px;
+}
+.nuestros-c{
+    color: rgb(0, 0, 0);
+    text-decoration-line: underline;
+    padding: 10px;
+    margin: 20px;
+}
+.container-1{
+    background-color: white;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+}
+.container-1 p{
+    margin-top: 10px;
+}
+.container-1 button{
+    background-color: rgb(128, 128, 128);
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.horario-c{
+    margin: 20px;
+    margin-: 10px;
+}
+.container-2{
+    margin: 15px;
+}
+.contacta-cn{
+    margin: 10px;
+    margin-left: 10px;
+}
+.textarea{
+    margin-left: 10px;
+}
+.btn{
+    
+    background-color: rgb(128, 128, 128);
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.nombre{
+    width: 100%;
+    margin: 10px;
+    height: 25px;
+}
+.email{
+    width: 100%;
+    margin: 10px;
+    height: 25px;
+    margin-top: -5px;
+}
+.si{
+    margin-left: 10px;
+}

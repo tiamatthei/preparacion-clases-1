@@ -1,0 +1,78 @@
+body {
+background-color: rgb(168, 168, 168);     
+margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    background-color: #000000;
+}
+.name {
+    color: aliceblue;
+    
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu li {
+    margin: 0 30px;
+    color: aliceblue;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.subtitulo {
+border-bottom: 2px solid rgb(0, 0, 0);
+margin-left: 10px;
+margin-right: 10px;
+padding: 15px
+;    
+}
+.fondo {
+ border-radius: 5px;
+ padding: 10px;
+ color: #000000;
+ border: 2px solid transparent;
+ background-color: #ffffff;
+ margin: 10px;
+
+}
+.pizza {
+    color: #000000;
+}
+.p1{
+    color: black;
+    font-weight: bold;
+}
+.horario {
+    margin: 10px;
+}
+.button {
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: rgb(14, 14, 14);
+    padding: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
