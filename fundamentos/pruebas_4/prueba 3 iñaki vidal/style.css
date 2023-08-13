@@ -1,0 +1,53 @@
+{
+    font-family: arial;
+}
+.div {
+    padding: 0vw 0vw 0vw 1vw;
+    color: ghostwhite;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+#a {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0vw 0vw 1vw 0vw;
+
+}
+.b {
+    margin-left: 1vw;
+}
+
+.linea {
+    background-color: dimgrey;
+    width: 100%;
+    height: 0.2vw;
+}
+#imagenes{
+    width: 30vw;
+    height: 10vw;
+}
+.imagenes {
+    width: 15vw;
+    height: 15vw;
+}
+.button{
+    background-color: dimgrey;
+    color: ghostwhite;
+    border-radius: 5px;
+    padding: 1vw 0vw 1vw 2vw;
+    margin: 2vw 0vw 0vw 0vw;
+    width: 20vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    margin: 1vw 0vw 2vw 0vw;
+    border: 0.2vw solid ghostwhite;
+    padding: 2vw 1vw 2vw 1vw;
+}
