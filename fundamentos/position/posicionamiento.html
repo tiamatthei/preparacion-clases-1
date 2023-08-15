@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .div-fome {
+            height: 100px;
+            width: 100px;
+            background-color: fuchsia;
+            left: 10px;
+            top: 10px;
+            position: relative;
+        }
+
+        .div-hola {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            background-color: brown;
+        }
+
+        .div-padre {
+            height: 200px;
+            width: 200px;
+            left: 100px;
+            background-color: black;
+        }
+        .div-flexible{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-flexible">
+        <div class="div-padre">
+            <div class="div-hola"></div>
+            <div class="div-fome"></div>
+        </div>
+    </div>
+</body>
+
+</html>

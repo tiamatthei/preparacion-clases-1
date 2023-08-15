@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desafío CSS: Diseño Flexible</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    font-size: 16px;
+    color: #777;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-content">
+        <h2 class="card-title">Título de la Tarjeta 1</h2>
+        <p class="card-text">Contenido flexible en un diseño de cuadrícula. Esta tarjeta se ajusta al tamaño de la ventana y puede acomodar diferentes tamaños de pantalla.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <h2 class="card-title">Título de la Tarjeta 2</h2>
+        <p class="card-text">Cada tarjeta ocupa un tercio del ancho disponible y se ajusta automáticamente. Puedes agregar más tarjetas sin preocuparte por el diseño.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <h2 class="card-title">Título de la Tarjeta 3</h2>
+        <p class="card-text">Este desafío se trata de crear un diseño flexible y responsivo utilizando propiedades de flexbox. ¡Experimenta y diviértete!</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
