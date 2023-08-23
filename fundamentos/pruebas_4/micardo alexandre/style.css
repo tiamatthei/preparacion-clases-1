@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(238, 238, 238);
+    height: 900px;
+}
+.nav-class{
+    border-radius: -9px;
+    height: 90px;
+    background-color: skyblue;
+    margin-top: -1.3%;
+    color: white;   
+}
+#cursos{
+    position: absolute;
+    display:flex ;
+    color: white;
+    margin-left: 33%;
+}
+#Horario{
+    position: absolute;
+    display:flex ;
+    margin-left: 43%;
+    color: white;
+}
+hr{
+
+    
+    border-color: aqua;
+}
+#Contacto{
+    display: flex;
+    position: absolute;
+    margin-left: 55%;
+    color: white;
+}
+#buscador{
+    position: absolute;
+    margin-left: 78%;
+    display: flex;
+}
+
+ul{
+    list-style: none;
+}
+#img_1{
+    margin-left: 1%;
+    height: 130px;
+}
+#ahora{
+    border: none;
+    background-color: skyblue;
+    color: white;
+    border-radius: 3px 3px 3px 3px;
+    height: 40px;
+    width: 120px;
+    margin-top:9%;
+    margin-left:3% ;
+}
+.Nuestros{
+    background-color: white;
+    height: 290px;
+}
+#txt_parafo{
+    position: absolute;
+    display: flex;
+    margin-left: 2%;
+    margin-top: 4%;
+}
+#desarollo{
+    display: flex;
+    position: absolute;
+    color: skyblue;
+    margin-left:2%;
+}
+
+
+#TU_nombre{
+    width: 1840px;
+    border-color:white;
+    border-radius: 1%;
+}
+#email{
+    position: absolute;
+    border-color: white;
+    margin-top: 3%;
+    margin-left: -99%;
+    width: 1840px;
+}
+#ultimo{
+    position: absolute;
+border: none;
+background-color: skyblue;
+color: white;
+border-radius: 3px 3px 3px 3px;
+height: 40px;
+width: 120px;
+margin-top:8%;
+margin-left:-99% ;
+}

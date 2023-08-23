@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family : arial,sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ddfaf8;
+
+}
+.top {
+    background-color: #000000;
+}
+.nav {
+    flex: auto;
+    width: 1080;
+    margin:0 auto;
+    color: #ffffff;
+    background-color: #00bcd4;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content:center;
+}
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+.nav-title {
+    margin-left: 20px;
+}
+.Expediciones{
+    position: static ;
+    align-content: center;
+    display: flex;
+    margin: 10px;
+    color: #ffffff;
+}
+.Horario{
+    position: static ;
+    align-content: center;
+    display: flex;
+    margin: 10px;
+    color: #ffffff;
+}
+.contacto{
+    position: static ;
+    align-content:center;
+    display: flex;
+    margin: 10px;
+    color: #ffffff;
+
+}
+
+.btn {
+    height: 35px;
+    width: 100px;
+    background-color: #00bcd4;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+    width: fit-content;
+    border: none;
+    font-size: 16px;
+}
+.Senderismo{
+    background-color: #fff;
+    border: 30px solid #cef2fc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+hr{
+    border-color: rgb(122, 187, 210);
+}
+#desarrollo{
+    color: #28c2d6;
+}
+
+    #Nombre{
+        flex: auto;
+        width: 1000px;
+        height: 25px;
+        border-color:white;
+        border-radius: 1%;
+}
+#Email{
+    width: 1000px;
+    height: 25px;
+    border-color:white;
+    border-radius: 1%;
+}
+#Enviar{
+    background-color: #00bcd4;
+    color: #ffffff;
+    border-radius: 5px;
+    height: 30px;
+}

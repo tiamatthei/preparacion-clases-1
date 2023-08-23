@@ -1,0 +1,62 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:aqua;
+    color: #fff;
+}
+
+header h1{
+    margin: 0;
+    font-size: 24px;
+
+}
+
+ul{
+    display: flex;
+}
+ul li{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    list-style: none;
+
+}
+nav input{
+    padding:5px ;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+
+}
+
+h2{
+    color: black;
+}
+button{
+    background-color: aqua;
+    color: antiquewhite;
+    font-weight:bold ;
+    width: fit-content;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    margin: 15px;
+}
+
+hr{
+    background-color: aqua;
+}
+.content1{
+    background-color: darkgray;
+}
+.content1 h3{
+    color: #1c93d8;
+}
