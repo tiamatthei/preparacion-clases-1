@@ -1,0 +1,156 @@
+            
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    padding: 2px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+
+.menu {
+    justify-content: center;
+    margin: 0%;
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    text-decoration: none;
+    margin: 0 30px;
+    color: rgb(0, 0, 0);
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #ffffff
+}
+.img{
+object-fit: cover;
+}
+.tarjetas-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.tarjeta {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    flex-basis: calc(25% - 40px);
+    
+}
+
+.tarjeta h2 {
+    margin: 0;
+}
+
+.tarjeta p {
+    margin: 10px 0;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta-1 {
+    background-color: #ffffff;
+    
+}
+
+.tarjeta-2 {
+    background-color: #ffffff;
+}
+
+.tarjeta-3 {
+    background-color: #ffffff;
+}
+
+.tarjeta-4 {
+    background-color: #ffffff;
+}
+button{
+    background-color: #ff2e63;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px ;
+    border: transparent;
+    
+}
+
+.recomendaciones{
+    background-color: #ffdab9;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.card {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card-info {
+    margin-top: 10px;
+}
+
+.card-info h3 {
+    margin: 0;
+}
+
+.price {
+    margin-bottom: 5px;
+}
+
+.discount-price {
+    margin: 5px 0;
+    color: red;
+    font-weight: bold;
+}
+
+.buy-button {
+    padding: 5px 10px;
+    background-color: #444444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.h21{
+padding: 10px;}
+
+.fondo{}

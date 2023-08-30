@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="arriba">
+        <h1 id="BIG">Big Burger</h1>
+        <ul id="list">
+            <li id="space">Inicio</li>
+            <li id="space">Menu</li>
+            <li id="space">Contacto</li>
+        </ul>
+    </div>
+    <div id="fondito">
+        <div id="menusito">
+            <h1>Visita Nuestro Extenso Menu con variedad de sandwiches</h1>
+        </div>
+        <div id="ordenar">
+            <h3>Ordenar ahora</h3>
+        </div>
+    </div>
+    <div id="almacen">
+        <h1 id="ajuste">Nuestro Menu</h1>
+        <div id="tooo">
+            <div id="opcion">
+                <img src="images/sandwich1.jpg" id="foto1">
+                <h3 id="primero">El carterito</h3>
+                <h4 id="segundo">$10.990</h4>
+                <input id="boton" type="button" value="Añadir a la orden">
+            </div>
+            <div id="opcion">
+                <img src="images/wrap.jpg" id="foto1">
+                <h3 id="primero">Wrapeado</h3>
+                <h4 id="segundo">$8.990</h4>
+                <input id="boton" type="button" value="Añadir a la orden">
+            </div>
+            <div id="opcion">
+                <img src="images/sandwich7.jpeg" id="foto1">
+                <h3 id="primero">Mix de locos</h3>
+                <h4 id="segundo">$15.990</h4>
+                <input id="boton" type="button" value="Añadir a la orden">
+            </div>
+            <div id="opcion">
+                <img src="images/sandwich6.jpeg" id="foto1">
+                <h3 id="primero">Big Veggie</h3>
+                <h4 id="segundo">$13.990</h4>
+                <input id="boton" type="button" value="Añadir a la orden">
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="almacen2">
+            <h1 id="ajuste2">Nuestras recomendaciones</h1>
+            <div id="tooo2">
+                <div id="opcion2">
+                    <img src="images/sandwich2.jpg" id="foto2">
+                    <h3 id="primero2">Pal' chef</h3>
+                    <p id="segundo2">Hamburguesa original hecha a mano</p>
+                    <input id="boton2" type="button" value="Compra ya!">
+                </div>
+                <div id="opcion2">
+                    <img src="images/sandwich4.jpeg" id="foto2">
+                    <h3 id="primero2">Chicken loco</h3>
+                    <p id="segundo2">Hamburguesa de pollo</p>
+                    <input id="boton2" type="button" value="Compra ya!">
+                </div>
+                <div id="opcion2">
+                    <img src="images/sandwich3.jpg" id="foto2">
+                    <h3 id="primero2">Big Veggie</h3>
+                    <p id="segundo2">$10.990</p>
+                    <input id="boton2" type="button" value="Compra ya!">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #arriba {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #BIG {
+        margin: 25px;
+        font-family: Arial, sans-serif;
+    }
+
+    #list {
+        display: flex;
+        list-style-type: none;
+        margin: 25px;
+        font-family: Arial, sans-serif;
+    }
+
+    #space {
+        margin-left: 20px;
+    }
+
+    #fondito {
+        background-image: url("images/local.jpg");
+        background-size: cover;
+        padding: 30px;
+        background-position: center;
+        font-family: Arial, sans-serif;
+    }
+
+    #menusito {
+        display: flex;
+        justify-content: center;
+        color: white;
+        margin-top: 20px
+    }
+
+    #ordenar {
+        background-color: #ff2e63;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        color: white;
+        padding: 5px;
+    }
+
+    #almacen {
+        background-color: #f5f5f5;
+        padding-bottom: 40px;
+        font-family: Arial, sans-serif;
+    }
+
+    #ajuste {
+        padding-left: 30px;
+        padding-top: 40px;
+        margin-left: -8px;
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+
+    #opcion {
+        background-color: white;
+        border-radius: 7.5px;
+        border: grey 1px;
+        margin-left: 2%;    
+        border-style: none;
+        box-shadow: 0.5px 0px 1px black;
+    }
+
+    #foto1 {
+        height: 185px;
+        width: 300px;
+        border-radius: 7.5px;
+    }
+
+    #tooo {
+        display: flex;
+        margin:0% 5%
+
+    }
+
+    #primero {
+        margin: 15px;
+    }
+
+    #segundo {
+        margin: 15px;
+
+    }
+
+    #boton {
+        display: block;
+        color: white;
+        background-color: #ff2e63;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 15px;
+        border-style: none;
+
+    }
+
+    #almacen2 {
+        background-color: #ffDAB9;
+        font-family: Arial, sans-serif;
+    }
+
+    #ajuste2 {
+        padding-left: 30px;
+        padding-top: 10px;
+        margin-left: -8px;
+        margin-bottom: 35px;
+        font-size: 25px;
+    }
+
+    #opcion2 {
+        background-color: white;
+        border-radius: 7.5px;
+        border: grey 1px;
+        padding: 10px;
+        box-shadow: 0.5px 0px 2px black;
+    }
+
+    #foto2 {
+        height: 450px;
+        width: 400px;
+    }
+
+    #tooo2 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #primero2 {
+        margin: 10px;
+    }
+
+    #segundo2 {
+        margin: 10px;
+
+    }
+
+    #boton2 {
+        display: block;
+        color: white;
+        background-color: #222;
+        border-radius: 5px;
+        padding: 7.5px;
+        font-size: 15px;
+        border-style: none;
+    }
+</style>

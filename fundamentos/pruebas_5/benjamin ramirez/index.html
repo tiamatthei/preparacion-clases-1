@@ -1,0 +1,189 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prueba 2</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body{
+            background-color: #ffffff;
+        }
+
+        .nav {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .nav-links a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 0 10px;
+            background-color: white;
+        }
+
+        .imagen-banner {
+            object-fit: cover;
+        }
+
+        .visita-ordena{
+            position: absolute;
+            left: 22%;
+            top: 23%;
+        }
+
+        .visita {
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .ordena {
+            position: relative;
+            left: 19%;
+            background-color: #ff2e63;
+            padding: 2px 300px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nuestro {
+            padding: 5%;
+        }
+
+        .container-sandwich {
+            display: flex;
+            justify-content: center;
+        }
+
+        .sandwich {
+            padding: 20px;
+            background-color: #eeeeee;
+            margin: 0 50px;
+        }
+
+        .añadir {
+            background-color: #ff2e63;
+            color: white;
+            padding: 5px;
+            border-radius: 3px;
+            width: 70%;
+        }
+
+        .apartado-2 {
+            background-color: #ffdab9;
+            height: 65%;
+            margin: 5% 0 0;
+        }
+
+        .nuestrasrecom {
+            padding: 30px;
+        }
+
+        .container-sandwich2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .sandwic {
+            background-color: white;
+            margin: 0 5%;
+            padding: 20px;
+            border-radius: 3px;
+        }
+
+        .añadir2 {
+            background-color: #222;
+            padding: 5px 8px 8px;
+            border-radius: 3px;
+            width: 100px;
+            color: white;
+            margin: 10px 0;
+        }
+    </style>
+
+    <body>
+        <div class="nav">
+            <h1 class="nav-title">Big Burger</h1>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Accesorios</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+
+
+        <div>
+            <img class="imagen-banner" src="img/local.jpg" alt="" width="100%" height="40%">
+            <div class="visita-ordena">
+                <h3 class="visita">Visita nuestro extenso menú con variedad de sandwiches</h3>
+                <a class="ordena" href="#">Ordena Ahora</a>
+            </div>
+        </div>
+
+
+        <h2 class="nuestro">Nuestro Menú</h2>
+        <div class="container-sandwich">
+            <div class="sandwich">
+                <img src="img/sandwich1.jpg" alt="" width="250px">
+                <h3>El Carterito</h3>
+                <span>$10.990</span>
+                <h4 class="añadir">Anadir a la orden</h4>
+            </div>
+            <div class="sandwich">
+                <img src="img/wrap.jpg" alt="" width="250px" height="170px">
+                <h3>Wrapeado</h3>
+                <span>$8.990</span>
+                <h4 class="añadir">Anadir a la orden</h4>
+            </div>
+            <div class="sandwich">
+                <img src="img/sandwich7.jpeg" alt="" width="250px">
+                <h3>Mix de locos</h3>
+                <span>$15.990</span>
+                <h4 class="añadir">Anadir a la orden</h4>
+            </div>
+            <div class="sandwich">
+                <img src="img/sandwich6.jpeg" alt="" width="250px">
+                <h3>Big veggie</h3>
+                <span>$13.990</span>
+                <h4 class="añadir">Anadir a la orden</h4>
+            </div>
+        </div>
+
+
+        <div class="apartado-2">
+            <h2 class="nuestrasrecom">Nuestras Recomendaciones</h2>
+            <div class="container-sandwich2">
+                <div class="sandwic">
+                    <img src="img/sandwich2.jpg" alt="" width="250px">
+                    <h3>Pal' Chef</h3>
+                    <span>Hamburguesa original hecha a mano</span>
+                    <h4 class="añadir2">Compra Ya!</h4>
+                </div>
+                <div class="sandwic">
+                    <img src="img/sandwich4.jpeg" alt="" width="250px">
+                    <h3>Chicken Loco</h3>
+                    <span>Hamburguesa de pollo</span>
+                    <h4 class="añadir2">Compra Ya!</h4>
+                </div>
+                <div class="sandwic">
+                    <img src="img/sandwich3.jpg" alt="" width="250px">
+                    <h3>Big Viggie</h3>
+                    <span>Hamburguesa Vegana</span>
+                    <h4 class="añadir2">Compra Ya!</h4>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

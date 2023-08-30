@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Burger</title>
+</head>
+<body>
+    <nav class="top-nav"> 
+        <h1><strong>Big Burger</strong></h1>
+        <ul>
+            <li>Inicio</li>
+            <li>Menú</li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
+
+    <div class="img">
+        <h2>Visita nuestro extenso menú con variedad de sandwiches</h2>
+        <div class="div-btn">
+            <button class="button">Ordenar ahora</button>
+        </div>
+    </div>
+
+    <div class="menu">
+        <p><strong>Nuestro menú</strong></p>
+    </div>
+
+    <div class="container">
+        <div class="right-container">
+            <img src="p5/images/sandwich1.jpg" width="200px">
+            <p><strong>El carterito</strong></p>
+            <p><strong>$10.990</strong></p>
+            <button class="button-shop">Añadir a la orden</button>
+        </div>
+
+        <div class="left-container">
+            <img src="p5/images/wrap.jpg" width="200px">
+            <p><strong>Wrapeado</strong></p>
+            <p><strong>$8.990</strong></p>
+            <button class="button-shop">Añadir a la orden</button>
+        </div>
+
+        <div class="center-container">
+            <img src="p5/images/sandwich7.jpeg" width="200px">
+            <p><strong>Mix de locos</strong></p>
+            <p><strong>$15.990</strong></p>
+            <button class="button-shop">Añadir a la orden</button>
+        </div>
+
+        <div class="last-container">
+            <img src="p5/images/sandwich6.jpeg" width="200px">
+            <p><strong>Big Vaggie</strong></p>
+            <p><strong>$13.990</strong></p>
+            <button class="button-shop">Añadir a la orden</button>
+        </div>
+    </div>
+
+    <div class="recomendacion">
+        <p><strong>Nuestras recomendaciones</strong></p>
+    </div>
+    <div class="recomendation-container">
+        <div class="right-recomendation">
+            <img src="p5/images/sandwich2.jpg" width="100%">
+            <p><strong>Pal' chef</strong></p>
+            <p>Hamburguesa original hecha a mano</p>
+            <button class="recomendation-button">Compra ya!</button>
+        </div>
+        <div class="center-recomendation">
+            <img src="p5/images/sandwich4.jpeg" width="100%">
+            <p><strong>Chicken loco</strong></p>
+            <p>Hamburguesa de pollo</p>
+            <button class="recomendation-button">Compra ya!</button>
+        </div>
+        <div class="last-recomendation">
+            <img src="p5/images/sandwich3.jpg" width="100%">
+            <p><strong>Big Vaggie</strong></p>
+            <p>Hamburguesa vegana</p>
+            <button class="recomendation-button">Compra ya!</button>
+        </div>
+    </div>
+</body>    
+</html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+body{
+    background-color: #f3f0f0;
+}
+
+.top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -5px;
+}
+
+.top-nav ul{
+    display: flex;
+}
+
+.top-nav li{
+    list-style: none;
+    padding: 3px;
+    margin: 20px;
+}
+
+.top-nav h1{
+    margin: 30px;
+    font-size: 29px;
+}
+
+.button{
+    background-color: #ff2e63;
+    color: white;
+    border: #ff2e63;
+    width: 90%;
+    height: 35px;
+    font-size: 17px;
+}
+.div-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.img h2{
+    color: white;
+    text-align: center;
+    padding: 50px;
+    size: 600px;
+    font-size: 29px;
+    margin: 0px;
+}
+
+.img{
+    background-image: url(https://c.pxhere.com/photos/8a/90/dawn_dusk_macedonia_ocean_ohrid_restaurant_sea-1529479.jpg!d);
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu{
+    margin: 30px;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.right-container{
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    width: 200px;
+    margin-left: 40px;
+    height: 250px;
+    background-color: white;
+}
+
+.button-shop{
+    color: white;
+    background-color: #ff2e63;
+    border-radius: 3px;
+    margin-top: 14px;
+    height: 30px;
+    width: 70%;
+    border: #ff2e63
+}
+
+.right-container p{
+    margin-top: 10px;
+    margin: 10px;
+}
+
+.left-container{
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    width: 200px;
+    margin-left: 40px;
+    height: 250px;
+    background-color: white;
+} 
+
+.container{
+    display: inline-block;
+    display: flex;
+}
+
+.left-container img{
+    height: 136px;
+}
+
+.left-container p{
+    margin-top: 10px;
+    margin: 10px;
+}
+
+.center-container{
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    width: 200px;
+    margin-left: 40px;
+    height: 250px;
+    background-color: white;
+}
+
+.center-container p{
+    margin-top: 10px;
+    margin: 10px;
+}
+
+.center-container img{
+    height: 136px;
+}
+
+.last-container{
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    width: 200px;
+    margin-left: 40px;
+    height: 250px;
+    background-color: white;
+}
+
+.last-container p{
+    margin-top: 10px;
+    margin: 10px;
+}
+
+.last-container img{
+    height: 136px;
+}
+
+.recomendacion p{
+    margin: 30px;
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.recomendation-container {
+    display: inline-block;
+    display: flex;
+}
+
+.recomendacion{
+    background-color: #ffdab9;
+    height: 700px;
+}
+
+.right-recomendation{
+    margin-top: -33%;
+}
+
+.right-recomendation{
+    border: 10px solid #ffffff;
+    width: 300px;
+    margin-left: 50px;
+    height: 540px;
+    background-color: white;
+    border-left: 10px solid #ffffff;
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+.recomendation-button{
+    background-color: black;
+    color: white;
+    border: black;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.center-recomendation{
+    border: 10px solid #ffffff;
+    width: 300px;
+    margin-left: 50px;
+    height: 540px;
+    background-color: white;
+    border-left: 10px solid #ffffff;
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+.center-recomendation{
+    margin-top: -33%;
+}
+
+.last-recomendation{
+    border: 10px solid #ffffff;
+    width: 300px;
+    margin-left: 50px;
+    height: 540px;
+    background-color: white;
+    border-left: 10px solid #ffffff;
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+.last-recomendation{
+    margin-top: -33%;
+}
+
+.last-recomendation img{
+    height: 450px;
+}
+</style>

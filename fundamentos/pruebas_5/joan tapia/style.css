@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:burlywood ;
+}
+
+nav{
+    background-color: #fff;
+    height: 600px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li{
+    margin: 20px;
+    list-style: none;
+}
+.home li{
+    display: inline-block;
+}
+
+.home li a{
+    text-decoration: none;
+    color: black;
+}
+
+.local{
+    object-fit: cover;
+}
+
+.visita{
+    margin-top: -130px;
+    margin-left: 10%;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.orden{
+    background-color: #ff2e63;
+    width: 80%;
+    height: 30px;
+    font-size: 1.1rem;
+    margin-left: 8.5%;
+    color: white;
+    border: 10px;
+}
+
+.sandwiches{
+    background-color: rgb(226, 226, 226);
+    width: 180px;
+    height: 225px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+h2{
+    margin: 25px;
+    margin-top: 80px;
+}
+
+.sandwiche{
+    border-radius: 5px;
+}
+
+h3{
+    padding: 15px;
+}
+
+span{
+    padding: 15px;
+}
+
+.añadir{
+    margin-top: 15px;
+    background-color: #ff2e63;
+    border: 25px;
+    border-radius: 3px;
+    color: white;
+    width: 110px;
+    height: 25px;
+}
+
+.panes{
+    background-color: rgb(226, 226, 226);
+    width: 220px;
+    height: 460px;
+    display: inline-block;
+    margin: 10px;
+    
+}
+
+section{
+    margin: 15px;
+}
+
+.añadi{
+    margin-left: 15px;
+    background-color: #222;
+    border: 25px;
+    border-radius: 3px;
+    color: white;
+    width: 90px;
+    height: 25px;
+}
+
+.che{
+    margin: 10px;
+}
+
+p{
+    margin: 15px;
+    color: grey;
+}

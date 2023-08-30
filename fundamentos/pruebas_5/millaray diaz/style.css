@@ -1,0 +1,62 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:#fff;
+}
+nav{
+    background-color:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    display: flex;
+
+}
+li{
+    list-style: none;
+    margin: 10px;
+    color: black;
+}
+h1{
+    color: black;
+}
+.hero{
+    height: 300px;
+    width: 100%;
+    background-image: url('images/local.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.boton-rojo{
+    background-color:#ff2e63;
+    color: #fff;
+}
+.boton-plomo{
+    background-color:#222;
+    color: #fff;
+}
+#Nuestrasrecomendaciones{
+    background-color: #FFDAB9;
+
+}
+.producto{
+    border: 1px solid grey;
+    border-radius:5px;
+}
+.producto button{
+    padding: 4px;
+}
+.recomendacion{
+    border: 1px solid grey;
+    border-radius:5px;
+    background-color: #fff;
+    padding: 4px;
+}
+.recomendacion button{
+    padding: 4px;
+}
