@@ -1,0 +1,154 @@
+body{
+    margin: 0% 0%;
+    height: 100%;
+    width: 100%;
+}
+nav{
+    background-color: white;
+    display: flex;
+    font-size: 20px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 75vw;
+
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav li{
+    padding-left: 30px;
+}
+nav h1{
+    padding-left: 30px;
+}
+.img-grande{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/local.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 15vw;
+}
+#boton1{ 
+    width: 95vw;
+    height: 3vw;
+    margin-left: 3vw;
+    margin-top: 0vw;
+    background-color: #ff2e63;
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+}
+.img-grande h1{
+    font-size: 50px;
+    padding-left: 15vw;
+    padding-top: 2.5vw;
+    color: #fff;
+
+}
+.titulo{
+    background-color: rgb(231, 231, 231);
+    margin: 0vw;
+    padding-left: 5vw;
+    padding-top: 2vw;
+}
+.nuestro-menu-section{
+    display:flex ;
+    background-color: rgb(231, 231, 231);
+    height: 25vw;
+}
+
+.menu-div{
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid rgb(148, 148, 148);
+    width: 15vw;
+    margin-left: 8vw;
+    margin-top: 3vw;
+    background-color: white;
+    height: 19vw;
+    font-size: 20px;
+}
+.menu-div img{
+    border-radius: 5px;
+    width: 15vw;
+
+
+}
+#wrap{
+    height: 10vw;
+}
+.titulo h1{
+    width: 30VW;
+    height: 7vw;
+}
+
+.menu-div button{
+    border-radius: 3px;
+    width: 7vw;
+    height: 2vw;
+    background-color: #ff2e63;
+    color: white;
+    margin-top: 0.6vw;
+
+}
+.menu-div h3{
+    padding-left: 1vw;
+    margin-top: 1vw;
+
+}
+.menu-div p{
+    padding-left: 1vw;
+    margin-top: 0vw;
+}
+.recomendaciones{
+    display: flex;
+    background-color: #ffdab9;
+    height: 41vw;
+}
+.recomendados{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 22vw;
+    border-radius: 5px;
+    margin-left: 8vw;
+    margin-top: 3vw;
+    border: 1px solid rgb(199, 199, 199);
+    height: 37vw;
+
+
+}
+.recomendados img{
+    width: 20vw;
+    margin-top: 0.5vw;
+    margin-left: 1vw;
+}
+
+.h1-recomendaciones{
+    background-color: #ffdab9;
+    margin: 0vw 0vw;
+    padding-left: 5vw;
+    padding-top: 2vw;
+
+}
+.recomendados button{
+    background-color: #222;
+    color: #fff;
+    border-radius: 5px;
+    width: 5vw;
+    height: 3vw;
+    margin: 1vw 0.9vw;
+}
+.recomendados h3{
+    margin: 0.5vw 1vw;
+}
+.recomendados p{
+    margin: 0vw 1vw;
+    color: dimgrey;
+}

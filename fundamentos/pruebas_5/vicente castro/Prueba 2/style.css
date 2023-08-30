@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.arriba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding: 2vw 1vw 2vw 1vw;
+    background-color: #f5f5f5;
+}
+.buscar {
+    width: 30vw;
+    height: 2vw;
+    border: 1px solid #aaa8a8;
+}
+li {
+    list-style: none;
+}
+.menu {
+    display: flex;
+}
+.a {
+    margin: 1vw;
+}
+.b {
+    margin-block-end: 3vw;
+}
+.c {
+    margin-left: 0.5vw;
+    margin-block-end: 0.6vw;
+    margin-block-start: 0.6vw;
+}
+.visita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/local.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 4vw 1vw 4vw 1vw;
+}
+.visita2 {
+    color: #fff;
+    margin-block-end: 1vw;
+}
+.button {
+    background-color: #ff2e63;
+    color: #fff;
+    border: none;
+    width: 94vw;
+    height: 4vw;
+    border-radius: 0.3vw;
+    margin-top: 1vw;
+}
+.el-menu {
+    display: flex;
+    flex-direction: column;
+}
+.borde {
+    margin: 3vw 0vw 0vw 2vw;
+    background-color: #f5f5f5;
+}
+.productos {
+    flex: 1;
+    display: flex;
+    margin-left: 1.3vw;
+    justify-content: center;
+}
+.img-producto {
+    width: 20vw;
+    height: 14vw;
+    border-top-left-radius: 0.3vw;
+    border-top-right-radius: 0.3vw;
+}
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 1vw 2vw 0vw 1vw;
+    border: 1px solid #d4d2d2;
+    border-radius: 0.3vw;
+    background-color: white;
+}
+.button2 {
+    background-color: #ff2e63;
+    color: #f5f5f5;
+    border-radius: 0.3vw;
+    border: 0.3vw solid #ff2e63;
+    width: 13vw;
+    height: 3vw;
+}
+.error {
+    background-color: #ffdab9;
+    margin-left: -2vw;
+    margin-top: 4vw;
+}
+.recomendaciones {
+        margin: 2vw 2vw 0vw 2vw;
+}
+.img-recomend {
+    width: 28vw;
+    height: 50vw;
+}
+.list-recomend {
+    display: flex;
+    justify-content: center;
+}
+.producto2 {
+    background-color: #f5f5f5;
+    justify-content: space-between;
+    border-radius: 0.3vw;
+    margin: 1vw;
+    border: 1vw solid white;
+    box-shadow: 0 0 10px;
+}
+.button3 {
+    background-color: #333;
+    color: white;
+    padding: 1.3vw;
+    border-radius: 0.3vw;
+    border: none;
+    width: 14vw;
+}
+.producto2 h2 {
+    margin-top: 0.5vw;
+}
+.producto2 p {
+    margin-block-end: 0.5vw;
+    color: #888888;
+}

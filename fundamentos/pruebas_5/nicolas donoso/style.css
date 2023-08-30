@@ -1,0 +1,155 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    background-color: #d8d8d8;
+}
+
+.name {
+    color: rgb(0, 0, 0);
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+}
+
+.menu li {
+    margin: 0 30px;
+    color: rgb(0, 0, 0);
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.vista img {
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+}
+.vista h1{
+    position: relative;
+    top: -150px;
+    color: white;
+    text-align: center;
+}
+
+
+.vista button{
+    position: relative;
+    top: -150px;
+    width: 60%;
+    background-color: #ff2e63;
+    color:#fff;
+    border: none;
+    border-radius: #ff2e63;
+    padding: 10px;
+}
+.div-boton{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.cardsP {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.product-item .card-info {
+    margin-top: 10px;
+}
+
+.product-item .card-info h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.product-item .price {
+    margin-bottom: 20px;
+
+}
+
+.product-item .buy-button {
+    padding: 5px 5px;
+    background-color: #ff2e63;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.chef {
+   border: 1px solid transparent;
+   background-color: #ffffff; 
+   justify-content: space-evenly;
+   background-color: #ffdab9;
+}
+
+.recom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+   
+}
+.product-item{
+    background-color: white;
+}
+.cardP {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+   
+}
+.buy-boton{
+    display: flex;
+    background-color: #222;
+    color: #ddd;
+    justify-content: start;
+    align-items: end;
+    border-radius: 5px;
+}
+.pric{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+
+
+
+

@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+}
+
+.barra {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.barra li{
+    padding-right: 20px;
+}
+.titulo{
+    display: flex;
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.fondo-vn {
+    background-image: url(img/local.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.fondo-vn h1 {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.fondo-vn button {
+    background-color: #ff2e63;
+    color: white;
+    justify-content: center;
+    align-self: center;
+    width: 90%;
+    margin: 50px;
+    height: 40px;
+}
+
+.nuestro-menú {
+    margin: 50px;
+}
+
+.img-comida {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.contenedor-comida {
+    margin-left: 25px;
+}
+.texto-nm{
+    background-color: #f5f5f5;
+}
+.texto-nm button{
+    background-color: #ff2e63;
+    color: white;
+    height: 30px;
+    width: 130px;
+}
+.nuestras-r{
+    background-color: #ffdab9;
+    font-size: 13px;
+}
+.fondo-comida{
+    display: flex;
+}
+.fondo-bl{
+    background-color: white;
+    width: 250px;
+    margin-left: 40px;
+    padding: 10px;
+}
+.fondo-bl button{
+    background-color: #222;
+    color: rgb(192, 192, 192);
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.nuestras-r h1{
+    padding: 20px;
+    margin-left: 10px;
+}
+.fondo-bl p{
+    color: grey;
+}

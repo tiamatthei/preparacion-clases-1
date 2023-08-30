@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin: 0px 10px;
+    color: rgb(10, 9, 9);
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+}
+
+.banner {
+    background-image: url(images/local.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 170px;
+}
+
+.banner h2 {
+    color: #f3f3f3;
+
+}
+
+.banner button {
+    background-color: crimson;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 50px;
+    width: 90%;
+    height: 60px;
+    color: #f3f3f3;
+
+}
+
+.texto-menu {
+    margin: 20px;
+}
+
+.producto {
+    width: 24%;
+    display: inline-block;
+
+}
+
+.producto img {
+    object-fit: cover;
+    margin: auto;
+    width: 70%;
+}
+
+.producto button {
+    background-color: rgb(245, 55, 112);
+    color: #f3f3f3;
+}
+
+.contenedor-recomenda {
+
+    background-color: bisque;
+}
+
+.recomendaciones {
+    background-color: #f3f3f3;
+}
+
+.recomendaciones {
+    width: 29%;
+    padding: 10px;
+    display: inline-block;
+}
+
+.recomendaciones img {
+    object-fit: cover;
+    margin: auto;
+}
+
+.recomendaciones button {
+    background-color: lightslategray;
+    color: #f3f3f3;
+}
+
+.imagen-recomenda {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.imagen-menu {
+    height: 200px;
+    width: 100px;
+}
