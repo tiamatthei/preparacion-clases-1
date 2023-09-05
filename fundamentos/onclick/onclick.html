@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Dojonary</h1>
+        <input type="text" placeholder="Search">
+        <button onclick="this.innerHTML='Logout'">Login</button>
+    </nav>
+    <div class="dojo-row">
+        <div class="definition">
+            <div class="col">
+                <h2>ninja</h2>
+                <h4>noun</h4>
+                <h4>Plural:ninjas</h4>
+                <button onclick="alert('ninja was clicked')">13 likes</button>
+            </div>
+            <div class="col-2">
+                <p>A practitioner skilled in the
+                    <a href="#">Japanese</a>
+                    art of
+                    <a href="#">ninjutsu</a>
+                </p>
+            </div>
+        </div>
+        <div class="dojonary-prompt">
+            <h2>Dojonary is defined by YOU</h2>
+            <button onclick="this.remove()">Add Definition</button>
+        </div>
+
+    </div>
+    <div class="dojo-row">
+        <div class="definition">
+            <div class="col">
+                <h2>ninja</h2>
+                <h4>noun</h4>
+                <h4>Plural:ninjas</h4>
+                <button>37 likes</button>
+            </div>
+            <div class="col-2">
+                <p>A
+                    <a href="#">programmer</a>
+                    who breaks down problems with
+                    <a href="#">zen</a>-like
+                    focus
+                </p>
+            </div>
+        </div>
+        <div class="blank"></div>
+    </div>
+    <script src="onclick.js"></script>
+</body>
+
+</html>
