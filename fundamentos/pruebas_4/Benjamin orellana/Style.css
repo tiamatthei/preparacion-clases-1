@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principio {
+    height: 50px;
+    width: 100%;
+    background-color: #00bcd4;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+ 
+.expediciones {
+    margin: 5px;
+}
+
+.todo {
+background-color: #e0f2f1;
+}
+
+.primero {
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+.horario {
+    padding: 5px;
+    margin: 5px;
+}
+
+.btn {
+    background-color: #00bcd4;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px 5px 5px 5px;
+    border-color: #ccc;
+}
+
+.con {
+    padding: 10px;
+}
+
+.ultimo {
+    height: 30px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+}
+
+.preultimo {
+    height: 30px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+}
+
+.btns {
+    background-color: #00bcd4;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px 5px 5px 5px;
+    border-color: #ccc;
+    margin: 10px;
+}
