@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #7a9d54;
+        }
+        div{
+            border: 10px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            width: 200px;
+            padding: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color:azure;
+            text-align: center;
+        }
+        h2{
+            background-color: rebeccapurple;
+            margin: 0px;
+            text-align: left;
+        }
+        .imagen-producto{
+            height: 100px;
+        }
+        .descripcion{
+            text-align: left;
+        }
+        .precio-base{
+            color: grey;
+            text-decoration: line-through;
+        }
+        .precio-oferta{
+            color: rgb(250, 20, 20);
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .precio-cmr{
+            color: #7a9d54;
+            font-weight: 900;
+            font-size: 20px;
+        }
+        #compra-blue-label{
+            background-color: yellowgreen;
+            border-radius: 10px;
+            padding: 5px 10px;
+            border: 1px solid green;
+            cursor: pointer; /*para que el cursor sea como click*/
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Blue label de Johnny Walker</h2>
+        <img class="imagen-producto" src="blue_label.jpeg" alt="">
+        <p class="descripcion">Es un elixir, el otro es un whisky, pero este es un elissir</p>
+        <p class="precio-base">$340.000</p>
+        <p class="precio-oferta">$250.000</p>
+        <p class="precio-cmr">CMR: $200.000</p>
+        <button id="compra-blue-label">¡Compra ya!</button>
+    </div>
+</body>
+
+</html>
