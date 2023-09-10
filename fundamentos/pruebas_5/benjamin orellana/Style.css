@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listas {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.cm {
+    margin: 5px;
+    color: #333;
+}
+
+.items {
+    text-align: center;
+    color: #fff;
+    background-image: url(images/local.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.btn {
+    background-color: #ff2e63;
+    color: #fff;
+    height: 20%;
+    width: 90%;
+}
+
+.btns {
+    background-color: #ff2e63;
+    color: #fff;
+}
+
+.btnss {
+    background-color: #222;
+    color: white;
+}
+
+.primer-producto {
+    height: 120px;
+    width: 100%;
+}
+
+.item {
+    border-color: black;
+    width: 20%;
+    display: inline-block;
+    box-shadow: 0px 10px 10px -6px black;
+    margin: 5px;
+}
+
+.Recomendaciones {
+    width: 31%;
+    display: inline-block;
+    border: 6px solid rgb(255, 255, 255);
+    margin: 5px;
+    background-color: white;
+    box-shadow: 0px 10px 10px #333;
+}
+
+.bonito {
+    background-color: #ffdab9;
+}
+
+.lindo {
+    width: 100%;
+    height: 20%;
+}

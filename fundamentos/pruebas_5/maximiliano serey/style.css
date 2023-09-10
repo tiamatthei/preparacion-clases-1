@@ -1,0 +1,120 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+li{
+    list-style: none;
+    margin: 10px;
+
+}
+ul{
+    display: flex;
+    margin: 10px;
+}
+
+.div-hero{
+    background-image: url(p5/images/local.jpg);
+    padding: 50px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    
+}
+.div-hero h2{
+    color: white;
+    padding: 10px;
+}
+
+.primera-tarjeta{
+    width: 200px;
+    display: inline-block;
+    border: 1px solid rgb(187, 187, 187);
+    margin: 10px;
+    background-color: white;
+}
+
+.img-tarjeta{
+    width: 100%;
+    
+    height: 200px;
+
+}
+
+
+.flex-container{
+    display: flex;
+    margin: 10px;
+    justify-content: start;
+    
+}
+
+.ordena-ahora{
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 1800px;
+}
+
+.boton{
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 10px;
+    border: 1px solid ;
+    border-radius: 10px 10px;
+}
+.nuestras-recomendaciones{
+    background-color: #ffdab9;
+    padding: 10px;
+    
+}
+
+.titulo-recomendaciones{
+    padding: 20px;
+    font-size: xx-large;
+}
+
+.caja1{
+    padding: 20px;
+    margin: 10px;
+}
+.img-caja{
+    display: inline-block;
+    width: 24%;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 1px 1px 5px black;;
+}
+
+.img-caja-uno{
+    width: 100%;
+    height: 400px;
+}
+
+.boton-compra{
+    background-color: black;
+    border: 1px solid;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+
+.titulo-menu{
+    padding: 20px;
+}
+
+
+.menu-main{
+    background-color: rgb(231, 231, 231);
+}

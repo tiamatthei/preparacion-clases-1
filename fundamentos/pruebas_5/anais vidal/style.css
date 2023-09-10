@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(242, 244, 245);
+}
+
+nav {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+    color: rgb(110, 6, 6);
+}
+
+h1 {
+    color: rgb(17, 17, 17);
+}
+
+.hero {
+    height: 300px;
+    background-image: url("images/local.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.boton-rojo{
+    background-color: #FF2e63;
+}
+
+.hero h2{
+    color: #f8f4f5;
+}
+.boton-hero{
+    background-color: #FF2e63;
+    width: 90%;
+    margin: 10px;
+    alt: 30px;
+} 
+#recomendaciones{
+    background-color: #FFDAB9;
+}
+#recomendaciones button{
+    background-color: black;
+    color: #f8f4f5;
+}
