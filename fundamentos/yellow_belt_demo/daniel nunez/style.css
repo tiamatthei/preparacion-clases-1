@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+body{
+    background-color: #1a1a1a;
+}
+#home{
+    color: white;
+}
+.nav_principal{
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(164, 164, 164);
+}
+.nav_secundario{
+    display: flex;
+    background: linear-gradient(#757575, #313131);
+    width: 100%;
+    height: 2em;
+}
+.nav_secundario ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #232323;
+    color: white;
+}
+.nav_secundario li{
+    border-left: 2px solid #424242bc;
+    padding-right: 10px;
+    padding-left: 20px;
+}
+.imagen_grande{
+    width: 100%;
+}
+.div_imgG{
+    background-color: #313131;
+}
+.section_text{
+    display: flex;
+    align-items: center;
+}
+.Ridiculus_1 div{
+    width: 40%;
+}
+.Ridiculus_1{
+    display: flex;
+    margin: 1em;
+}
+.Ridiculus_1 h3{
+    color: #be6500;
+}
+.Ridiculus_1 span{
+    color: white;
+}
+.Ridiculus_1 img{
+    width: 3vw;
+    height: 5vh;
+}
+.Segunda_section{
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background: repeating-linear-gradient(135deg,
+    #000000,
+    #545454 1px,
+    #000000 4px,
+    #000000 3px
+        );
+    color: white;
+}
+.boton_buy button{
+    background: linear-gradient(#ffb662, #be6500);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 8em;
+    height: 3em;
+}
+.section_portafolio{
+    display: flex;
+    justify-content: center;
+}
+.portafolio_ar img{
+    width: 18vw;
+    border: 5px solid rgb(82, 82, 82);
+}
+.portafolio_ar{
+    margin: 3vw;
+    margin-top: -3em;
+}
+.portafolio_ar h3{
+    color: #be6500;
+}
+.portafolio_ar p{
+    color: white;
+    width: 15vw;
+}
+.div_textF{
+    display: flex;
+    flex-direction: column;
+}
+.h1_portafolio{
+    color: white;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 5em;
+}
+#a_final{
+    color: #be6500;
+    font-size: 17px;
+    margin: 10px;
+}
+.h6_final{
+    display: flex;
+    color: rgb(92, 92, 92);
+    justify-content: end;
+    margin-right: 10px;
+}
+
+

@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgb(27, 27, 27);
+}
+.titulo-inicio {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    height: 120px;
+    align-items: center;
+}
+.barra-nav ul {
+    display: flex;
+    list-style: none;
+    background-color: rgb(53, 52, 52);
+    color: white;
+}
+.barra-nav ul li {
+    margin: 10px;
+    padding-left: 20px;
+    border-left: solid rgb(59, 59, 59);
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+section {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+section div h1 {
+    color: #b65000;
+}
+footer {
+    display: flex;
+    background-color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+footer div {
+    color: white;
+    padding: 40px;
+}
+footer div button {
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: #b65000;
+    border: #b65000;
+    border-radius: 5px;
+    justify-content: center;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+main div h1 {
+    color: white;
+}
+main div a {
+    color: #b65000;
+}
+.papa-de-los-papas {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.portafolio-1 div h1 {
+    color: #b65000;
+}

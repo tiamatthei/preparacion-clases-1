@@ -1,0 +1,132 @@
+
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: #1a1a1a;
+
+}
+
+.logo{
+    background-color: #1a1a1a;
+
+
+}
+.numero{
+    font-size: small;
+    color: white;
+    display: flex;
+    justify-content: end;
+    
+    
+}
+nav{
+    background-color: #313131;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+}
+li{
+    padding: 15px;
+    margin: 5px;
+    color: #7e7b7b;
+}
+a{
+    text-decoration: none;
+    color: #7e7b7b;
+}
+a:hover{
+    color: white;
+}
+.img1{
+
+    width: 100%;
+}
+.parte2{
+    display: flex;
+}
+.contenedores{
+    display: flex;
+    padding: 20px;
+
+}
+.imgcontenedor{
+    margin-top: 20px;
+}
+.primercontenedor{
+    display: flex;
+    width: 50%;
+}
+.texto-contenedor h1{
+    color: #be6500;
+    font-size: 20px;
+}
+.texto-contenedor p{
+    color: white;
+}
+.parte3{
+    background-color: #070707;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+.parte3 h1 {
+    color: white;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parte3 p{
+    color: white;
+    font-size:small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn{
+    color:white;
+    background-color: #be6500;
+    display: flex;
+    margin-top: 25px ;
+    border-radius: 7px;
+    padding: 10px;
+}
+.parte4{
+    display: inline;
+}
+.title2{
+    color: white;
+    font-size: medium;
+}
+.view{
+    color: #be6500;
+    font-size: small;
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    margin-right: 25px;
+}
+.img-portafolio{
+    margin-top: 35px;
+    
+}
+.texto-parte4{
+    color: white;
+}
+.texto-portafolio h1{
+    color: #be6500;
+    font-size: medium;
+}
+.texto-portafolio p{
+    color: white;
+    font-size: small;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-tarjetas p{
+    color: white;
+    width: 40%;
+}
+.contenedor-tarjetas{
+    display: flex;
+    
+}

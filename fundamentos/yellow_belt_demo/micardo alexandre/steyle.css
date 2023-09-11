@@ -1,0 +1,222 @@
+* {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+}
+
+#call {
+    display: flex;
+    margin-left: 43pc;
+    margin-top: -2pc;
+}
+
+#logo {
+    display: flex;
+    margin-left: 1%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding-left: 5px;
+}
+
+.nav {
+    background: linear-gradient(#757575, #313131);
+    color: white;
+    padding: 10px 0px;
+}
+
+#txt {}
+
+#rediculus {
+    display: flex;
+    color: #be6500;
+    margin-top: -3%;
+    margin-left: 6%;
+}
+
+#parafo {
+    display: flex;
+    width: 175px;
+    margin-left: 6%;
+    margin-top: -1%;
+}
+
+#img_reloj {
+    position: absolute;
+    margin-top: -15%;
+    margin-left: 25%;
+}
+
+#Ipsum {
+    position: absolute;
+    color: #be6500;
+    margin-left: 30%;
+    margin-top: -13%;
+}
+
+#integer {
+    position: absolute;
+    width: 175px;
+    margin-top: -9%;
+    margin-left: 29%;
+}
+
+#img_ubi {
+    position: absolute;
+    margin-top: -2vw;
+    margin-left: 45%;
+}
+
+#Twllus {
+    color: #be6500;
+    margin-left: 51%;
+    margin-top: -13%;
+}
+
+#Aenean {
+    width: 175px;
+    margin-top: -1%;
+    margin-left: 50%;
+}
+
+#img_cambio {
+    position: absolute;
+    margin-left: 69%;
+    margin-top: -15%;
+}
+
+#Sem {
+    position: absolute;
+    color: #be6500;
+    margin-left: 75%;
+    margin-top: -14%;
+}
+
+#Aenean2{
+    position: absolute;
+    width: 175px;
+    margin-top: -10%;
+    margin-left: 75%;
+}
+
+#Bibendum{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+#Praesent{
+    position: absolute;
+    margin-top: 9%;
+    margin-left: 2%;
+    width: 900px;
+}
+#boton{
+background-color: #be6500;
+color: white;
+height: 50px;
+width: 100px;
+border-radius: 10px;
+margin-left: 85%;
+margin-top: 12%;
+}
+
+.fondo{
+    background: repeating-linear-gradient(
+        -55deg,
+        #1a1a1a,
+        #070707 5px,
+        #ffffff 5px,
+        #070707 5px
+    );
+}
+#img_baile{
+    position: absolute;
+    margin-left: 2%;
+    border: 3px solid rgb(82, 82, 82);
+}
+
+#Built_in{
+    position: absolute;
+    color: #be6500;
+    margin-left: 2%;
+    margin-top: 17%;
+}
+#you{
+    position: absolute;
+    width: 250px;
+    margin-left: 2%;
+    margin-top:20% ;
+}
+
+#img_car{
+    position: absolute;
+    margin-left: 29%;
+    border: 3px solid rgb(82, 82, 82);
+}
+#New_page{
+    position: absolute;
+    color: #be6500;
+    margin-left: 29%;
+    margin-top: 17%;
+}
+
+#Our_page{
+    position: absolute;
+    width: 240px;
+    margin-left: 29%;
+    margin-top:20% ;
+}
+
+#img_beso{
+    position: absolute;
+    margin-left: 55%;
+    border: 3px solid rgb(82, 82, 82);
+}
+
+#Access{
+    position: absolute;
+    color: #be6500;
+    margin-left: 55%;
+    margin-top: 17%;
+}
+
+#You_cam{
+    position: absolute;
+    width: 250px;
+    margin-left: 55%;
+    margin-top:20% ;
+}
+
+#img_city{
+    position: absolute;
+    margin-left: 81%;
+    border: 3px solid rgb(82, 82, 82);
+}
+
+#Custom{
+    position: absolute;
+    color: #be6500;
+    margin-left: 81%;
+    margin-top: 17%;
+}
+
+#We_provide{
+    position: absolute;
+    width: 250px;
+    margin-left: 81%;
+    margin-top:20% ;
+}
+#View{
+    position: absolute;
+    color: #be6500;
+    margin-left: 80%;
+    margin-top: -4%;
+}

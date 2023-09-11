@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.perro{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rayoo{
+    margin-right: 50px;
+}
+
+body{
+    background-color: #161515fa;
+}
+
+.farruko{
+    background-color: #535353;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    color: #fff;
+    list-style: none;
+}
+.farruko li{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-right: #353535 2px solid;
+    padding-left: 4px;
+    padding-right: 10px
+}
+
+.julisosa{
+    color:  #be6500;
+    display: flex;
+}
+.anuel-aa{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    padding-left: 40px ;
+    padding-right: 30px;
+}
+
+.anuel-aa h5 {
+    color: #fff;
+}
+
+
+.paulo-chill{
+    display: flex;
+    justify-content: space-between;
+}
+
+.kuchau{
+    width: 100%;
+    height: 50%;
+}
+
+.mate{
+    background-color: #000;
+    color:#fff ;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.franchesco{
+    background-color: #be6500;
+    color: #fff;
+    padding: 10px;
+    width: 150px;
+    border-radius: 4px;
+    border: none;
+}
+
+.cr7{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.cr7 a{
+    color: #be6500;
+}
+
+.shakira{
+    display: flex;
+    padding: 10px; 
+    color: #fff;
+}
+
+.shakira img{
+    border: solid #272727;
+    margin: 10px;
+}
+.messi{
+    color: #be6500;
+}
+
+.shakira p{
+    padding: 10px;
+}
+
+footer{
+    color: #302f2f;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}

@@ -1,0 +1,167 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgba(26,26,26,255);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+.Inicio{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.foto-logo{
+    margin: 15px;
+
+}
+.Llamaa{
+    color: whitesmoke;
+    margin: 15px;
+}
+.opciones{
+background-color: #313131;
+display: flex;
+justify-content: space-between;
+box-shadow: 10px 10px 10px black ;
+font-family: Arial, Helvetica, sans-serif;
+}
+.too-lista{
+display: flex;
+list-style-type: none;
+text-decoration: none;
+}
+.too-lista li{
+margin: 20px;
+
+}
+.too-lista a{
+    text-decoration: none;
+    margin-left: 35px;
+}
+.activo{
+color: white;
+}
+.Zzzz{
+    border-left: black 10px;
+    border-left: solid;
+}
+.zzz{
+color: gray;
+
+}
+.space{
+border-left: black 10px;
+border-left: solid;
+margin-right: 50px;
+}
+.imgdos{
+    width: 100% ;
+}
+.borde-peque{
+    background-color: gray;
+    padding-bottom: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.too-cuatrito{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.cuatrito{
+    display: flex;
+}
+.cuatrito h2{
+    color: #be6500;
+    margin-left: 40px;
+
+}
+.cuatrito p{
+color: whitesmoke;
+margin-left: 40px;
+font-size: 15px;
+}
+.cuatrito img{
+    height: 40px;
+    width: 50px;
+}
+.space-textual{
+background-color: black;
+    display:flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.space-textual h1{
+    color:white;
+    margin-top: 45px;
+    margin-left: 40px;
+}
+.space-textual p{
+    color:whitesmoke;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 45px;
+}
+.boton{
+    display: flex;
+    align-items: center;
+}
+.boton button{
+    background-color: #be6500;
+    color: white;
+    border: none;
+    margin-right: 30px;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 4px;
+}
+.porta{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.porta a{
+    display: flex;
+    color: #be6500;
+    text-decoration: none;
+    align-items: center;
+}
+.port-todo{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-around;
+}
+.port-todo h1{
+    color: #be6500;
+    font-size:17.5px;
+    margin-top: 10px;
+    margin-bottom:10px ;
+}
+.idk{
+    color: white;
+    font-size: 12px;
+    margin-bottom:50px ;
+}
+.port-todo img{
+    padding: 3px;
+    background-color: gray;
+}
+.final{
+    display:flex;
+    justify-content:flex-end;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.final a{
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+}

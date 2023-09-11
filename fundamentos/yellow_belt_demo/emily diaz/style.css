@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #1a1a1a;
+    
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+p{
+    color: white;
+}
+ul {
+    display: flex;
+    align-items: center;
+    
+}
+
+li {
+    list-style: none;
+    margin: 0px 10px;
+    color: #ffffff;
+    
+}
+nav{
+    background-color: #313131;
+    padding: 15px;
+
+}
+.hola{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+}
+h3{
+    color: #BE6500;
+}
+.compra{
+    color: white;
+    background-color: #070707;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3%;
+}
+button{
+    background-color: #BE6500;
+    padding: 10px 40px;
+    color: white; border-radius: 10px;
+    border-color: #BE6500;
+    font-size: 24px
+}
+.imagenes{
+    display: flex;
+    color: #BE6500;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+}
+.Portafolio{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+h4{ 
+    color: #BE6500;
+}
+footer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 10px;
+    color: #5352529d;
+}

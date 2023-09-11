@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgb(143, 139, 133);
+    background-color: black;
+}
+.viewport{
+    display: flex;
+    justify-content:space-between; 
+    margin: 10px;
+}
+.portafolio{
+    color: aliceblue;
+}
+.link{
+    color: #be6500;
+}
+.menu_logo {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7px;
+    color: aliceblue;
+}
+
+.menu_logo img {
+    height: 100%;
+}
+.inicio{
+    max-width: 1400px;
+}
+header h4{
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+header h4:hover{
+    color: rgb(245, 245, 245);
+}
+.menu {
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    padding: 20px;
+    gap: 3rem;
+    align-items: center;
+    margin: 0px;
+    background: rgb(67, 69, 70);
+}
+
+.menu li {
+    display: block;
+    list-style-type: none;
+}
+
+.menu a {
+    color: inherit;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: white;
+
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    margin:0;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-content: center;
+}
+
+.parent {
+    width: 1600px;
+    display: grid;
+    text-align: center;
+    background: rgb(25, 26, 27);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.contenedores-icono{
+    color: aliceblue;
+    display: flex;
+    padding: 30px;
+    text-align: left;
+}
+
+
+.parent h3 {
+    color: rgb(232, 119, 0);
+
+}
+.h3{
+    color:aliceblue;
+    margin-left: 20px;
+}
+
+.item {
+    color: aliceblue;
+    display: grid;
+    text-align: center;
+    padding: 40px 40px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: px;
+    grid-row-gap: px;
+}
+
+.item1 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.item2 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+.item1{
+    text-align: center;
+    font-weight: lighter;
+}
+
+.item2 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(232, 119, 0);
+    color: white;
+    background: rgb(232, 119, 0);
+
+}
+button:hover{
+    background-color: rgba(212, 69, 17, 0.91);
+}
+.carta1{
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 20px;
+    gap: 3rem;
+    align-items: center;
+    margin: 0px;  
+    
+}
+.carta1 li{
+    display: block;
+    list-style-type: none;
+
+}
+
+#portafolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+
+
+#portafolio h3{
+    text-align: center;
+
+    color: rgb(232, 119, 0);
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+
+}
+#portafolio p{
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+}
+.carta img{
+    border: 10px solid rgb(54, 55, 58);
+}
+h6{
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+    margin: 20px;
+
+}

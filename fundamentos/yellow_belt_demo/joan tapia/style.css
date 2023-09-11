@@ -1,0 +1,114 @@
+body{
+    background-color: black;
+}
+.logo{
+    background-color: #1a1a1a;
+    height: 670px;
+    width: 100%;
+}
+.nav-11{
+    display: flex;
+    justify-content: space-between;
+}
+.imagen-logo{
+    padding: 10px;
+}
+nav h4{
+    display: flex;
+}
+.nav-2{
+    height: 387px;
+    width: 100%;
+    background-color: #313131;
+    border-top: 6px solid grey;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    margin-top: 15px;
+}
+ul li a{
+    margin: 1px 10px;
+    color: white;
+    text-decoration: none;
+}
+.comentarios{
+    display: flex;
+    margin: 10px;
+    height: 250px;
+}
+.comentarios img{
+    margin-top: 15px;
+}
+section{
+    background-color: #070707;
+    margin-top: -20px;
+    height: 170px;
+}
+.boton{
+    margin-top: -35px;
+}
+button{
+    background-color: #be6500;
+    height: 30px;
+    border-radius: 5px;
+    border: 10px;
+    color: white;
+    width: 90px;
+    margin-left: 88%;
+    margin-top: -90px;
+}
+.lorm{
+    margin: 25px;
+    margin-top: -25px;
+}
+h1{
+    color: white;
+    padding: 25px;
+}
+h2{
+    color: white;
+}
+h3{
+    color: orange;
+}
+.lugares{
+    background-color:  #313131;
+    height: 450px;
+    margin-top: -20px;
+}
+.view{
+    color: orange;
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    margin: 5px;
+}
+.lugares ul li a{
+    margin: 30px;
+}
+.endd{
+    margin-left: 69%;
+}
+.imagen{
+    height: 150px;
+    width: 200px;
+    display: inline-block;
+    padding: 10px;
+}
+.imagen img{
+    border: 3px solid rgb(80, 80, 80);
+} 
+h4{
+    color: white;
+}
+p{
+    color: white;
+}
+h5{
+    color: grey;
+    display: flex;
+    justify-content: end;
+}

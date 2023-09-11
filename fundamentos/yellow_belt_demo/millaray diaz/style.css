@@ -1,0 +1,99 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #1a1a1a;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:#070707;
+}
+
+p {
+    color: white;
+}
+
+.navegacion {
+    background-color: #313131;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    padding: 5px;
+}
+
+h3 {
+    color: #be6500;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #1a1a1a;
+}
+.cartita{
+    display: flex;
+}
+
+.compra {
+    color: white;
+    background-color: #070707;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10%;
+}
+
+button {
+    background-color: #be6500;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 10px;
+    border-color: #be6500;
+    font-size: 24px;
+    justify-content: end;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+}
+.portafolio{
+  
+    display: flex;
+    justify-content: space-between;
+
+}
+.final {
+    display: flex;
+    justify-content: space-between;
+}
+footer {
+    padding: 40px;
+    display: flex;
+    justify-content: end;
+}
+.item1{
+    color: white;
+}
+.item2{
+    color: #be6500;
+}
