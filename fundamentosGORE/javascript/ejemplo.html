@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boton-verde {
+            background-color: chartreuse;
+            border: 2px green solid;
+            padding: 10px;
+        }
+        div h2{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button value="chris" class="boton-verde" onmouseover="miboton(this)">Soy un boton</button>
+    </div>
+    <div title="un valor muy importante">
+        <h2 class="unaclase">texto que quiero seleccionar</h2>
+        <h2>blablabla</h2>
+    </div>
+</body>
+<script>
+    function miboton(elemento) {
+        var mih2 = document.getElementsByClassName("unaclase");
+        console.log(mih2);
+    }
+</script>
+
+</html>

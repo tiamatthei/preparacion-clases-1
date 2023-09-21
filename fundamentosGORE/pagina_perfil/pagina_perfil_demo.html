@@ -31,44 +31,47 @@
             padding: 10px;
         }
 
-        .row {
+        .fila {
             display: flex;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 2%;
+            height: 700px;
         }
 
-        .rojito {
-            background-color: red;
-            flex: 3;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .cafecito {
-            background-color: chocolate;
-            flex: 2;
-        }
-
-        .rosadito {
-            background-color: pink;
-            flex: 1
-        }
-
-        .azulito {
+        .azul {
             background-color: blue;
-            flex: 2;
             display: flex;
             flex-direction: column;
+            flex: 3;
         }
 
-        .celestito {
-            background-color: aqua;
-            flex: 1;
-        }
-
-        .beige {
-            background-color: beige;
+        .rojo {
+            background-color: red;
+            display: flex;
+            flex-direction: column;
             flex: 2;
         }
 
+        .morado {
+            background-color: blueviolet;
+            flex: 4;
+        }
+
+        .lima {
+            background-color: limegreen;
+            flex: 2;
+        }
+
+        .rosado {
+            background-color: pink;
+            flex: 2;
+        }
+
+        .gris {
+            background-color: grey;
+            flex: 3;
+        }
     </style>
 </head>
 
@@ -86,19 +89,16 @@
             Sign out
         </button>
     </nav>
-    <!--Contenido principal-->
-    <main>
-        <div class="row">
-            <div class="rojito">
-                <div class="cafecito"></div>
-                <div class="rosadito"></div>
-            </div>
-            <div class="azulito">
-                <div class="celestito"></div>
-                <div class="beige"></div>
-            </div>
+    <div class="fila">
+        <div class="azul">
+            <div class="morado"></div>
+            <div class="lima"></div>
         </div>
-    </main>
+        <div class="rojo">
+            <div class="rosado"></div>
+            <div class="gris"></div>
+        </div>
+    </div>
 
 </body>
 
