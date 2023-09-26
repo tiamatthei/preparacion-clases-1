@@ -3,6 +3,7 @@
 
 <head>
     <title>Big Burger</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
@@ -27,25 +28,26 @@
         <section id="menu">
             <h2>Nuestro menú</h2>
             <ul>
-                <li>
+                <li class="producto" id="carterito">
                     <img src="images/pexels-anton-porsche-133578.jpg" alt="Pizza">
                     <h3>El carterito</h3>
                     <p>$10.990</p>
-                    <button>Añadir a la orden</button>
+                    <span id="spanagregado"></span>
+                    <button onclick="anadir()">Añadir a la orden</button>
                 </li>
-                <li>
+                <li class="producto">
                     <img src="images/pexels-nishant-aneja-2955819.jpg" alt="Burger">
                     <h3>Wrapeado</h3>
                     <p>$8.990</p>
                     <button>Añadir a la orden</button>
                 </li>
-                <li>
+                <li class="producto">
                     <img src="images/pexels-photo-1600711.jpeg" alt="Sushi">
                     <h3>Mix de locos</h3>
                     <p>$15.990</p>
                     <button>Añadir a la orden</button>
                 </li>
-                <li>
+                <li class="producto">
                     <img src="images/pexels-photo-1603898.jpeg" alt="Salad">
                     <h3>Big Veggie</h3>
                     <p>$13.990</p>
@@ -53,54 +55,56 @@
                 </li>
             </ul>
         </section>
+        <section class="recommendations">
+            <h2>Nuestras recomendaciones</h2>
+            <ul class="menu">
+                <li class="menu-item">
+                    <img src="images/pexels-rajesh-tp-1633572.jpg" alt="Recommendation">
+                    <h3>Pal' chef</h3>
+                    <p>Hamburguesa original hecha a mano</p>
+                    <button>Compra ya!</button>
+                </li>
+                <li class="menu-item">
+                    <img src="images/pexels-photo-1633525.jpeg" alt="Recommendation">
+                    <h3>Chicken loco</h3>
+                    <p>Hamburguesa de pollo</p>
+                    <button>Compra ya!</button>
+                </li>
+                <li class="menu-item">
+                    <img src="images/pexels-rajesh-tp-1633559.jpg" alt="Recommendation">
+                    <h3>Big Veggie</h3>
+                    <p>Hamburguesa Vegana</p>
+                    <button>Compra ya!</button>
+                </li>
+            </ul>
+        </section>
     </main>
-    <section class="recommendations">
-        <h2>Nuestras recomendaciones</h2>
-        <ul class="menu">
-            <li class="menu-item">
-                <img src="images/pexels-rajesh-tp-1633572.jpg" alt="Recommendation">
-                <h3>Pal' chef</h3>
-                <p>Hamburguesa original hecha a mano</p>
-                <button>Compra ya!</button>
-            </li>
-            <li class="menu-item">
-                <img src="images/pexels-photo-1633525.jpeg" alt="Recommendation">
-                <h3>Chicken loco</h3>
-                <p>Hamburguesa de pollo</p>
-                <button>Compra ya!</button>
-            </li>
-            <li class="menu-item">
-                <img src="images/pexels-rajesh-tp-1633559.jpg" alt="Recommendation">
-                <h3>Big Veggie</h3>
-                <p>Hamburguesa Vegana</p>
-                <button>Compra ya!</button>
-            </li>
-        </ul>
-        <footer>
-            <div class="footer-container">
-                <div class="footer-row">
-                    <div class="footer-column">
-                        <h3>Nosotros</h3>
-                        <p>Somos una tienda casera de sandwiches premium para todos los gustos, llevamos más de 15 años
-                            en el mercado</p>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Contacto</h3>
-                        <p>140 Calle callejas<br>Santiago, RM<br>Fono: (+56) 9 4560 7890<br>Email:
-                            info@comidascomides.cl</p>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Siguenos</h3>
-                        <ul class="social-media">
-                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
-                        </ul>
-                    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <h3>Nosotros</h3>
+                    <p>Somos una tienda casera de sandwiches premium para todos los gustos, llevamos más de 15 años
+                        en el mercado</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <p>140 Calle callejas<br>Santiago, RM<br>Fono: (+56) 9 4560 7890<br>Email:
+                        info@comidascomides.cl</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Siguenos</h3>
+                    <ul class="social-media">
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
