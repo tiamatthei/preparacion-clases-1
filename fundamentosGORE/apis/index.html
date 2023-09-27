@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Mi suma es:</h2>
+    <h2 style="color: royalblue;" id="tanto">0</h2>
+    <button onclick="mifuncion()">boton onclick</button>
+    <script>
+        var suma = 0;
+        function mifuncion(){
+            suma = suma + 1;
+            document.getElementById("tanto").innerHTML = suma;
+        }
+        setTimeout(function(){
+            alert("hola alejandro");
+        }, 3000);
+
+    </script>
+</body>
+</html>
