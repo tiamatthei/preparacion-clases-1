@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conclick{
+            color: green;
+            font-size: larger;
+            background-color: yellow;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <button onmouseenter="hazmeclick('Estas encima!')" onmouseleave="sales()">Hazme click!</button>
+    <h2 id="mitexto" class="supertexto">No me haz hecho click :C</h2>
+</body>
+<script>
+    function hazmeclick(untexto) {
+        var element = document.getElementById("mitexto");
+        element.innerHTML = untexto;
+        element.classList.add("conclick");
+    }
+    function sales() {
+        var element = document.getElementById("mitexto");
+        element.innerHTML = "saliste";
+        element.classList.remove("conclick");
+    }
+</script>
+</html>
