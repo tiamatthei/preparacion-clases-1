@@ -4,29 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .conclick{
-            color: green;
-            font-size: larger;
-            background-color: yellow;
-            font-style: italic;
-        }
-    </style>
 </head>
 <body>
-    <button onmouseenter="hazmeclick('Estas encima!')" onmouseleave="sales()">Hazme click!</button>
-    <h2 id="mitexto" class="supertexto">No me haz hecho click :C</h2>
+    <h2 id="numero">
+        1
+    </h2>
+    <button onclick="like()">Incrementa</button>
 </body>
 <script>
-    function hazmeclick(untexto) {
-        var element = document.getElementById("mitexto");
-        element.innerHTML = untexto;
-        element.classList.add("conclick");
-    }
-    function sales() {
-        var element = document.getElementById("mitexto");
-        element.innerHTML = "saliste";
-        element.classList.remove("conclick");
+    var contador = 1;
+    function like() {
+        //Primero le sumo uno al contador
+        contador = contador + 1;
+        //Luego encuentro mi elemento con la id desde mi JS
+        var num = document.getElementById("numero");
+        //Finalmente, modifico el html desde mi JS
+        //Cambiando el numero, por el contador
+        num.innerHTML = contador;
     }
 </script>
 </html>
