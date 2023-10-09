@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  margin-left: 23%;
+  margin-right: 23%;
+}
+
+.logo {
+  background-color: #00d1b2;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.search {
+  border-radius: 20px;
+  border-color: grey;
+  border-style: solid;
+  padding: 5px;
+  width: 100%;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.search-img {
+  position: relative;
+  right: 25px;
+  height: 15px;
+}
+
+.row-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul {
+  list-style: none;
+  border-bottom: 3px solid black;
+  padding-bottom: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  margin: 30px;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: normal;
+}
+
+.full-hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#left-hero {
+  display: flex;
+  color: white;
+}
+
+#left-hero-text {
+  background-color: #00d1b2;
+  font-size: x-large;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+#left-hero img {
+  flex: 1;
+}
+
+#left-hero-text h3 {
+  font-weight: normal;
+}
+
+.discover-text {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discover-text h3 {
+}
+
+.discover-text img {
+  max-width: 50px;
+}
+
+#right-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.soothing-aloe {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  background-color: #00d1b2;
+}
+
+.plants-section {
+  margin-top: 20px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #aae8d8;
+  padding: 60px 20px;
+}
+
+.plants-section ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.plants-section img {
+  border-radius: 50%;
+  width: calc(100%);
+}
+.plants-section li {
+  text-align: center;
+  flex: 1;
+}
