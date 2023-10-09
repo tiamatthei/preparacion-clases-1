@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    background-color: #00d1b2;
+    border-radius: 5px;
+}
+
+.mariposa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.logofull {
+    display: flex;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper {
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.buscador {
+    border-radius: 20px;
+    width: 630px;
+    padding: 7px;
+}
+
+.input-icon {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.sushi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.pantera {
+    display: flex;
+    background-color: #00d1b2;
+    width: 600px;
+    color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+
+
+}
+.pantera h3{
+    padding: 50px 0px 0px;
+
+}
+
+.aloe {
+    margin-top: -325px;
+    margin-left: 640px;
+    margin-left: 58%;
+    color: white;
+
+}
+
+.foto {
+    background-color: #00d1b2;
+    width: 330px;
+    margin-left: 0%;
+    margin-right: 25%;
+    color: white;
+    height: 70px;
+
+
+}
+
+.img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    display: flex;
+    background-color: #aae8d8;
+    list-style: none;
+    margin-left: 25%;
+    margin-right: 24%;
+    height: 200px;
+    padding: 8px;
+
+}
+
+.planta1 {
+    border-radius: 500px;
+    width: 120px;
+}
+
+.planta2 {
+    border-radius: 500px;
+    width: 120px;
+}
+
+.planta3 {
+    border-radius: 500px;
+    width: 120px;
+}
+
+.planta4 {
+    border-radius: 500px;
+    width: 120px;
+}
+
+.planta5 {
+
+    border-radius: 500px;
+    width: 120px;
+
+}
+
+.planta6 {
+    border-radius: 500px;
+    width: 120px;
+}
+
+.carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr {
+    width: 50%;
+    border: 2px solid black;
+}
+
+
+.button {
+    background-color: darkgrey;
+    width: 100px;
+}
+
+footer {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    background-color:rgb(245, 240, 234);
+    list-style: none;
+    margin-left: 25%;
+    margin-right: 24%;
+    padding: 20px;
+
+}

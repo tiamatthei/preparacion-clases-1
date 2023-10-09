@@ -1,0 +1,148 @@
+body{
+    margin-left: 20%;
+    margin-right: 25%;
+}
+.seccion1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imglogo{
+    background-color: rgb(108, 199, 199);
+    border-radius: 10px;
+    background-image: url(assets/leaf.png);
+    background-position: center;
+    width: 60px;
+    height: 60px;
+
+    
+}
+.titulo{
+    font-family: cursive;
+    font-size: large;
+}
+input{
+    width: 700px;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 20px;
+    background-color: rgb(243, 241, 241);
+    border: 1px solid black;
+}
+.sing{
+    padding-top: 1%;
+}
+.imgcarrito{
+    padding-top: 2%;
+}
+li{
+    list-style: none;
+    
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid black;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    width: 100%;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.texto1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2%;
+}
+.texto{
+    font-weight: lighter;
+    font-size: xx-large;
+}
+.seccion2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 3%;
+    padding-right:40px ;
+}
+.articulo1{
+    background-color: rgb(100, 182, 182);
+    display: flex;
+    
+}
+.parrafo1{
+    color: aliceblue;
+    text-align: center;
+    padding-left:5% ;
+    padding-right:25px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 300px;
+    font-size: 40px;
+    margin-top: 70px;
+    
+}
+
+
+.p-img{
+    display: flex;
+    align-items: center;
+}
+.parrafo2{
+    color: aliceblue;
+    text-align: center;
+    padding-left: 5%;
+    padding-right:25px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 300px;
+    font-size: xx-large;
+}
+.imgflecha{
+    float: right;
+    margin-top: -100px;
+    width: 30px;
+    height: 30px;
+    margin-right: 60px;
+}
+.p2{
+    background-color: rgb(100, 182, 182);
+    color: aliceblue;
+    justify-content:left ;
+    padding: 30px;
+}
+.seccion3{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(119, 209, 209);
+    margin-top: 3% ;
+    height: 250px;
+}
+.seccion3 img{
+    border-radius: 70px;
+    align-items: center;
+    margin-top: 50px;
+}
+.seccion3 p{
+    text-align: center;
+    justify-content: center;
+}
+.anuncio{
+    display: flex;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: space-around;
+}
+button{
+    background-color:rgb(100, 182, 182);
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px  black;
+}

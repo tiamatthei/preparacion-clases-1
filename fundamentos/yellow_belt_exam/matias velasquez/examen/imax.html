@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+</head>
+
+<body>
+    <nav class="primero">
+        <li><img class="logo" src="img/assets/leaf.png" alt=""></li>
+        <li>
+            <h1>EasyBay</h1>
+        </li>
+        <ul>
+            <li><input class="buscador" type="text" placeholder="     Search for anything"></li>
+        </ul>
+        <li class="inicio">
+            <h3><a href="#">Sing in</a></h3>
+        </li>
+        <li><a href="#" onclick="alert('your cart is empty')"><img src="img/assets/cart-dark.png" alt=""></a></li>
+    </nav>
+    <div class="lista">
+        <ul>
+            <li>
+                <p>Aeonium</p>
+            </li>
+            <li>
+                <p>Andormischus</p>
+            </li>
+            <li>
+                <p>Agave</p>
+            </li>
+            <li>
+                <p>Aloe</p>
+            </li>
+            <li>
+                <p>Anacampseros</p>
+            </li>
+            <li>
+                <p>Aristaoe</p>
+            </li>
+            <li>
+                <p>More...</p>
+            </li>
+
+        </ul>
+    </div>
+    <hr>
+    <h1>Your Source for Serious Succulent Specialties</h1>
+    <div class="primeras-imagenes">
+        <div class="discover-img">
+            <div class="texto">
+                <h3>Discover succulent varieties one pot or rack at a time!</h3>
+                <div class="discover">
+                    <h3>Discover</h3>
+                    <img src="img/assets/arrow-light.png" alt="">
+                </div>
+            </div>
+            <img class="captus-4" onmouseover="cambiar()" onmouseout="recitiar()" src="img/assets/succulents-1.jpg" alt="original" width="450px">
+        </div>
+        <div class="segunda-img">
+            <img src="img/assets/aloe-m.jpg" alt="" width="400px">
+            <div class="boton-flecha">
+                <p class="btn-soothing">Soothing aloe</p>
+                <img src="img/assets/arrow-light.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="cuadrados">
+        <div class="cuadrado4">
+            <img class="imagen4" src="img/assets/aeonium-s.jpg" alt="">
+            <p>Aeonium</p>
+        </div>
+        <div class="cuadrado5">
+            <img class="imagen5" src="img/assets/aloe-s.jpg" alt="">
+            <p>Aloe</p>
+        </div>
+        <div class="cuadrado6">
+            <img class="imagen6" src="img/assets/cactus-s.jpg" alt="">
+            <p>Cactus</p>
+        </div>
+        <div cuadrado 7>
+            <img class="imagen7" src="img/assets/echeveria-s.jpg" alt="">
+            <p>Echeveria</p>
+        </div>
+        <div class="cuadrado8">
+            <img class="imagen8" src="img/assets/sedum-s.jpg" alt="">
+            <p>sedum</p>
+        </div>
+        <div class="cuadrado9">
+            <img class="imagen9" src="img/assets/sempervivum-s.jpg" alt="">
+            <p>Sempervivum</p>
+        </div>
+    </div>
+    <div class="mensaje-eliminar" id="adios">
+        <img src="img/assets/alert-dark.png" alt="">
+            <h3>This site makes use of third-party cookies, by clicking "l accept" you agree to the terms outlined in our <a class="bue" href="#">cookie policy</a></h3>
+        <button class="acepto" onclick="eliminar()">I accept</button>
+    </div>
+
+  
+
+    <script>
+        function eliminar(){
+    document.getElementById("adios").remove()
+}
+function cambiar(){
+    document.querySelector(".captus-4").src = "img/assets/succulents-2.jpg"
+}
+function recitiar(){
+    document.querySelector(".captus-4").src = "img/assets/succulents-1.jpg"
+}
+    </script>
+</body>
+
+</html>
+<style>
+    .acepto{
+    color: white;
+    background-color: #00d1b2;
+    border: 2px solid black;
+    width: 80px;
+    height: 25px;
+    font-size: 1rem;
+}
+.mensaje-eliminar{
+    width: 100%;
+    border: 2px solid black;
+}
+.mensaje-eliminar img{
+    margin: 30px 5px;
+}
+.mensaje-eliminar h3{
+    display: inline-block;
+    padding: 20px 10px;
+}
+    .boton {
+        background-color: aqua;
+        color: black;
+        height: 30px;
+        width: 70px;
+    }
+
+    .ultimo {
+        padding: 20px;
+        margin: 20px;
+        border: 2px solid black;
+        height: 120px;
+    }
+
+    .imagen4 {
+        border-radius: 500px;
+        width: 150px;
+    }
+
+    .imagen5 {
+        border-radius: 500px;
+        width: 150px;
+    }
+
+    .imagen6 {
+        border-radius: 500px;
+        width: 150px;
+    }
+
+    .imagen7 {
+        border-radius: 500px;
+        width: 150px;
+    }
+
+    .imagen8 {
+        border-radius: 500px;
+        width: 150px;
+    }
+
+    .imagen9 {
+        border-radius: 500px;
+        width: 150px;
+    }
+
+    hr {
+        border: 1px solid black;
+        width: 1350px;
+        margin: 10px;
+    }
+
+    .IMAGEN {
+        margin-left: 50%;
+        height: 400px;
+        width: 400px;
+    }
+
+    .cuadrado1 {
+        background-color: aqua;
+        height: 400px;
+        width: 700px;
+    }
+
+    h1 {
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    body {
+        width: 45%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .logo {
+        background-color: #00d1b2;
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+    }
+
+    .buscador {
+        width: 700px;
+        height: 25px;
+        border-radius: 15px;
+        border: 1px solid black;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul li {
+        list-style: none;
+        margin: 1px 50px;
+    }
+
+    .primero {
+        align-items: center;
+        display: flex;
+        list-style: none;
+    }
+
+    nav li a img {
+        margin-left: 45%;
+    }
+
+    .utiles {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    .inicio {
+        margin-left: -10px;
+    }
+
+    .cuadrados {
+        align-items: centers;
+        background-color: aqua;
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+        margin: 20px 0px;
+        padding: 50px 50px;
+        width: 1250px;
+    }
+
+    .titulo h1 {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .primeras-imagenes {
+        display: flex;
+        height: 400px;
+    }
+
+    .discover-img {
+        display: flex;
+    }
+
+    .discover-img h3 {
+        text-align: center;
+        width: 250px;
+    }
+
+    .texto {
+        background-color: #00d1b2;
+        color: white;
+        font-size: 28px;
+        padding: 50px 80px;
+    }
+
+    .discover {
+        display: flex;
+        align-items: center;
+        padding: 40px 0px;
+    }
+
+    .segunda-img {
+        margin: 0px 30px;
+    }
+
+    .boton-flecha {
+        margin: 20px 0px;
+        width: 360px;
+        padding: 0px 20px;
+        height: 100px;
+        background-color: #00d1b2;
+        display: flex;
+        align-items: center;
+    }
+</style>

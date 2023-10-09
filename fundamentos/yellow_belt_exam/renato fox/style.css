@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0 53.5vh;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1vh 0;
+}
+nav div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+nav input{
+    background-color: #F4F4F4;
+    color: #9B9B9B;
+    padding: 1vh 48vh 1vh 2vh;
+    border: #9B9B9B solid 2px;
+    border-radius: 20px;
+}
+nav div h1{
+    font-size: xx-large; 
+    font-weight: 100;
+}
+#logo{
+    background-color: #00D1B2;
+    border-radius: 5px;
+    width: 4vh;
+    margin-right: 1vh;
+}
+/*
+Barra de navegacion 🡡
+*/
+#categories{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1vh 0;
+    padding-bottom: 1vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    border-bottom: #000 solid 3px;
+}
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    margin: 2vh;
+}
+/*
+Discover ↓
+*/
+#source{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#discover{
+    background-color: #00D1B2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#discover-enter{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30vh;
+}
+#discover-enter h1{
+    margin: 2vh 0;
+}
+#Soothing-aloe{
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 2vh;
+}
+#Soothing-aloe h3{
+    background-color: #00D1B2;
+    padding: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 500;
+    color: #fff;
+    margin: 2vh 0 0 0;
+}
+/*
+Discover 🡡
+*/
+#product-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 2vh;
+    background-color: #B2F1E7;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.product img{
+    width: 15vh;
+    border-radius: 100%;
+    margin-bottom: 2vh;
+}
+#cook{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: #000 solid 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    bottom: 7vh;
+    background-color: #fff;
+    width: 100.5vh;
+}
+#cook img{
+    margin: 2vh;
+}
+#cook button{
+    margin: 2vh;
+    box-shadow: 4px 4px 0px 0px #000;
+    background-color: #00D1B2;
+    border: #000 solid 2px;
+    padding: 0.5vh 1.5vh;
+    font-weight: bolder;
+    color: #fff;
+    font-size: medium;
+    cursor: pointer;
+}

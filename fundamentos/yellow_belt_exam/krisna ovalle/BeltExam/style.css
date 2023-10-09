@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 20px 80px ;
+}
+
+.top-nav{
+    display: flex;
+    margin-left: 298px;
+}
+
+.color{
+    background-color: #00bbb4;
+    width: 60px;
+    height: 60px;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+.color img{
+    margin-right: 10px;
+}
+
+.top-nav h1{
+    margin: 24px 20px;
+    font-size: 30px
+}
+
+.search{
+    height: 40px;
+    width: 50%;
+    border-radius: 20px;
+    margin: 25px 40px;
+}
+
+.sing-in{
+    width: 60px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    margin: 25px;
+    margin-left: -30px;
+}
+
+.top-nav img{
+    height: 50px;
+    margin: 15px -10px;
+}
+
+.menu{
+    display: flex;
+    margin: 10px 255px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    margin: 10px 51.8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.line{
+    margin-left: 304px;
+    margin-top: 5px;
+}
+
+.tittle-big{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 30px;
+}
+
+.center-block{
+    background-color: #00bbb4;
+    height: 330px;
+    width: 365px;
+}
+
+.center-block h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    text-align: center;
+    padding: 40px 10px 10px;
+}
+
+.container{
+    height: 650px;
+    width: 64%;
+    margin-left: 300px;
+}
+.discover{
+    display: flex;
+}
+.discover p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 50px 55px;
+}
+
+.discover img{
+    height: 60px;
+    margin: 39px -30px;
+}
+
+.plant img{
+    display: flex;
+    margin: -330px 360px;
+    height: 330px;
+    width: 365px;
+} 
+
+.plant-2{
+    text-align: end;
+}
+
+.aloe{
+    background-color: #00bbb4;
+    width: 322px;
+    height: 86px;
+    margin: 20px 764px;
+    display: flex;
+}
+
+.aloe p{
+    color: white;
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 34px
+}
+
+.aloe img{
+    height: 20px;
+    margin: 34px 10px;
+}
+
+.row{
+    background-color: #aae8d8;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aling-plants{
+    margin: 40px 10px;
+}
+
+.plant-img{
+    border-radius: 50%;
+}
+
+.aling-plants p{
+    margin: 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.notification{
+    border: 2px solid black;
+    display: flex;
+    height: 100px;
+}
+
+.notification img{
+    height: 70px;
+    margin: 10px 10px;
+}
+
+.notification p{
+    margin: 39px 20px;
+}
+
+.accept{
+    background-color: #00bbb4;
+    width: 80px;
+    height: 30px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 1px black;
+    color: white;
+    margin: 30px 30px;
+}
+
+

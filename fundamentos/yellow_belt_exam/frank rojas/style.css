@@ -1,0 +1,157 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#foto-logo{
+    background-color: #00d1b2;
+    border-radius: 7.5px;
+}
+#foto-logo2{
+    color: black;
+}
+#parte-arriba{
+    display: flex;
+    align-items: center;
+    justify-content:center
+}
+#parte-arriba li{
+    list-style: none;
+    margin: 10px;
+}
+#parte-arriba li input{
+ border-radius: 20px;
+ font-size: 20px;
+ background-color: whitesmoke;
+ padding: 5px;
+ padding-right: 250px ;
+}
+#parte-arriba li h1{
+    font-size: 40px;
+   }
+   #parte-arriba li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+   }
+#menu{
+    display: block;
+}
+   /*separacion*/
+#parte-botones{
+    display: flex;
+    justify-content: center;
+    
+
+}
+#parte-botones li{
+ list-style: none;
+ 
+ 
+}
+#parte-botones input{
+    font-size: 17.5px;
+    background-color: white;
+    border: none;
+    padding-bottom: 10px;
+    border-bottom: solid;
+   }
+#boton{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#titulo-central{
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/*separacion*/
+#tooo-central{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+#seccion-centro1{
+    display: flex;
+    background-color: #00d1b2;
+    margin-right: 15px;
+}
+#seccion-centro1 h2{
+align-items: center;
+padding: 25px;
+font-size: 30px;
+justify-content: center;
+color: white;
+display: flex;
+}
+#separacion-centro{
+    margin-top: 15px;
+    background-color: #00d1b2;
+    font-size: 15px;
+    padding: 31.25px;
+    color: white;
+}
+/*separacion*/
+#parte-final{
+display: flex;
+background-color: #aae8d8;
+padding-top: 40px;
+padding-bottom: 50px;
+}
+#parte-final il img{
+    border-radius: 50%;
+}
+#parte-final il p {
+    display: flex;
+    justify-content: center;
+}
+#centro-final{
+    display: flex;
+    justify-content: center;
+}
+#lateral1{
+    border-radius: 50%;
+    height: 134.5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 7.5px;
+}
+#lateral2{
+    border-radius: 50%;
+    height: 134.5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 7.5px;
+    margin-right: 15px;
+}
+#central{
+    border-radius: 50%;
+    height: 134.5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+#Aceptar{
+    display: flex;
+    justify-content: center;
+}
+#borde{
+    border: solid;
+    display: flex;
+    font-size: 12.5px;
+    padding: 25px;
+    padding-left: 47.5px;
+    padding-right: 47.5px;
+    align-items: center;
+}
+#borde button{
+    background-color: #00d1b2;
+    color: white;
+    height: 35px;
+    width: 75px;
+    margin-left: 20px;
+    box-shadow: 4px 4px 1.5px black;
+}

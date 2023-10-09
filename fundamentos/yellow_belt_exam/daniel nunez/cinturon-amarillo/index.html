@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="logo" src="/images/assets/leaf.png" alt="">
+            <h1>EasyBay</h1>
+
+            <input type="text" placeholder="Search for anything" >
+
+                <h3>Sing in</h3>
+                <img onclick="alert('Your Cart is empty')" src="/images/assets/cart-dark.png" alt="">
+
+        </nav>
+        <section class="nav_down">
+            <ul>
+                <li><a href="#">Aenonium</a></li>
+                <li><a href="#">Andormischus</a></li>
+                <li><a href="#">Agave</a></li>
+                <li><a href="#">Aloe</a></li>
+                <li><a href="#">Anacmpseros</a></li>
+                <li><a href="#">Aristaloe</a></li>
+                <li><a href="#">More...</a></li>
+            </ul>
+        </section>
+        <hr>
+    </header>
+    <main>
+        <section class="titulo">
+            <h1>Your Source for Serious Succulent Specalites</h1>
+        </section>
+        <section class="sect">
+            <article class="primer_producto">
+                <div class="primer_div_h">
+                <p>Discover succ-ulent varieties one pot or rack at a time</p>
+                <div class="discover">
+                    <p>Discover</p>
+                    <img src="/images/assets/arrow-light.png" alt="">
+                </div>
+            </div>
+            <div class="img_div">
+                <img  id="img" src="/images/assets/succulents-1.jpg" alt=""  onmouseenter="arriba();"
+                onmouseleave="fuera();">
+            </div>
+            </article>
+            <article class="segundo_producto">
+                    <img src="/images/assets/aloe-m.jpg" alt="">
+                <div class="text">
+                    <p>Soothing aloe</p>
+                    <img id="img_text" src="/images/assets/arrow-light.png" alt="">
+                </div>
+            </article>
+        </section>
+        <section class="section_final">
+            <article class="ar_final">
+                    <ul>
+                        <li><img src="/images/assets/aeonium-s.jpg" alt="">
+                            <div>
+                                Aenonium
+                            </div>
+                        </li>
+                        <li><img src="/images/assets/aloe-s.jpg" alt="">
+                            <div>
+                                Aloe
+                            </div>
+                        </li>
+                        <li><img src="/images/assets/cactus-s.jpg" alt="">
+                            <div>
+                                Cactus
+                            </div>
+                        </li>
+                        <li><img src="/images/assets/echeveria-s.jpg" alt="">
+                            <div>
+                                Echeveria
+                            </div>
+                        </li>
+                        <li><img src="/images/assets/sedum-s.jpg" alt="">
+                            <div>
+                                Sedum
+                            </div>
+                        </li>
+                        <li><img src="/images/assets/sempervivum-s.jpg" alt="">
+                            <div>
+                                Sempervivum
+                            </div>
+                        </li>
+                    </ul>
+            </article>
+        </section>
+        <section class="final" id="final">
+            <article class="arr-final">
+                <img src="/images/assets/alert-dark.png" alt="">
+                <p>This site makes use of third-party cookies, by clicking "I accept" you agree to the terms outlinied in our <a href="#">cookie polityc.</a></p>
+                <button id="boton" >I accept</button>
+            </article>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

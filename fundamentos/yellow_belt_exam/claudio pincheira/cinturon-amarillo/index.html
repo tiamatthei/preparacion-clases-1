@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="pagina-completa">
+        <div class="inicio">
+            <nav>
+                <ul>
+                    <li>
+                        <img src="/images/assets/leaf.png" alt="leaf.png" class="flor">
+                    </li>
+                    <li>
+                        <h1>EasyBay</h1>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Search for anything">
+                    </li>
+                    <li>
+                        sign in
+                    </li>
+                    <li>
+                        <a href="#"><img src="/images/assets/cart-dark.png" alt="cart-dark.png" onclick="alerta()"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--Barra de navegacion-->
+        <nav class="barra-de-navegacion">
+            <ul>
+                <li><a href="#">Aeonium</a></li>
+                <li><a href="#">Andormischus</a></li>
+                <li><a href="#">Agave</a></li>
+                <li><a href="#">Aloe</a></li>
+                <li><a href="#">Anacampseros</a></li>
+                <li><a href="#">Aristaloe</a></li>
+                <li><a href="#">More...</a></li>
+            </ul>
+        </nav>
+        <h6 class="linea"></h6>
+        <div class="texto-grande">
+            <h1>Your Source for Serious Succulent
+                Specialties </h1>
+        </div>
+        <div class="discover">
+            <div class="disco">
+                <h1>Discover succ- <br>
+                    ulent verieties <br>
+                    one pot or rack <br>
+                    at a time! <br><br> discover <img src="/images/assets/arrow-light.png" alt="" width="25px"></h1>
+                <img onmouseenter="cambio()" onmouseleave="reset()" src="/images/assets/succulents-1.jpg" class="img-succulents-1" id="img-succulents-1" alt="">
+            </div>
+                <div class="flor-sola">
+                    <img src="/images/assets/aloe-m.jpg" alt="" width="300px" height="250px">
+                    <h1> soothing aloe <img src="/images/assets/arrow-light.png" alt="" width="25px"></h1>
+                </div>
+        </div>
+        <div class="muchas-flores">
+            <ul>
+                <li><img src="/images/assets/aeonium-s.jpg" alt="">Aeonium</li>
+                <li><img src="/images/assets/aloe-s.jpg" alt="">Aloe</li>
+                <li><img src="/images/assets/cactus-s.jpg" alt="">Cactus</li>
+                <li><img src="/images/assets/echeveria-s.jpg" alt="">Echeveria</li>
+                <li><img src="/images/assets/sedum-s.jpg" alt="">sedum</li>
+                <li><img src="/images/assets/sempervivum-s.jpg" alt="">Sempervivum</li>
+            </ul>
+        </div>
+        <div class="alerta" id="poto">
+            <div>
+                <img src="/images/assets/alert-dark.png" alt="">
+                <p>This site makes use of third-party cookies, by clicking "I accept" you agree to the 
+                <br> terms outlined in our <a href="#">cokkie policy.</a></p>
+                <button onclick="accept()">I accept</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+function accept() {
+    document.getElementById("poto").remove();
+}
+
+function alerta() {
+    alert("Your cart is empty")
+}
+
+function cambio(){
+    document.getElementById("img-succulents-1").src = "images/assets/succulents-2.jpg";
+}
+function reset(){
+    document.getElementById("img-succulents-1").src = "images/assets/succulents-1.jpg";
+}
+</script>
+
+</html>

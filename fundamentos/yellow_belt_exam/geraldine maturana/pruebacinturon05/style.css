@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(250, 249, 249);
+    font-family: "roboto", sans-serif;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(2, 2, 29);
+    /* lugar del texto */
+}
+
+.hojita {
+    height: 50px;
+    border-radius: 10px;
+    background-color: #00d1b2;
+}
+
+.flex-container,
+.nav-links,
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    height: 80px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*color de letra del titulo*/
+}
+
+.nav-links {
+    width: 50%;
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links a.active {
+    color: rgb(255, 255, 255);
+}
+
+.links1 {
+    list-style: none;
+    display: flex;
+}
+
+.links1 li {
+    padding-left: 30px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav ul li {
+    padding-left: 20px;
+}
+
+.lupa {
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.linea {
+    border: none;
+    height: 5px;
+    margin-top: 5px;
+    background-color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+
+.titulo-grande {
+    margin: 30px;
+}
+
+.planta1 {
+    display: flex;
+    background-color: #00d1b2;
+    margin-left: 20px;
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.planta-sola {
+    margin-left: 50px;
+
+}
+
+.planta-sola h2 {
+    margin-top: 20px;
+    height: 90px;
+    background-color: #00d1b2;
+    align-items: center;
+    display: flex;
+    color: white;
+
+}
+
+.papa {
+    display: flex;
+
+}
+
+.planta-sola h2 img {
+    width: 40px;
+    margin-top: 10px;
+}
+
+.rectangulo ul {
+    background-color: #aae8d8;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.triangulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+}
+
+.triangulo button {
+    height: 50px;
+    width: 100px;
+    background-color: #00d1b2;
+    color: white;
+    margin-left: 15px;
+}

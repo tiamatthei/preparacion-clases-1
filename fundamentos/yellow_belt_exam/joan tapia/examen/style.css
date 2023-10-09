@@ -1,0 +1,186 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    width: 60%;
+    margin-left: 22%;
+}
+.logo{
+    background-color: aqua;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+.buscador{
+    width: 700px;
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin: 1px 50px;
+}
+.navv{
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+nav li a img{
+    margin-left: 25px;
+}
+.utiles{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.sing{
+    margin-left: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+hr{
+    border: 1px solid black;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.captus-1{
+    margin-left: 58%;
+    margin-top: -26.6%;
+}
+.cuadrado-2{
+    margin-left: 70%;
+    margin-top: -29%;
+}
+.captus-2{
+    width: 340px;
+    height: 250px;
+}
+.tocar{
+    width: 340px;
+    height: 73px;
+    color: white;
+    background-color: #00d1b2;
+    border: 0px solid ;
+}
+
+.parrafos {
+    background-color: #00d1b2;
+    text-align: center;
+}
+.lol h3 {
+    padding: 30px 113px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.imagen {
+    display: flex;
+}
+
+.lol {
+    background-color: #00d1b2;
+    height: 330px;
+    width: 40%;
+    text-align: center;
+}
+
+.coor{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.flecha{
+    margin-left: -100px;
+    width: 30px;
+}
+
+section{
+    background-color: #00d1b2;
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    height: 250px;
+}
+.captus-10 img{
+    width: 130px;
+    border-radius: 90px;
+    padding: 25px 28px;
+}
+.bue{
+    color: blue;
+}
+.captus-10 h4{
+    padding: 10px 48px;
+}
+.acepto{
+    color: white;
+    background-color: #00d1b2;
+    border: 2px solid black;
+    width: 80px;
+    height: 25px;
+    font-size: 1rem;
+}
+.mensaje-eliminar{
+    width: 100%;
+    border: 2px solid black;
+}
+.mensaje-eliminar img{
+    margin: 30px 5px;
+}
+.mensaje-eliminar h3{
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+#anuncio-emergente {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.parrafo-img {
+    display: flex;
+    align-items: center;
+}
+
+.btn-accept {
+    background-color: #00d1b2;
+    padding: 5px 20px;
+    border: 3px black solid;
+    box-shadow: 3.5px 3px 2px black;
+    color: white;
+    font-weight: bold;
+}
+.btn-accept{
+    height: 35px;
+    margin-left: 35%;
+    margin-top: 10px;
+}
+
+.negro{
+    border: 2px solid black;
+    display: flex;
+    padding: 10px 30px;
+    margin-top: -3%;
+    background-color: white;
+}
+
+.flechass{
+    width: 30px;
+}

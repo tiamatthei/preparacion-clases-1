@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="cuerpo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="java.js">
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <img src="leaf.png" alt="Logo">
+        <h1>EasyBay</h1>
+    </div>
+    
+   <input type="search" class="search">
+     <div>
+        <p>sign in</p>
+    </div>
+        <div class="cart-icon">
+            
+        <img src="cart-dark.png" height="50px" alt="Icono de carrito de compra"></a>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="">Aeonium</a></li>
+            <li><a href="">Andormischus</a></li>
+            <li><a href="">Agave</a></li>
+            <li><a href="">Aloe</a></li>
+            <li><a href="">Anacampseros</a></li>
+            <li><a href="">Aristaloe</a></li>
+            <li><a href="">more...</a></li>
+        </ul>
+    </nav>
+    <div class="linea"></div>
+    <div><h1 class="subtitulo">Your Source for Serious Succulent Sepecialties</h1></div>
+   <div class="cuadrado">
+<div class="noticia">
+    <img class="derecha" onmouseenter="cambiar()" onmouseleave="alas()" src="succulents-1.jpg" alt="">>
+  <center><h1>Discover succ-ulent varieties one pot or rack at a time!.</h1>
+  <H1>Discover → </H1></center>
+  <div class="reset"></div>
+</div>
+<div class="aloe">
+    <img src="aloe-m.jpg" alt="">
+    <h3 class="al">Soothing Aloe → </h3> 
+
+</div>
+<div class="margen"></div>
+</div>
+<div class="palantas">
+    <img src="aeonium-s.jpg" alt="">
+    <img src="aloe-s.jpg" alt="">
+    <img src="cactus-s.jpg" alt="">
+    <img src="echeveria-s.jpg" alt="">
+    <img src="sedum-s.jpg" alt="">
+    <img src="sempervivum-s.jpg" alt="">
+   
+</div>
+<div class="letra">
+     <ul class="lista">
+        <li><a href="">Aeonium</a></li>
+        <li><a href="">Aloe</a></li>
+        <li><a href="">Cactus</a></li>
+        <li><a href="">Echeveria</a></li>
+        <li><a href="">Sedum</a></li>
+        <li><a href="">Sempervivum</a></li>
+    </ul>
+    
+</div>
+<script>
+    function eliminar(){
+        document.getElementById("cambiar").remove()
+
+    }
+    function cambiar() {
+        document.querySelector(".derecha").src= "succulents-2.jpg"
+    }
+    function alas(){
+        document.querySelector(".derecha").src= "succulents-1.jpg"
+    } 
+</script>
+</body>
+</html>

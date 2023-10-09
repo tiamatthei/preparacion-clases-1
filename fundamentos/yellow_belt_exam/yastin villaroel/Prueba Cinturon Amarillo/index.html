@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--Nav Superior-->
+    <div class="borde">
+    <nav class="nav-superior">
+        <div class="empresa">
+            <img class="logo" src="images/assets/leaf.png" alt="">
+            <h2>EasyBay</h2>
+        </div>
+        <input id="barra-busqueda" placeholder="Search for anything" type="text">
+        <button id="sing">
+            Sing In
+        </button>
+        <a href="" onclick="mostrarAlert()"><img id="carrito" src="images/assets/cart-dark.png" alt=""></a>
+    </nav>
+
+    <!--div Menú-->
+    <div>
+        <ul class="menu">
+            <li><a href="">Aeonium</a></li>
+            <li><a href="">Andormischus</a></li>
+            <li><a href="">Agave</a></li>
+            <li><a href="">Aloe</a></li>
+            <li><a href="">Anacampseros</a></li>
+            <li><a href="">Aristaloe</a></li>
+            <li><a href="">more...</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!--div TEXT LARGE-->
+    <div class="centrar">
+        <h1>Your Source for Serious Succulent Specialties</h1>
+    </div>
+
+    <!--div Productos-->
+
+    <div class="borde">
+        <div class="flex">
+            <div class="flex-2">
+                <button class="butonn">
+                    Discover succ-ulent varieties one pot pr rack at time
+                    <span class="margin"> Discover →</span>
+                </button>
+                <img class="img-a" src="images/assets/succulents-1.jpg" alt="" onmousemove="entro()" onmouseout="fuera()">
+            </div>
+            <div class="flex-1">
+                <img class="img-b" src="images/assets/aloe-m.jpg" alt="">
+                <button class="butonn-a">
+                    Soething aloe→
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Mas Productos-->
+    <div class="borde-b">
+        <div class="fondo">
+            <section class="productos">
+                <div class="producto">
+                    <img class="img-producto" src="images/assets/aeonium-s.jpg" alt="">
+                    <h4>Asonium</h4>
+                </div>
+                <div class="producto">
+                    <img class="img-producto" src="images/assets/aloe-s.jpg" alt="">
+                    <h4>Alone</h4>
+                </div>
+                <div class="producto">
+                    <img class="img-producto" src="images/assets/cactus-s.jpg" alt="">
+                    <h4>Cactus</h4>
+                </div>
+                <div class="producto">
+                    <img class="img-producto" src="images/assets/echeveria-s.jpg" alt="">
+                    <h4>Echeveria</h4>
+                </div>
+                <div class="producto">
+                    <img class="img-producto" src="images/assets/sedum-s.jpg" alt="">
+                    <h4>Sedum</h4>
+                </div>
+                <div class="producto">
+                    <img class="img-producto" src="images/assets/sempervivum-s.jpg" alt="">
+                    <h4>Sempervivum</h4>
+                </div>
+            </section>
+        </div>
+
+        <!--COOOKIEEES-->
+        <div class="cookies">
+            <img src="images/assets/alert-dark.png" alt="">
+            <p>This site makes use third-party cookies, by clicking "I accept" you agree to the terms outlined in our
+                <a href=""> cookie policy.</a>
+            </p>
+            <button class="btn-cookies" onclick="aceptar()">I accept</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

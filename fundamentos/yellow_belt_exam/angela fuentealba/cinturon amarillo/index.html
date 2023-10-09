@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prueba cinturon amarillo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <section class="seccion1">
+            <div class="imglogo">
+                
+            </div>
+            <div class="titulo">
+                <h1>EasyBay</h1>
+            </div>
+            <div>
+                <input type="text" placeholder="Search for anything">
+            </div>
+            <div class="sing">
+                <p>Sing In</p>
+            </div>
+            <div class="imgcarrito">
+                <img onclick="alerta()" src="assets/cart-dark.png" alt="" width="30px">
+            </div>
+        </section>
+        <nav>
+            <ul>
+                <li>Aeonium</li>
+                <li>Andormischus</li>
+                <li>Agave</li>
+                <li>Aloe</li>
+                <li>Anacampseros</li>
+                <li>Aristaloe</li>
+                <li>More...</li>
+            </ul>
+        </nav>
+        <div class="texto1">
+            <h1 class="texto">
+                Your Source For Serious Succulent Specialties
+            </h1>
+        </div>
+        <section class="seccion2">
+            <article class="articulo1">
+                <div>
+                    <p class="parrafo1">Discover succ- ulent varieties one pot or rack at a time! </p>
+                    <p class="parrafo2">Discover</p>
+                    <img class="imgflecha" src="assets/arrow-light.png" alt="">
+                </div>
+                <img  onmouseout="reset()" onmouseover="cambio()" class="img-cambia" src="assets/succulents-1.jpg" alt="">
+            </article>
+            <article class="articulo2">
+                <img src="assets/aloe-m.jpg" alt="">
+                <div class="p2">
+                    <p class="p-img">
+                        Soothing aloe <img class="imgflecha2" src="assets/arrow-light.png" alt="" width="20px" height="20px">
+                    </p>
+                    
+                </div>
+            </article>
+        </section>
+
+        <section class="seccion3">
+            <div>
+                <img src="assets/aeonium-s.jpg" alt="" width="130px " height="130px">
+                <p>Aeonium</p>
+            </div>
+            <div>
+                <img src="assets/aloe-s.jpg" alt="" width="130px" height="130px">
+                <p>Aloe</p>
+            </div>
+            <div>
+                <img src="assets/cactus-s.jpg" alt="" width="130px" height="130px">
+                <p>Cactus</p>
+            </div>
+            <div>
+                <img src="assets/echeveria-s.jpg" alt="" width="130px" height="130px">
+                <p>Echeveria</p>
+            </div>
+            <div>
+                <img src="assets/sedum-s.jpg" alt="" width="130px" height="130px">
+                <p>Sedum</p>
+            </div>
+            <div>
+                <img src="assets/sempervivum-s.jpg" alt="" width="130px" height="130px">
+                <p>Sempervivum</p>
+            </div>
+        </section>
+
+    </div>
+    <div onclick="eliminar(this)" class="anuncio">
+        <div>
+            <img src="assets/alert-dark.png" alt="">
+        </div>
+        <div>
+            This site makes use of third-party cookies, by clicking "I accept you agree to the terms outline in our
+            cookies policy"
+        </div>
+        <div>
+            <button onclick="eliminar()">
+                I accept
+            </button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

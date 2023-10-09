@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="margin-top: 1px; margin-left: 1px">
+    <nav class="counter-barrita">
+        <img class="counter-logo" style="background-color: cyan;" src="/images/assets/leaf.png" alt="">
+        <h1>EasyBay</h1>
+        <input class="counter-busqueda" type="text" placeholder="     Search for anything">
+        <ul class="counter-carrito">
+            <li>Sing in</li>
+            <li><img class="counter-logito" onclick="alerta()" src="/images/assets/cart-dark.png" alt=""></li>
+        </ul>
+    </nav>
+    <div>
+        <ul class="counter-lista">
+            <li>Aeonium</li>
+            <li>Andormischus</li>
+            <li>Agave</li>
+            <li>Aloe</li>
+            <li>Anacampseros</li>
+            <li>Aristaloe</li>
+            <li>More...</li>
+        </ul>
+        <hr color="#3a3a3a">
+    </div>
+
+
+    <div class="counter-your">
+        <h1 class="counter-h1">Your Source for Serious Succulent Specialties</h1>
+    </div>
+
+    <div class="counter-grande">
+        <div class="counter-1">
+            <div class="Discover">
+                <h1 class="counter-texto">
+                    Discover succulent varieties one pot or rack at a time!
+                </h1>
+                <div class="counter-flecha" style="display: flex;">
+                    <h1 style="color: white;">
+                        Discover
+                    </h1>
+                    <img src="images/assets/arrow-light.png" alt="">
+                </div>
+            </div>
+            <img id="img" src="images/assets/succulents-1.jpg" alt=""  onmouseenter="arriba();" 
+            onmouseleave="fuera();">
+        </div>
+        <div class="counter-2">
+            <img src="images/assets/aloe-m.jpg" alt="">
+            <div class="counter-3" display: flex; background-color: aqua;">
+                <h2>Soothing aloe</h2>
+                <img src="images/assets/arrow-light.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="counter-invernadero">
+        <ul class="counter-plantas">
+            <li>
+                <img class="counter-circulo" src="/images/assets/aeonium-s.jpg" alt="">
+                <div>
+                    Aeonium
+                </div>
+            </li>
+
+            <li>
+                <img class="counter-circulo" src="/images/assets/aloe-s.jpg" alt="">
+                <div>
+                    Aloe
+                </div>
+            </li>
+            <li>
+                <img class="counter-circulo" src="/images/assets/cactus-s.jpg" alt="">
+                <div>
+                    Captus
+                </div>
+            </li>
+            <li>
+                <img class="counter-circulo" src="/images/assets/echeveria-s.jpg" alt="">
+                <div>
+                    Echeveria
+                </div>
+            </li>
+            <li>
+                <img class="counter-circulo" src="/images/assets/sedum-s.jpg" alt="">
+                <div>
+                    Sedum
+                </div>
+            </li>
+            <li>
+                <img class="counter-circulo" src="/images/assets/sempervivum-s.jpg" alt="">
+                <div>
+                    Sempervivum
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+    <div class="ultimo">
+        <div class="policy">
+            <img src="/images/assets/alert-dark.png" alt="">
+            <div class="text">
+
+                <p>This site makes use of third-party cookies, by clicking"I accept"you agree to the terms outlined in
+                    our <a href="">cookie plicy.</a></p>
+                <button class="btn" onclick="accept()">i accept</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+
+
+</html>

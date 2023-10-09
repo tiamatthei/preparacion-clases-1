@@ -1,0 +1,145 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo {
+    background-color: rgb(14, 143, 143);
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.rosa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.input-wrapper {
+    position: relative;
+}
+.input-wrapper input{
+    border-radius: 20px;
+    width: 200px;
+    padding: 7px;
+    margin-left: 5%;
+}
+
+.input-icon {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pizza {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.gato {
+    display: flex;
+    background-color: lightseagreen;
+    width: 600px;
+    color: white;
+    margin-left: 25%;
+    margin-left: 25%;
+    text-align: center;
+    
+}
+
+.gato h3 {
+    padding: 50px 0px 0px ;
+}
+
+.aloe {
+    margin-top: -325px;
+    margin-left: 650px;
+    color: white;
+    margin-left: 58%;
+}
+
+.boton {
+    background-color: lightseagreen;
+    width: 330px;
+    margin-left: 0%;
+    margin-right: 25%;
+    height: 70px;
+    text-align: center;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    display: flex;
+    background-color: lightseagreen;                                                                                                                                                                                     ;
+    list-style: none;
+    height: 200px;
+    margin-left: 25%;
+    margin-right: 24%;
+    padding: 20px;
+
+}
+.uno{
+    border-radius: 500px;
+    width: 120px;
+}
+.dos{
+    border-radius: 500px;
+    width: 120px;
+}
+.tres{
+    border-radius: 500px;
+    width: 120px;
+}
+.cuatro{
+    border-radius: 500px;
+    width: 120px;
+}
+.cinco{
+    border-radius: 500px;
+    width: 120px;
+}
+.seis{
+    border-radius: 500px;
+    width: 120px;
+}
+.carro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+hr {
+    width: 50%;
+    border: 2px solid black;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    background-color: rgb(210, 226, 225);                                                                                                                                                                                     ;
+    list-style: none;
+    height: 60px;
+    margin-left: 25%;
+    margin-right: 24%;
+    padding: 20px;
+}
+.aaa{
+    background-color: rgb(58, 199, 152);
+    width: 100px;
+}

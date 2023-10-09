@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinturon amarillo</title>
+</head>
+<style>
+    .img1 {
+        background-color: rgb(50, 170, 170);
+        width: 50px;
+        border-radius: 10px;
+    }
+
+    .div1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: -50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .busqueda {
+        width: 50px;
+    }
+
+    input {
+        width: 1500px;
+        border-radius: 500px;
+        padding: 8px;
+    }
+
+    li {
+        list-style: none;
+        display: flex;
+    }
+
+    .ul1 {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin-left: 24%;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .line {
+        display: flex;
+        justify-content: flex-start;
+        padding: 3px;
+        border-radius: 9px;
+        background-color: black;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .div3 {
+        display: flex;
+        justify-content: flex-start;
+        width: 450px;
+        background-color: #00d1b2;
+        color: white;
+    }
+
+    .div2 {
+        display: flex;
+        margin: 100px;
+        justify-content: center;
+    }
+
+    .h33 {
+        background-color: #00d1b2;
+        color: white;
+        margin: 15px;
+        padding: 40px;
+        right: 50%;
+        margin-right: -0.6%;
+        margin-left: 6%;
+        margin-top: 2.5%;
+    }
+
+    .img2 {
+        margin-left: 20px;
+        width: 95%;
+    }
+
+    .div4 {
+        display: flex;
+        background-color: #00f1cd;
+        margin-left: 28%;
+        padding: 30px;
+        width: 40%;
+        margin-top: -4%;
+    }
+
+    .img4 {
+        border-radius: 900000%;
+        width: 100px;
+        margin-right: 30px;
+    }
+
+    .div5 {
+        padding: 35px;
+    }
+
+    p {
+        width: 15%;
+    }
+</style>
+
+<body>
+    <div class="div7">
+        <div class="div1">
+            <img class="img1" src="/images/assets/leaf.png" alt="">
+            <h1>EasyBay</h1>
+            <input type="text" placeholder="search for anything"><img class="busqueda"
+                src="/images/assets/search-dark.png" alt="">
+            <p>sign in </p>
+            <img onclick="mostrarAlert()" src="/images/assets/cart-dark.png" alt="">
+        </div>
+        <ul class="ul1">
+            <li>aeonium</li>
+            <li>andormischus</li>
+            <li>agave</li>
+            <li>aloe</li>
+            <li>anacampseros</li>
+            <li>aristaloe</li>
+            <li>more...</li>
+        </ul>
+    </div>
+    <div class="line">
+    </div>
+    <h2>Your source for Serious Succulent Specialties</h2>
+    <div class="div2">
+        <div class="div3">
+            <div class="div5">
+                <h3>Discover succ-ulent varieties one pot or rack at a time!
+                    discover →</h3>
+            </div>
+            <img src="/images/assets/succulents-1.jpg" onmouseenter="entro()" onmouseleave="fuera()" class="img-a">
+        </div>
+        <div>
+            <img class="img2" src="/images/assets/aloe-m.jpg" alt="">
+            <h3 class="h33"> Soothing Aloe →</h3>
+        </div>
+    </div>
+    <div class="div4">
+        <li>
+            <div><img class="img4" src="/images/assets/aeonium-s.jpg" alt="">
+                <figcaption>Aeonium</figcaption>
+            </div>
+            <div><img class="img4" src="/images/assets/aloe-s.jpg" alt="">
+                <figcaption>Agave</figcaption>
+            </div>
+            <div><img class="img4" src="/images/assets/cactus-s.jpg" alt="">
+                <figcaption> Cactus</figcaption>
+            </div>
+            <div><img class="img4" src="/images/assets/echeveria-s.jpg" alt="">
+                <figcaption> Echeveria</figcaption>
+            </div>
+            <div><img class="img4" src="/images/assets/sedum-s.jpg" alt="">
+                <figcaption> sedum</figcaption>
+            </div>
+            <div><img class="img4" src="/images/assets/sempervivum-s.jpg" alt="">
+                <figcaption> Sempervivum</figcaption>
+            </div>
+        </li>
+    </div>
+</body>
+<script src="style.js"></script>
+
+</html>

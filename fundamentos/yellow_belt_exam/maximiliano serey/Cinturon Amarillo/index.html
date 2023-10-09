@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="titulo-logo">
+            <div class="logo">
+            </div>
+            <div class="titulo">
+                <h1>
+                    EasyBay
+                </h1>
+            </div>
+        </div>
+        <div class="container-input">
+            <input id="buscar" type="text" placeholder="Seach for onything">
+        </div>
+        <div class="carrito">
+            <h2 class="titulo-carrito">Sign In</h2>
+            <img onclick="alerta()" class="img-carrito" src="images/assets/cart-dark.png" alt="">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a class="color-nav" href="#">Aeonium</a>
+            </li>
+            <li>
+                <a class="color-nav" href="#">Andormischus</a>
+            </li>
+            <li>
+                <a class="color-nav" href="#">Agave</a>
+            </li>
+            <li>        
+                <a class="color-nav" href="#">Aloe</a>
+            </li>
+            <li>
+                <a class="color-nav" href="#">Anacampseros</a>
+            </li>
+            <li>
+                <a class="color-nav" href="#">Aristaloe</a>
+            </li>
+            <li>
+                <a class="color-nav" href="#">More...</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="titulo-main">
+            <h2 class="titulo-source">Your Source for Serious Succulent Specialties</h2>
+        </div>
+        <section>
+            <article class="hero">
+                <div class="parrafo-hero">
+                    <p class="parrafo">
+                        Discover succulent varieties one pot or rack at a time!
+                    </p>
+                    
+                    <a class="ancort-1" href="#">Discover <img class="flecha" src="images/assets/arrow-light.png" alt=""></a>
+                    
+                    
+                </div>
+                <img onmouseout="reset()" onmouseover="cambio()" class="img-succulents"
+                    src="images/assets/succulents-1.jpg" alt="">
+            </article>
+            <article>
+                <img class="aloe" src="images/assets/aloe-m.jpg" alt="">
+                <div class="abajo-aloe">
+                    <a class="ancort" href="#">Soothing aloe <img class="arrow" src="images/assets/arrow-light.png" alt=""></a>
+                    
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img class="img-footer" src="images/assets/aeonium-s.jpg" alt="">
+            <div class="div-span">
+                <h2>aeonium</h2>
+            </div>
+        </div>
+        <div>
+            <img class="img-footer" src="images/assets/aloe-s.jpg" alt="">
+            <div class="div-span">
+                <h2>aloe</h2>
+            </div>
+        </div>
+        <div>
+            <img class="img-footer" src="images/assets/cactus-s.jpg    ">
+            <div class="div-span">
+                <h2>cactus</h2>
+            </div>
+        </div>
+        <div class="div-span">
+            <img class="img-footer" src="images/assets/echeveria-s.jpg" alt="">
+            <div>
+                <h2>Echeveria</h2>
+            </div>
+        </div>
+        <div class="div-span">
+            <img class="img-footer" src="images/assets/sedum-s.jpg" alt="">
+            <div>
+                <h2>Sedum</h2>
+            </div>
+        </div>
+        <div class="div-span">
+            <img class="img-footer" src="images/assets/sempervivum-s.jpg" alt="">
+            <div>
+                <h2>sempervivum</h2>
+            </div>
+        </div>
+    </footer>
+    <div class="anuncio" onclick="eliminar()">
+        <div>
+            <img src="images/assets/alert-dark.png" alt="">
+        </div>
+        <div>
+            This site makes use of third-party cookies, by clicking
+            "I accept you agree to the terms outlined in our cookie policy
+        </div>
+        <div>
+            <button onclick="renatofox(this)">
+                I accept
+            </button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

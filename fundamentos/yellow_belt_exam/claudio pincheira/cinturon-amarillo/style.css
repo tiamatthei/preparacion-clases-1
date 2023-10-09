@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.inicio nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.inicio nav ul li {
+    margin: 5px;
+    margin-left: 25px;
+}
+.flor {
+    background-color: #00d1b2;
+    height: 50px;
+    border-radius: 10px;
+}
+div input {
+    width: 500px;
+    height: 25px;
+    border-radius: 15px;
+    padding-left: 15px;
+}
+.barra-de-navegacion {
+    margin-left: 484px;
+    margin-right: 499px;
+}
+.barra-de-navegacion ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.barra-de-navegacion ul li {
+    justify-content: space-around;
+    padding-left: 29px;
+    margin-right: 10px;
+}
+.barra-de-navegacion ul li a{
+    color: black;
+    text-decoration: none;
+}
+.linea {
+    height: 5px;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 524px;
+    margin-right: 534px;
+}
+.texto-grande {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.discover{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 0px;
+}
+.disco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00d1b2;
+}
+.disco h1 {
+    margin: 20px;
+    margin-left: 30px;
+    color: white;
+}
+.flor-sola {
+    margin-left: 30px;
+}
+.flor-sola img {
+    margin-left: 10px;
+}
+.flor-sola h1 {
+    margin-left: 10px;
+    font-size: 20px;
+    height: 65px;
+    padding-left: 10px;
+    margin-top: 7px;
+    background-color: #00d1b2;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.muchas-flores {
+    display: flex;
+    justify-content: center;
+    background-color: #00d1b2;
+    margin-left: 495px;
+    margin-right: 494px;
+    margin-top: 10px;
+}
+.muchas-flores ul {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+}
+.muchas-flores ul li img {
+    border-radius: 50%;
+    width: 120px;
+}
+.muchas-flores ul li {
+    padding-left: 20px;
+    text-align: center;
+}
+.alerta div{
+    display: flex;
+    border: solid;
+    justify-content: center;
+    margin-left: 494px;
+    margin-right: 494px;
+    margin-top: 10px;
+    align-items: center;
+}
+.alerta div p {
+    font-size: 20px;
+}
+.alerta div button {
+    height: 40px;
+    width: 100px;
+    margin-left: 10px;
+    background-color: #00d1b2;
+    color: white;
+    box-shadow: black;
+}

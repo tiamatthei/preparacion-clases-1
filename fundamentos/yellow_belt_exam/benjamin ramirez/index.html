@@ -1,0 +1,270 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyBay</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .todo {}
+
+    .nav-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .nav-top input {
+        width: 70%;
+        padding: 10px 15px;
+        border-radius: 20px;
+        background-color: #f4f4f4;
+    }
+
+    .lupa {
+        position: absolute;
+        margin-left: 48%;
+    }
+
+    .nav-top a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .logo-name {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .logo-name img {
+        background-color: #00d1b2;
+        border-radius: 15px;
+    }
+
+    .nav-down {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+
+    .nav-down a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+    hr {
+        border: 2px solid black;
+    }
+
+    .titulo p {
+        text-align: center;
+        padding: 40px;
+        font-size: 40px;
+    }
+
+    .primeras-imagenes {
+        display: flex;
+        height: 400px;
+    }
+
+    .discover-img {
+        display: flex;
+    }
+
+    .discover-img h3 {
+        text-align: center;
+        width: 250px;
+    }
+
+    .texto {
+        background-color: #00d1b2;
+        color: white;
+        font-size: 28px;
+        padding: 50px 80px;
+    }
+
+    .discover {
+        display: flex;
+        align-items: center;
+        padding: 40px 0px;
+    }
+
+    .segunda-img {
+        margin: 0px 30px;
+    }
+
+    .boton-flecha {
+        margin: 16px 0px;
+        width: 400px;
+        padding: 0px 13px;
+        height: 100px;
+        background-color: #00d1b2;
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-soothing {
+        color: white;
+    }
+
+    .final {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0px;
+        background-color: #b2f1e7;
+        padding: 20px;
+    }
+
+    .flores {
+        text-align: center;
+    }
+
+    .flores img {
+        margin: 0px 8px;
+        border-radius: 50%;
+    }
+
+    #anuncio-emergente {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid black;
+        padding: 20px;
+    }
+
+    .parrafo-img {
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-accept {
+        background-color: #00d1b2;
+        padding: 5px 20px;
+        border: 3px black solid;
+        box-shadow: 3.5px 3px 2px black;
+        color: white;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <section class="nav">
+        <div class="nav-top">
+            <div class="logo-name">
+                <img class="logo-leaf" src="images/assets/leaf.png" alt="">
+                <h1>EasyBay</h1>
+            </div>
+            <input type="search" placeholder="Search for anything">
+            <img class="lupa" src="images/assets/search-dark.png" alt="" width="30px">
+            <a href="#">Sign in</a>
+            <img onclick="mostrarAlertaCarro()" src="images/assets/cart-dark.png" alt="">
+        </div>
+        <div class="nav-down">
+            <a href="#">Aeonium</a>
+            <a href="#">Andormischus</a>
+            <a href="#">Agave</a>
+            <a href="#">Aloe</a>
+            <a href="#">Anacampseros</a>
+            <a href="#">Aristaloe</a>
+            <a href="#">More...</a>
+        </div>
+        <hr>
+        <div class="titulo">
+            <p>Your Source for Serious Succulent Specialities</p>
+    </section>
+    <div class="primeras-imagenes">
+        <div class="discover-img">
+            <div class="texto">
+                <h3>Discover succ-</h3>
+                <h3>ulent varieties</h3>
+                <h3>one pot or rack</h3>
+                <h3>at a time!</h3>
+                <div class="discover">
+                    <h3>Discover</h3>
+                    <img src="images/assets/arrow-light.png" alt="">
+                </div>
+            </div>
+            <div class="imagenes-cambiar">
+                <img class="captus-4" onmouseover="cambiar()" onmouseout="resetear()"
+                    src="images/assets/succulents-1.jpg" alt="" width="400px">
+            </div>
+        </div>
+        <div class="segunda-img">
+            <img src="images/assets/aloe-m.jpg" alt="" width="425px">
+            <div class="boton-flecha">
+                <p class="btn-soothing">Soothing aloe</p>
+                <img src="images/assets/arrow-light.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="final">
+        <div class="flores">
+            <img src="images/assets/aeonium-s.jpg" alt="" width="180px">
+            <p>Aeonium</p>
+        </div>
+        <div class="flores">
+            <img src="images/assets/aloe-s.jpg" alt="" width="180px">
+            <p>Aloe</p>
+        </div>
+        <div class="flores">
+            <img src="images/assets/cactus-s.jpg" alt="" width="180px">
+            <p>Cactus</p>
+        </div>
+        <div class="flores">
+            <img src="images/assets/echeveria-s.jpg" alt="" width="180px">
+            <p>Echevaria</p>
+        </div>
+        <div class="flores">
+            <img src="images/assets/sedum-s.jpg" alt="" width="180px">
+            <p>Sedum</p>
+        </div>
+        <div class="flores">
+            <img src="images/assets/sempervivum-s.jpg" alt="" width="180px">
+            <p>Sempervivum</p>
+        </div>
+    </div>
+
+    <div onclick="eliminar()" id="anuncio-emergente">
+        <div class="parrafo-img">
+            <img src="images/assets/alert-dark.png" alt="">
+            <div class="parrafos-ventana-emergente">
+                <p>This site makes use of third-party cookies, by clicking "I accept" you agree to the</p>
+                <p>terms outlined in our <a href="#">cookie policy</a></p>
+            </div>
+        </div>
+        <button class="btn-accept" onclick="eliminar()">I accept</button>
+    </div>
+</body>
+<script>
+    function mostrarAlertaCarro() {
+        alert("¡Tu carrito está vacio!")
+    }
+
+    function eliminar() {
+        document.getElementById("anuncio-emergente").remove()
+    }
+
+    function cambiar() {
+        document.querySelector(".captus-4").src = "images/assets/succulents-2.jpg"
+    }
+
+    function resetear() {
+        document.querySelector(".captus-4").src = "images/assets/succulents-1.jpg"
+    }
+
+</script>
+
+</html>

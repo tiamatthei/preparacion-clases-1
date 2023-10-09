@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    function milla() {
+        document.querySelector(".flores").src = "assets/succulents-2.jpg"
+    }
+    
+    function baybay() {
+        document.querySelector(".flores").src = "assets/succulents-1.jpg"
+    }
+
+</script>
+
+<body>
+    <header class="rosa">
+        <img class="logo" src="assets/leaf.png" alt="">
+        <h2>EasyBay</h2>
+        <div class="input-wrapper">
+            <input type="Seach for anything" placeholder="Seach for anything">
+            <img src="assets/search-dark.png" alt="" class="input-icon">
+        </div>
+        <div class="carro">
+            <h3>Sing In</h3>
+            <img onclick="alert('Your cart is empty')" src="assets/cart-dark.png" alt="">
+        </div>
+    </header>
+    <nav class="pizza">
+        <li>Aeonium</li>
+        <li>Andormischus</li>
+        <li>Agave</li>
+        <li>Aloe</li>
+        <li>Anacampseros</li>
+        <li>Aristaloe</li>
+        <li>More...</li>
+    </nav>
+    <hr>
+    <div class="titulo">
+        <h1> Your Source for Serius Succulent Specialties</h1>
+    </div>
+    <div class="gato">
+        <div>
+            <h3>Discover succulent varieties one pot or rack at a time! </h3>
+            <h3>Discover➜</h3>
+        </div>
+        <img class="flores" onmouseover="milla()" onmouseout="baybay()" src="assets/succulents-1.jpg" alt="">
+    </div>
+    <div class="aloe">
+        <img src="assets/aloe-m.jpg" alt="">
+        <h2 class="boton">Soothimg Aloe ➜</h2>
+    </div>
+    <div class="imagenes">
+        <div>
+            <img class="uno" src="assets/aeonium-s.jpg" alt="">
+            <li>Aeonium</li>
+        </div>
+        <div>
+            <img class="dos" src="assets/aloe-s.jpg" alt="">
+            <li>Agave</li>
+        </div>
+        <div>
+            <img class="tres" src="assets/cactus-s.jpg" alt="">
+            <li>Cactus</li>
+        </div>
+        <div>
+            <img class="cuatro" src="assets/echeveria-s.jpg" alt="">
+            <li>Echeveria</li>
+        </div>
+        <div>
+            <img class="cinco" src="assets/sedum-s.jpg" alt="">
+            <li>Sedum</li>
+        </div>
+        <div>
+            <img class="seis" src="assets/sempervivum-s.jpg" alt="">
+            <li>Sempervivum</li>
+        </div>
+    </div>
+    <footer class="button" id="eliminar">
+        <img src="assets/alert-dark.png" alt="">
+        <p>This site makes use of third-party cookies, by clicking "I accept" you agree to the terms outlined in our
+            cookie policy </p>
+        <button onclick="ksd()" class="aaa"> I accept</button>
+    </footer>
+    <script src="scrip.js"></script>
+</body>
+
+</html>

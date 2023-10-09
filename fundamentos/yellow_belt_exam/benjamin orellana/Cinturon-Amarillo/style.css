@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.counter-logo {
+    margin: 2px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#00d1b2;
+    border: 5px cyan solid;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.counter-barrita {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counter-busqueda {
+    width: 1500px;
+    height: 40px;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.counter-carrito {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.carrito-logito {
+    height: 30px;
+    width: 30px;
+}
+
+.counter-lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    list-style: none;
+    padding: 8px;
+}
+
+.counter-your {
+
+    margin: 5px;
+    border: 10px rgb(255, 255, 255) solid;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-h1 {
+    font-size: 60px;
+}
+
+.counter-todo {
+    border: 10px solid black;
+    height: 30%;
+    background-color: #000;
+    columns: 2;
+}
+
+.counter-grande {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.counter-1 {
+    display: flex;
+}
+
+.Discover {
+    background-color: #00d1b2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.counter-texto {
+    color: white;
+    width: 25%;
+    display: flex;
+    margin: 15px;
+}
+
+.counter-flecha {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-3 {
+    background-color: #00d1b2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.fondo-imagen {
+    background-image: url(images/assets/succulents-1.jpg);
+    background-repeat: no-repeat;
+
+}
+
+.counter-discover {
+    background-color: #00d1b2;
+}
+
+.negro {
+    background-color: black;
+}
+
+.rojo {
+    background-color: brown;
+}
+
+.counter-invernadero {
+    height: 220px;
+    color: #000;
+    background-color: #00d1b2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.counter-invernadero li {
+    margin: 10px;
+    text-align: center;
+
+}
+
+.counter-plantas {
+    display: flex;
+    border-radius: 50%;
+    list-style: none;
+
+}
+
+.counter-circulo {
+    border-radius: 50%;
+    width: 65%;
+}
+
+/* ESTA SECCION CORRESPONDE A LA BARRA QUE DESAPARECE */
+.ultimo {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.policy {
+    box-sizing: border-box;
+    width: 1000px;
+    height: 160px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 4px #000;
+    background-color: #00d1b2;
+    color: white;
+
+}

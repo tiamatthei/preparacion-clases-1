@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navv">
+        <li><img class="logo" src="images/assets/leaf.png" alt=""></li>
+        <li>
+            <h1>EasyBay</h1>
+        </li>
+        <ul>
+            <li><input class="buscador" type="text" placeholder="   Search for anything"></li>
+        </ul>
+        <li class="sing">
+            <h3><a href="#">Sing in</a></h3>
+        </li>
+        <li><a href="#" onclick="alert('Tu carrito esta vacío')"><img src="images/assets/cart-dark.png" alt=""></a></li>
+    </nav>
+
+
+    <div class="utiles">
+        <a href="#">Aeonium</a>
+        <a href="#">Andormischus</a>
+        <a href="#">Agave</a>
+        <a href="#">Aloe</a>
+        <a href="#">Anacampseros</a>
+        <a href="#">Aristaloe</a>
+        <a href="#">More...</a>
+    </div>
+    <hr>
+    <h1 class="center">Your Source for Serious Succulent Specialties</h1>
+
+    <div class="imagen">
+        <div class="lol">
+        <h3>Discover succulent varieties one pot or rack at a time!</h3>
+            <div class="coor">
+                <h3>Discover</h3>
+                <img class="flecha" src="images/assets/arrow-light.png" alt="">
+            </div>
+        </div>
+        <img class="captus-4" onmouseover="cambiar()" onmouseout="recitiar()" src="images/assets/succulents-1.jpg" alt="original">
+    </div>
+
+
+    <div class="cuadrado-2">
+        <img class="captus-2" src="images/assets/aloe-m.jpg" alt="">
+        <button class="tocar">Soothing aloe <img class="flechass" src="images/assets/arrow-light.png" alt=""></button>
+    </div>
+
+    <section>
+        <div class="captus-10">
+            <img class="captus-3" src="images/assets/aeonium-s.jpg" alt="">
+            <h4>Aeonium</h4>
+        </div>
+        <div class="captus-10">
+            <img class="captus-3" src="images/assets/aloe-s.jpg" alt="">
+            <h4>Aloe</h4>
+        </div>
+        <div class="captus-10">
+            <img class="captus-3" src="images/assets/cactus-s.jpg" alt="">
+            <h4>Cactus</h4>
+        </div>
+        <div class="captus-10">
+            <img class="captus-3"src="images/assets/echeveria-s.jpg" alt="">
+            <h4>Echeveria</h4>
+        </div>
+        <div class="captus-10">
+            <img class="captus-3" src="images/assets/sedum-s.jpg" alt="">
+            <h4>Sedum</h4>
+        </div>
+        <div class="captus-10">
+            <img class="captus-3" src="images/assets/sempervivum-s.jpg" alt="">
+            <h4>Sempervivum</h4>
+        </div>
+    </section>
+
+    <div class="negro" onclick="eliminar()" id="adios">
+        <div class="parrafo-img">
+            <img src="images/assets/alert-dark.png" alt="">
+            <div class="parrafos-ventana-emergente">
+                <p>This site makes use of third-party cookies, by clicking "I accept" you agree to the</p>
+                <p>terms outlined in our <a href="#">cookie policy</a></p>
+            </div>
+        </div>
+        <button class="btn-accept" onclick="eliminar()">I accept</button>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
