@@ -19,7 +19,7 @@
             <img src="assets/search-dark.png" alt="" class="search-img">
         </div>
         <h3>Sign In</h3>
-        <img src="assets/cart-dark.png" alt="">
+        <img src="assets/cart-dark.png" alt="" onclick="alert('Your cart is empty')">
     </header>
     <nav>
         <ul class="row-between">
@@ -45,7 +45,7 @@
                         <img src="assets/arrow-light.png" alt="" id="img-succulent">
                     </div>
                 </div>
-                <img src="assets/succulents-1.jpg" alt="">
+                <img id="imagen-suculentas" onmouseenter="cambiarImg('assets/succulents-2.jpg')" onmouseleave="cambiarImg('assets/succulents-1.jpg')" src="assets/succulents-1.jpg" alt="">
             </div>
             <div id="right-hero">
                 <img src="assets/aloe-m.jpg" alt="">
@@ -89,8 +89,9 @@
         <h3>This site makes use of third-party cookies, by clicking "I accept"
             you agree to the terms outlined in out <a href="#">cookie policy</a>
         </h3>
-        <button>I accept</button>
+        <button onclick="borrar()">I accept</button>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
