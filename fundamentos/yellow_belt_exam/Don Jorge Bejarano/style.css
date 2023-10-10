@@ -150,3 +150,21 @@ h2 {
   text-align: center;
   flex: 1;
 }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  margin-top: -60px;
+  background-color: white;
+  padding: 20px;
+}
+footer button {
+  width: 100px;
+  padding: 10px;
+  background-color: #00d1b2;
+  color: white;
+  font-weight: bold;
+  box-shadow: 4px 4px 1px 1px rgba(0, 0, 0, 1);
+}
