@@ -25,13 +25,34 @@ class Usuario:
         
     
 
+usuarios = [
+    Usuario("Jorge", 10000),
+    Usuario("Felipe", 1000)
+]
 
-jorge = Usuario("Jorge", 1000)
-baltazar = Usuario("Baltazar", 500)
+def menu():
+    for i in range(len(usuarios)):
+        usuario = usuarios[i]
+        print(f"{i+1}. {usuario.nombre}")
+        
+    opcion = int(input("Ingrese una opcion: "))
+    usuario = usuarios[opcion-1]
+    print(f"Elegiste a {usuario.nombre}")
+    menu_x_usuario(usuario)
 
-jorge.transfer_dinero(baltazar, 1000)
-#print(jorge.nombre)
 
+def menu_x_usuario(usuario):
+    for us in usuarios:
+        if us != usuario:
+            print(f"{us.nombre} no es {usuario.nombre}")
+        
+        
+    
+
+
+
+
+menu()
 
 
 
