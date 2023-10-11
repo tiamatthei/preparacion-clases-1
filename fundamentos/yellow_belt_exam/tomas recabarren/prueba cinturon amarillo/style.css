@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    align-items: center;
+    margin-right: 500px;
+    margin-left: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo img {
+    background-color: #00d1b2;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu li {
+    position: relative;
+    left: -20px;
+    margin: 0 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.cart-icon img {
+    height: 50px;
+}
+
+input{
+    background-color: aliceblue;
+    position: relative;
+    right: -20px;
+padding: 10px;
+border-radius: 20px;
+width: 900px;
+}
+.si{
+    position: relative;
+    top: -40px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-bottom: 4px solid black;
+}
+.si li{
+position: relative;
+left: -60px;
+
+    margin: 0 30px;
+}
+.si li a{
+    text-decoration: none;
+    color: #333;
+}
+.letra{
+    position: relative;
+    top: -40px;
+font-size: 25px;
+}
+.noticia {   
+    width: 50%;
+    margin: 20px auto;
+    background-color: #00d1b2;
+    color: #fff;
+    font-size: 30px;
+    width: 1000px;
+    height: 400px;
+    margin-left: 500px;
+
+  }
+.noticia a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+  }
+  
+
+  
+
+.palabras{
+    padding: 10px;
+  }
+.plantas{
+    border: 1px solid transparent;
+    background-color: #00d1b2;
+}
+.hola{
+  display: flex;
+  gap: 10px;  
+}
+.q{
+    position: relative;
+    left: -187px;
+    top: 20px;
+    height:250px;
+    width: 300px;
+}
+h3{
+    position: relative;
+    top: 280px;
+    left: -500px;
+    background-color:#00d1b2;
+    border: 1px solid transparent;
+    padding: 50px;
+    width: 200px;
+    color: white;
+    text-decoration: none;
+}
+.plantas{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 30px;
+}
+.plantas img{
+    height: 150px;
+    border-radius: 9999px;
+}
+.nombres{
+    position: relative;
+    top: -50px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 5px;
+    left: 15px;
+    color: #333;
+    font-size: 20px;
+}
+#cookie-warning{
+    border: 1px solid black;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 10px;
+    height: 70px;
+}
+#cookie-warning button{
+padding: 8px;
+width: 90px;
+background-color: #00d1b2;
+position: relative;
+right: -1070px;
+top: -108px;
+}
+#cookie-warning p{
+font-size: 20px;
+position: relative;
+right: -100px;
+top: -60px;
+}
+#cookie-warning img{
+position: relative;
+top: 5px;    
+}
+.imagenn{
+    background-image: url(assets/succulents-1.jpg);
+    float: right;
+    margin-left: 15px;
+    width: 50%;
+    height: 100%;
+}
+.imagenn:hover{
+    background-image: url(assets/succulents-2.jpg);
+}
