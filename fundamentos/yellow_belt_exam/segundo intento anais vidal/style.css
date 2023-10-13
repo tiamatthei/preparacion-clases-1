@@ -1,0 +1,199 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 10px;
+    padding: 20px;
+}
+
+.img ul,
+li {
+    display: flex;
+    list-style: none;
+    text-align: center;
+
+}
+
+.img a {
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+
+.img img {
+    width: 30px;
+    height: 30px;
+
+}
+
+.store {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+
+}
+
+.user {
+    position: relative;
+    margin-top: 10px;
+}
+
+.user div{
+    display: flex;
+    align-items: center;
+
+}
+
+.user img {
+    height: 40px;
+}
+
+.user a {
+    margin-top: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.user h6 {
+    display: flex;
+    justify-content: end;
+    font-size: 16px;
+
+
+}
+
+nav {
+    background-color: red;
+
+}
+
+.container1 ul {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    width: auto;
+}
+
+.container1 ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: aliceblue;
+    border-left: 1px solid wheat;
+    border-right: 1px solid wheat;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 10px;
+    gap: 40px;
+}
+
+.container2 img {
+    scale: 0.8;
+
+}
+
+.cards {
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 300px;
+    padding: 40px;
+}
+
+.cards div {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.imagenuno img {
+    width: 95%;
+}
+
+.imagenesdos {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+}
+
+.weekly {
+    display: flex;
+    align-items: center;
+}
+
+.button-view {
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.negro{
+    font-weight: bolder;
+}
+
+
+
+.header-izquierda{
+    display: flex;
+}
+.opciones{
+    border: 1px solid grey;
+    padding: 5px;
+}
+.opciones img{
+    scale: 0.7;
+    
+}
+
+h4{
+ padding-top: 20px;
+ color: gray;
+}
+
+.red{
+    color: red;
+}
