@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+footer {
+    display: flex;
+
+}
+
+.logo {
+    margin: 10px;
+    padding: 20px;
+}
+
+.lista ul,
+li {
+    display: flex;
+    list-style: flex;
+    text-align: center;
+    border: solid 1px gray;
+
+}
+
+.lista a {
+    text-decoration: nome;
+    
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+
+.lista img {
+    width: 30px;
+    height: 30px;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.store {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap ;
+}
+
+.user img {
+    height: 40px;
+}
+
+nav {
+    background-color: red;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.container1 ul li a {
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    margin: 10px;
+    color: dimgray;
+}
+
+.carta-shop{
+    width: 270px;
+    height: 250px;
+    border: 1px solid grey;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+.fila{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+h3{
+    color:gray;
+    font-size: 30px;
+    }
+span{
+    color: red;
+}
