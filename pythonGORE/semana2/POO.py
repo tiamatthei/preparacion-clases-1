@@ -1,23 +1,33 @@
 #encapsulamiento
 
 class Usuario:
-    def __init__(self, nombreusuario, password):
-        self.nombreusuario = nombreusuario
-        self.password = password
+    respirar = True
     
-    @getattr
-    def getPassword(self):
-        return self.password
+    def __init__(self, nombre, clave):
+       self.nombre = nombre
+       self.clave = clave
     
-    @setattr  
-    def setPassword(self, newPassword):
-        self.password = newPassword
-        return self.password
+    @classmethod
+    def respirar(cls):
+        if cls.respirar:
+            print("esta respirando")
+        else:
+            print("no respira, llamen al doctor")
+    
+    @staticmethod
+    def sumar(valor1, valor2):
+        print(valor1 + valor2)
+    
     
 usuario1 = Usuario("jorge", "blabla123")
-print(usuario1.setPassword("hola"))
-usuario1.password = "kakakakka"
-print(usuario1.password)
+
+usuario1.sumar(2, 3)
+
+usuario2 = Usuario("alejandro", "blabla123")
+
+
+usuario3 = Usuario("nicolas", "blabla123")
+usuario4 = Usuario("felipe", "blabla123")
 
 
 
