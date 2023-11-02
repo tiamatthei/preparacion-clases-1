@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    {% with mensajes = get_flashed_messages() %}
+        {% if mensajes %}
+            
+            {% for mensaje in mensajes %}
+            <div style="background-color: yellow;">
+                {{ mensaje }}
+            </div>
+            
+            {% endfor %}
+
+        {% endif %}
+    {% endwith %}
+
+    <h2>Esta es la lista de productos</h2>
+    <ul>
+        {% for producto in productos %}
+        <li>{{ producto.nombre_producto }} precio: {{ producto.precio }}</li>
+        {% endfor %}
+    </ul>
+</body>
+<script>
+</script>
+
+</html>

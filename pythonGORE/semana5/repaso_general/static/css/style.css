@@ -1,0 +1,9 @@
+ul{
+    list-style: none;
+}
+h2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    background-color: antiquewhite;
+    color: chocolate;
+}
