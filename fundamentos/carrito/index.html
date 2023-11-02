@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .productos{
+        display: flex;
+        gap: 30px;
+    }
+    .carrito{
+        display: flex;
+        justify-content: center;
+    }
+    .imagen-carrito{
+        width: 50px;
+    }
+
+    .producto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4px;
+        justify-content: space-around;
+        border: 1px solid black;
+        width: min-content;
+    }
+
+    .btn-producto {
+        border: none;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 2px;
+        transition: 300ms;
+        cursor: pointer;
+    }
+
+    .btn-producto:hover {
+        scale: 1.1;
+    }
+</style>
+
+<body>
+    <div class="productos">
+        <div class="producto">
+            <h2 class="titulo-producto">Leche</h2>
+            <img class="img-producto" src="leche.webp" alt="">
+            <p>Lo mejor para comenzar tu día</p>
+            <p class="precio-producto">$990</p>
+            <button onclick="agregarCarrito(this)" class="btn-producto">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <h2 class="titulo-producto">Arroz</h2>
+            <img class="img-producto" src="arroz.webp" alt="">
+            <p>Arrocito rico</p>
+            <p class="precio-producto">$1100</p>
+            <button onclick="agregarCarrito(this)" class="btn-producto">Agregar al carrito</button>
+        </div>
+    </div>
+    <div class="carrito">
+    </div>
+
+</body>
+<script>
+    function agregarCarrito(element) {
+        var padre = element.parentElement;
+        var titulo = padre.querySelector(".titulo-producto").innerText;
+        var precio = padre.querySelector(".precio-producto").innerText;
+        var imagen = padre.querySelector(".img-producto").src;
+        
+        var carrito = document.querySelector(".carrito");
+        carrito.innerHTML += `
+        <div class="producto-carrito">
+            <p class="titulo-carrito">${titulo}</p>
+            <img src="${imagen}" alt="" class="imagen-carrito">
+            <p class="precio-carrito">${precio}</p>
+            <button onclick="eliminarCarrito(this)">Eliminar</button
+        </div>
+        `
+    }
+    function eliminarCarrito(element) {
+        element.parentElement.remove();
+    }
+
+
+</script>
+
+</html>
