@@ -1,4 +1,4 @@
-from flask import Flask, render_template, flash, session, get_flashed_messages
+from flask import Flask, render_template, flash, session, get_flashed_messages, request
 import pymysql.cursors
 
 
@@ -59,16 +59,33 @@ app.secret_key = "algun secreto"
 
 @app.route("/")
 def index():
-
     coneccion = connectToMySQL("nuestro_schema")
     productos = coneccion.query_db("SELECT * FROM productos;")
-    print(productos)
-    flash("Hola")
+    
+    user = {
+        "nombre": "Juan",
+        "apellido": "Perez",
+        "email": "juan.perez@gmail.com"
+        }
+    
+    
+    session['user'] = user
     
     return render_template("index.html", productos=productos)
 
 
+    
 
+
+@app.route("/productos")
+def productos():
+    return render_template("productos.html")
+
+
+@app.route("/catalogo")
+def catalogo():
+
+    return render_template("index.html", productos=productos)
 
 
 

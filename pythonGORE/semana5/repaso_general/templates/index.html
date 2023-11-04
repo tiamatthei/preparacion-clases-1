@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <h2>Bienvenido {{ session.user.nombre }}</h2>
+
     {% with mensajes = get_flashed_messages() %}
         {% if mensajes %}
             
@@ -28,6 +30,8 @@
         <li>{{ producto.nombre_producto }} precio: {{ producto.precio }}</li>
         {% endfor %}
     </ul>
+    <a href="{{url_for('productos')}}">Ir a productos</a>
+
 </body>
 <script>
 </script>

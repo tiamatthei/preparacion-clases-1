@@ -24,8 +24,6 @@ def index_sin():
 
 
 
-
-
 @app.route("/lists")
 def lists():
     lista_usuarios = [
