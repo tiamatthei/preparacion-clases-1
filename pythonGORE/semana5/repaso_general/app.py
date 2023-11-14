@@ -19,7 +19,7 @@ class MySQLConnection:
                                     autocommit = True)
         # establecer la conexión a la base de datos
         self.connection = connection
-        
+         
     # el método para consultar la base de datos
     def query_db(self, query, data=None):
         with self.connection.cursor() as cursor:
@@ -73,6 +73,23 @@ def index():
     
     return render_template("index.html", productos=productos)
 
+
+@app.rout('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        conn = connectToMySQL('nuestro_schema')
+        email = request.form['email']
+        pwd = request.form['password']
+        resultado = conn.query_db("select count(*) from usuarios where password = %s and email = %s;", (pwd, email, ))
+        if resultado:
+            return True
+        else:
+            return False
+        
+        
+    # show the form, it wasn't submitted
+    return render_template('login.html')
+    
 
     
 
