@@ -17,16 +17,20 @@
 // 4.4. Después de 500 milisegundos, el programa debe cambiar el texto de la respuesta donde se señala en el html.
 // (debe mostrar la respuesta en el centro de la imagen de la respuesta) junto con la imagen de "respuesta".
 
+// 5. DEBE COMENTAR SU CÓDIGO, EXPLICANDO PARA QUE SIRVE CADA PARTE DEL MISMO.
+
+
 // BONUS: Hacer un movimiento de "agitado" de la bola 8, antes de mostrar la respuesta.
 
 
 
 document.addEventListener("DOMContentLoaded", function() { // NO ELIMINAR
-  // Estas son las url de las imágenes que se usan en el programa, cuando quiera mostrar una respuesta, uso la imagen de la respuesta, cuando quiera mostrar el 8, uso la imagen de la pregunta.
+  // Estas son las url de las imágenes que se usan en el programa, cuando quiera mostrar una respuesta, uso la imagen de la respuesta, 
+  // cuando quiera mostrar el 8, uso la imagen de la pregunta.
   const imagen_respuesta = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballAnswer.png";
   const imagen_pregunta = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballQuestion.png";
 
-  //ESCRIBE TU CODIGO AQUI
+  // ESCRIBE TU CODIGO AQUI
 
 
 
@@ -45,6 +49,6 @@ document.addEventListener("DOMContentLoaded", function() { // NO ELIMINAR
 
 
   // AYUDA: ESA ES LA ALERTA QUE PERMITE RECIBIR UNA PREGUNTA DEL USUARIO, LA PREGUNTA SE GUARDA EN LA VARIABLE pregunta  
-  var pregunta = prompt("ASK A YES/NO QUESTION!");
+  var pregunta = prompt("Hazme una pregunta");
 
 });
