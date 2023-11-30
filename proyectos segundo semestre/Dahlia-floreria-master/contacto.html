@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="barra-navegacion">
+            <li class="lista-izquierda">
+                <a class="listas-letras" href="pagina-principal.html">Inicio</a>
+            </li>
+            <ul class="lista-primera">
+                <li class="lista-izquierda">
+                    <a class="listas-letras" href="pagina-productos.html">Productos</a>
+                </li>
+                <li class="lista-izquierda">
+                    <a class="listas-letras" href="#">Especiales</a>
+                </li>
+                <li class="lista-izquierda">
+                    <a class="listas-letras" href="#nav-nosotros">Sobre nosotros</a>
+                </li>
+            </ul>
+            <ul class="lista-segunda">
+                <li class="lista-derecha">
+                    <a class="listas-letras-comprar" href="#">Comprar</a>
+                </li>
+                <li class="lista-derecha">
+                    <a class="listas-letras" href="#contacto-nav">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <img src="img/Dahlia-img.png" alt="">
+    </header>
+    <div class="contenedor-form">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

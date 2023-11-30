@@ -1,0 +1,637 @@
+/*HEADER*/
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: rgb(255, 255, 240);
+    
+}
+.header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 800px;
+    background-size: cover;
+    /*opacity: 0.9;*/
+    animation: imagenes 15s ease infinite ;
+    animation-delay: 2s;
+}
+@keyframes imagenes{
+    0%{
+        background-image: url(img/tulipan3.jpg);
+    }
+    25%{
+        background-image: url(img/dalias1.jpg); 
+    }
+    50%{
+        background-image: url(img/especiales2.jpg);
+        
+    }
+    100%{
+        background-image: url(img/tulipan3.jpg);
+    }
+}
+.barra-navegacion{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    padding: 4vw;
+}
+.lista-primera{
+    display: flex;
+    list-style: none;
+}
+.lista-izquierda{
+    align-items: center;
+    display: flex;
+    margin-left: 0;
+    margin-right: 26px;
+    position: relative;
+}
+.lista-segunda{
+    display: flex;
+    list-style: none;
+}
+.lista-derecha{
+    align-items: center;
+    display: flex;
+    margin-left: 30px;
+    margin-right: 0px;
+    position: relative;
+}
+.listas-letras{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: x-large;
+}
+.listas-letras-comprar{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: x-large;
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+    padding: 12px 16px 14px;
+    transition: all .3s ease;
+}
+
+.listas-letras:hover{
+    border-bottom: 3px solid white;
+}
+.listas-letras-comprar:hover{
+    background-color: white;
+    color: black;
+}
+
+/*--------------*/
+
+/*MAIN*/
+
+/*1parde de main*/
+.caja-origen-dahlia{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5.2631578947%;
+    padding-right: 5.2631578947%;
+    position: relative;
+    z-index: 1;
+}
+.origen-dahlia{
+    padding: 108px;
+}
+.img-origen{
+    margin: 0%;
+    padding:0% ;
+}
+.parrafo-origen{
+    font-family:"Trebuchet MS", Helvetica, sans-serif ;
+    font-size: 45px;
+    line-height: 120%;
+    color: rgb(167, 98, 156);
+    align-items: center;
+    margin: 60px;
+    text-align: center;
+}
+
+.boton-sobre-nosotros{
+    align-items: center;
+    align-self: center;
+    border: 3px solid rgb(167, 98, 156);
+    border-radius: 100px;
+    display: inline-flex;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 1.25;
+    padding: 17px 24px 18px 27px;
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 240);
+}
+
+.boton-sobre-nosotros:hover{
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+    color: rgb(167, 98, 156);
+    
+}
+
+/*---------------*/
+
+/*2da parte main (productos)*/
+.caja-todo-productos{
+    
+    
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.caja-contenedor-productos{
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.caja-flex{
+    align-items: flex-start;
+    column-count: 2;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    height: 1774.42px;
+    box-sizing: border-box;
+}
+
+.titulo-productos{
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    margin-top: 85px;
+    padding-left: 5.2631578947%;
+    width: 52.6315789474%;
+    color: #141e3c;
+    /*position: absolute;
+    left: 0%;
+    top: 0px;
+    margin-top: 90px;
+    width: 52.6315789474%;
+    font-size: 30px;*/
+}
+.titulo{
+    font-size: 70px;
+    line-height: 90%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    
+}
+.parrafo-titulo-producto{
+    font-size: 22px;
+    line-height: 150%;
+    padding: 20px;
+}
+.titulo-flores{
+    color: #fff;
+    display: block;
+    font-family: brick-text-extralight;
+    font-size: 52px;
+    left: 50%;
+    line-height: 92%;
+    padding-left: 68px;
+    padding-right: 68px;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all .3s cubic-bezier(.165,.84,.44,1);
+    width: 100%;
+    z-index: 2;
+}
+
+.cajas-flores{
+    box-sizing: border-box;
+    display: inline-block;
+    transition: transform .32s cubic-bezier(.165,.84,.44,1);
+    vertical-align: top;
+    width: 47.3684210526%;
+}
+
+.img-diseño-producto{
+    border-radius: 20px;
+    overflow: hidden;
+}
+/*ROSAS*/
+.link-rosas{    
+    position: absolute;
+    left: 52%;
+    top: 0px;
+    margin-top: 47px;
+    padding-left: 5%;
+    width: 33%;
+}
+.contenedor-img-rosas{
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-bottom: 130%;
+    
+}
+
+.img-rosa{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+/*-------*/
+
+/* LIRIO */
+.link-lirio{
+    position: absolute;
+    left: 0%;
+    top: 343.906px;
+    margin-top: 40px;
+    width: 38%;
+}
+
+.contenedor-img-lirio{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-bottom: 66.6667%;
+    
+}
+.img-lirio{
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+/*--------*/
+
+/* GIRASOL*/
+.link-girasol{
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 37%;
+    padding-left: 5.2631578947%;
+    margin-top: 194px;
+    position: absolute;
+    left: 47.3634%;
+    top: 607.281px;
+}
+
+.contenedor-img-girasol{
+    padding-bottom: 66%;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.img-girasol{
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+/*------------*/
+
+/* DAHLIA*/
+.link-dahlia{
+    position: absolute;
+    left: 5%;
+    top: 700.000px;
+    margin-top: 194px;
+    width: 28%;
+}
+
+.contenedor-img-dahlia{
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;   
+    padding-bottom: 150%;
+}
+
+.img-dahlia{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*-----------*/
+
+/*ESPECIALES*/
+.link-especiales{
+    position: absolute;
+    left: 31.5756%;
+    top: 1222.53px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    margin-top: 121px;
+    padding-left: 10%;
+}
+
+.contenedor-img-especiales{
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-bottom: 66.6667%;
+    
+}
+
+.img-especiales{
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*-------------*/
+
+/*PARALAXX*/
+.paralax-container{
+    padding-top: 108px;
+    padding-bottom: 108px;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+.paralax{
+    background-image: url(img/paralax.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    padding: 150px;
+    border-radius: 20px;
+}
+
+.parrafo-paralax{
+    color: rgb(167, 98, 156);
+    font-family: brick-text-extralight;
+    font-size: 94px;
+    line-height: 92%;
+    padding-bottom: 30vh;
+    padding-top: 50vh;
+}
+/*-----------*/
+
+/*SOBRE NOSOTROS*/
+
+.sobre-nosotros-seccion{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 108px;
+    padding: 108px;
+    padding-left: 85px;
+    padding-right: 85px;
+    font-family: brick-text-extralight;
+}
+.contenedor-nosotros{
+    width: 100%;
+}
+.contenedor-titulo{
+    margin-bottom: 68px;
+}
+.h2{
+    font-size: 94px;
+    line-height: 92%;
+}
+.parrafo-nosotros{
+    font-size: 22px;
+    line-height: 130%;
+    padding: 10px;
+}
+.imagenes-nosotros{
+    column-gap: 5.2631578947%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 153px;
+    padding-bottom: 85px;
+    row-gap: 68px;
+    width: 100%;
+}
+.contenedor-imagen-uno{
+    border-radius: 20px;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 60%;
+    position: relative;
+    width: 100%;
+}
+.imagen-uno{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.boton-mas{
+    align-items: center;
+    align-self: center;
+    border: 3px solid rgb(167, 98, 156);
+    border-radius: 100px;
+    display: inline-flex;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 1.25;
+    padding: 17px 24px 18px 27px;
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 240);
+}
+
+.cacas{
+    border-radius: 20px;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 60%;
+    position: relative;
+    width: 100%;
+    background-color: aqua;
+}
+.triplecaca{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*CONTACTO*/
+.contenedor-contacto{
+    display: flex;
+    padding-left: 108px;
+    padding-right: 108px;
+}
+.contacto-div{
+    background-color: rgb(167, 98, 156);
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+.cosas-contacto{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.contacto-contenido-uno{
+    margin-left: 5.2631578947%;
+    margin-right: 5.2631578947%;
+    width: 40%;
+    margin-top: 70px;
+}
+.img-dahlia-contacto{
+    height: 400px;
+    margin-top: 1px;
+    width: auto;
+}
+.h3{
+    font-size: 60px;
+    line-height: 80%
+}
+.contacto-contenido-dos{
+    margin-bottom: 85px;
+    margin-left: 0;
+    margin-top: 68px;
+    margin-left: 5.2631578947%;
+    margin-right: 5.2631578947%;
+    width: 42.1052631579%;
+}
+.parrafo-contacto{
+    font-size: 30px;
+}
+.boton-contacto-uno{
+    align-items: center;
+    align-self: center;
+    border-radius: 100px;
+    display: inline-flex;
+    font-size: 22px;
+    padding: 30px;
+    text-transform: uppercase;
+    margin-top: 33px;
+}
+.boton-contacto:hover{
+    background-color: #f1f1f1;
+    color: rgb(167, 98, 156);
+}
+.boton-contacto{
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+/*--------------*/
+
+/*FOOTER*/
+.footer{
+    display: flex;
+    margin-top: 121px;
+    width: 100%;
+}
+.footer-contenido{
+    position: relative;
+    width: 100%;
+}
+.footer-cosas{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 68px;
+    padding-left: 5.2631578947%;
+    padding-right: 5.2631578947%;
+}
+.logo-footer{
+    display: block;
+    height: auto;
+    max-width: 800px;
+    width: 100%;
+    
+}
+.h4{
+    color: rgb(167, 98, 156);
+    visibility: inherit;
+    font-size: 80px;
+    line-height: 92%;
+    margin-right: -5px;
+    text-align: center;
+    font-family: sans-serif;    
+}
+.img-dahlia-footer{
+    display: block;
+    max-width: 320px;
+}
+/*FOOTER-NAV*/
+.footer-nav{
+    align-items: center;
+    border-top: 1px solid hsla(0,0%,59%,.4);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 51px;
+    padding-top: 47px;
+    width: 100%;
+}
+.lista-footer-nav{
+    display: flex;
+    justify-content: center;
+}
+.li-footer-nav{
+    display: inline-flex;
+    margin-right: 20px;
+    font-size: 22px;
+    line-height: 150%;
+    position: relative;
+}
+.a-footer-nav{
+    display: inline-block;
+    font-family: Graphik-Medium;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    padding-left: 20px;
+    color: #141e3c;
+    width: 100%;
+}
+.li-footer-nav:hover{
+    border-bottom: 3px solid #141e3c;
+}

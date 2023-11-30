@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabezote">
+        <div class="top">
+            <div class="contenedor">
+                <div class="logo">
+                    <h1><a href="inicio.html">CGKR</a></h1>
+                </div>
+                <nav class="bmenu">
+                    <ul>
+                        <li><a href="inicio.html">Inicio</a></li>
+                        <li><a href="lanzamiento.html">Lanzamientos</a></li>
+                        <li><a href="oferta.html">Ofertas</a></li>
+                        <li><a href="conocenos.html">Conocenos</a></li>
+                        <li><a href="cuenta.html">Cuenta</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="caja-video">
+            <video autoplay muted loop poster="/img-fondos/img-lanz-ofert.mp4">
+                <source src="/img-fondos/img-lanz-ofert.mp4">
+            </video>
+        </div>
+        <section class="contenido">
+            <div class="mostrador" id="mostrador">
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img-oferta/airmax97.png" alt=""><!--aca cambias las imagenes-->
+                            <h3 class="description">NIKE AIR MAX 97</h3 >
+                                <p>Zapatillas para hombre </p>
+                            <span class="precio">$149.990 </span>
+                            <h2 class="precio-descuento">$99.990</h2>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img-oferta/uptempo.png" alt=""><!--aca cambias las imagenes-->
+                            <h3 class="description"> UPTEMPO OG NEGRA</h3>
+                            <p>Zapatilla para hombre </p>
+                            <span class="precio">$199.990 </span>
+                            <h2 class="precio-descuento">$149.990</h2>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img-oferta/nikephantom.png"><!--aca cambias las imagenes-->
+                            <h3 class="description"> NIKE PHANTOM GX </h3>
+                            <p>Pro Fg 2023 Adulto</p>
+                            <span class="precio">$119.990 </span>
+                            <h2  class="precio-descuento">$95.990</h2>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img-oferta/airmax97mujer.png" alt=""><!--aca cambias las imagenes-->
+                            <h3 class="description">  NIKE AIR MAX 97</h3>
+                            <p>Zapatillas para Mujer</p>
+                            <span class="precio">$119.990 </span>
+                            <h2 class="precio-descuento">$85.990</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img-oferta/airforce1tiffany.png" alt=""><!--aca cambias las imagenes-->
+                            <h3 class="description"> NIKE AIR FORCE 1 LOW Tiffany</h3>
+                            <span class="precio">$169.990 </span>
+                            <h2 class="precio-descuento">$125.990</h2>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img-oferta/nikeairforce 107.png" alt=""><!--aca cambias las imagenes-->
+                            <h3 class="description">NIKE AIR FORCE 1 '07 SE' </h3>
+                            <p>Zapatillas para mujer </p>
+                            <span class="precio">$99.990 </span>
+                            <h2 class="precio-descuento">$72.990</h2>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img-oferta/nikeairfoce1blancas.png" alt=""><!--aca cambias las imagenes-->
+                            <h3 class="description"> NIKE AIR FORCE 1</h3>
+                            <p>zapatillas mujer</p>
+                            <span class="precio">$119.990 </span>
+                            <h2 class="precio-descuento">$85.990</h2>
+                            </div>
+                            </div>
+                            <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img-oferta/airjordan1.png" alt=""><!--aca cambias las imagenes-->
+                            <h3 class="description"> NIKE AIR JORDAN 1 MID</h3>
+                            <p>zpatillas hombre</p>
+                            <span class="precio">$119.990 </span>
+                            <h2 class="precio-descuento">$95.990</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contenedor del item seleccionado -->
+            <div class="seleccion" id="seleccion">
+                <div class="cerrar" onclick="cerrar()">
+                    &#x2715
+                </div>
+                <div class="info">
+                    <img src="img/1.jpg" alt="" id="img"><!--aca cambias las imagenes-->
+                    <h2 id="modelo">Nike Modelo 1</h2>
+                    <p id="descripcion">Descripcion Modelo 1 </p>
+                    <span class="precio" id="precio">$159.000</span>
+                    <div class="fila">
+                        <div class="SIZE">
+                            <label for="">TALLA</label>
+                            <select name="" id="">
+                                <option value="">35</option>
+                                <option value="">36</option>
+                                <option value="">37</option>
+                                <option value="">38</option>
+                                <option value="">39</option>
+                                <option value="">40</option>
+                                <option value="">41</option>
+                                <option value="">42</option>
+                                <option value="">43</option>
+                            </select>
+                        </div>
+                        <button id="AgregarAlCarrito" class="AgregarAlCarrito">Agregar Al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="info-contact">
+        <div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

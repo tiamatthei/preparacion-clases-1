@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    position: relative;
+    min-height: 100vh;
+    background: radial-gradient(#f0483a, #501212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 100px;
+}
+
+header {
+    background-color: #501212;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+    .logo {
+        max-width: 90px;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        list-style: none;
+    }
+
+    .navigation li a {
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+        margin-left: 40px;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content .text {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .content .text h2 {
+        color: #fff;
+        font-size: 5em;
+        font-weight: 300;
+    }
+
+    .content .text h2 span {
+        font-weight: 700;
+    }
+
+    .content .text p {
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.1em;
+        line-height: 1.5em;
+        margin: 20px 0;
+    }
+
+    .carousel-container {
+        max-height: 200px;
+        overflow: hidden;
+        margin: 20px;
+    }
+
+    .carousel {
+        display: flex;
+        animation: carousel-animation 10s infinite;
+    }
+
+
+    .carousel img {
+        width: 30%;
+        object-fit: cover;
+        height: auto;
+    }
+
+
+    @keyframes carousel-animation {
+        0% {
+            transform: translateX(-30%);
+        }
+
+        30% {
+            transform: translateX(-60%);
+        }
+
+        60% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    .btn {
+        position: relative;
+        display: inline-block;
+        padding: 20px 50px;
+        background: #fff;
+        color: #333;
+        font-size: 1.1em;
+        font-weight: 500;
+        border-radius: 40px;
+        text-decoration: none;
+        transition: 0.25s;
+    }
+
+    .btn:hover {
+        letter-spacing: 2px;
+    }
+
+    .busqueda {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-box {
+        background: #fff;
+        width: 90%;
+        max-width: 650px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        height: 85px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .search-box input {
+        flex: 1;
+        padding: 15px 10px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        font-size: 20px;
+    }
+
+    .search-box button img {
+        width: 25px;
+    }
+
+    .search-box button {
+        padding: 10px 12px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .slider {
+        position: absolute;
+        bottom: 0;
+        left: 285px;
+        animation: slider 6s linear infinite;
+    }
+
+    .slider div {
+        height: 85px;
+        display: flex;
+        align-items: center;
+    }
+
+    .slider img {
+        width: 25px;
+    }
+
+    @keyframes slider {
+        0% {
+            transform: translateY(-85px);
+        }
+
+        5% {
+            transform: translateY(0px);
+        }
+
+        30% {
+            transform: translateY(0px);
+        }
+
+        35% {
+            transform: translateY(85px);
+        }
+
+        65% {
+            transform: translateY(85px);
+        }
+
+        75% {
+            transform: translateY(170px);
+        }
+
+        100% {
+            transform: translateY(170px);
+        }
+    }
+    footer {
+    padding: 20px;
+    background-color: #501212;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 20px;
+}
+footer h3{
+    display: flex;
+    justify-content: center;
+}
+footer p{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+</style>
+
+<body>
+    <section class="main">
+        <header>
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="ayuda (1).html">Ayuda</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h2>Mejores <span>productos,</span> <br>mejores </h2>
+                <h2><span>precios.</span></h2>
+                <p>Don Marcos es una bodega que ofrece abarrotes y productos similares, el objetivo de la pagina es
+                    brindar una experiencia de compra conveniente y satisfactoria, ¡Visita Don Marcos y dexcubre todo lo
+                    que ofrecen!</p>
+                <a href="catalogo.html" class="btn">Entrar</a>
+            </div>
+            <div class="carruseles">
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <img src="img/Don marcos img/kuky.jpg" alt="imagen1">
+                        <img src="img/Don marcos img/donuts.jpg" alt="imagen2">
+                        <img src="img/Don marcos img/nik.png" alt="imagen3">
+                    </div>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <img src="img/Queijos _ Queijos Président.jpeg" alt="imagen1">
+                        <img src="img/__COLUN__ Leche Colun Blanca Entera 1L.jfif" alt="imagen2">
+                        <img src="img/100 Healthiest Foods of 2018.jfif" alt="imagen3">
+                    </div>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <img src="img/Fanta laranja.jpeg" alt="imagen1">
+                        <img src="img/Coca Cola.jpeg" alt="imagen2">
+                        <img src="img/Pepsi and Chill_.jpeg" alt="imagen3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="busqueda">
+                <form class="search-box">
+                    <input type="text" placeholder="¿Que estas buscando?">
+                    <div class="slider">
+                        <div><img src="img/music.png" alt=""></div>
+                        <div><img src="img/video.png" alt=""></div>
+                        <div><img src="img/image.png" alt=""></div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <h3>Contacto:</h3>
+        <p>+569 1234 5678</p>
+        <p>DonMarcos@contacto.com</p>
+    </footer>
+</body>
+
+</html>

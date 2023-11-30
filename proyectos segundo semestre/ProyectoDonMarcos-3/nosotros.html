@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <style>
+            body {
+    background-color: #a8a196;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    background-color: #141313;
+}
+
+    
+.logo img {
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu li {
+    margin: 0 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fffbfb;
+}
+.search input{
+
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 30px;
+}
+
+.search img{
+    border-radius: 7px;
+
+}
+
+.carrito img{
+    display: flex;
+    border-radius: 10px;
+    width: 60px;
+    color: #cccccc;
+}
+.don {
+    padding: 10px;
+    display: inline-flex;
+    justify-content: start;
+    gap: 10px;
+} 
+
+.cuadro {
+background-color: #141313;
+ border: 1px solid;
+ border-radius: 5px;
+ width: 44%;
+ padding: 50px;;
+ 
+ }
+ .cuadro h2 {
+    color: #ccc;
+ }
+.stars {
+    cursor: pointer;
+  }
+  
+  .star {
+    font-size: 24px;
+    color: #ccc;
+    display: inline-block;
+  }
+  
+  .star:hover,
+  .star.active {
+    color: #ffcc00;
+  }
+  
+  .comment textarea {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+ button {
+   border-radius: 5px;
+   padding: 10px;
+ }
+ main {
+    display: flex;
+    justify-content: end;
+ }
+ .cards {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Cambiamos la propiedad para establecer 3 columnas */
+    gap: 20px;
+    padding: 20px;
+}
+.tarjetas-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjeta {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex-basis: calc(25% - 40px);
+    margin-bottom: 10px;
+}
+
+.tarjeta h2 {
+    margin: 0;
+}
+
+.tarjeta p {
+    margin: 10px 0;
+}
+
+.tarjeta img {
+    width: 70%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta-1 {
+    background-color: #cccccc;
+}
+
+.tarjeta-2 {
+    background-color: #cccccc;
+}
+
+.tarjeta-3 {
+    background-color: #cccccc;
+}
+
+.tarjeta-4 {
+    background-color: #cccccc;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .tarjeta {
+        flex-basis: calc(50% - 40px);
+    }
+}
+
+
+/* Reset some default styles for better consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the card container */
+.card {
+    
+    display:inline-flex;
+    width: 300px;
+    height: 300px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    margin: 20px;
+}
+.todo {
+
+    align-items: end;
+    margin-top: -470px;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 20px;
+    display: flex;
+}
+
+/* Style the card content */
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Define the hover effect */
+.card:hover {
+    transform: scale(1.05);
+}
+
+.orden1 {
+justify-content: space-around;
+}
+
+.card img {
+    width: 350px;
+    margin-top: -100px;
+    margin-left: -22px;
+}
+.DonMarcos {
+    margin-top:60px;
+}
+
+        </style>
+      <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="ayuda (1).html">Ayuda</a></li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <input type="text" placeholder="¿Que estas buscando?">
+        </div>
+    </header>
+    <div class="contenedor">
+        <div class="barra"></div>
+        <span class="texto">Delivery 12Hrs</span>
+    </div>
+        
+ <body>
+    <div class="don">
+        <img class="DonMarcos" src="img/unnamed.png" height="100px" alt="DonMarcos">
+        <div class="cuadro">
+            <h2>DonMarcos, es un minimarket con una alta variedad de productos de consumo, con un personal capacitado para ayudar a los clientes.</h2>
+            <h2>nuestros horarios de apertura y cierre son: 10:00 a 20:00, hacemos entrega a la comodidad de tu hogar. </h2>
+         </div>
+    </div> 
+    
+    <div class="rating">
+        <div class="stars">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <div id="rating-value">Calificación: 0 estrellas</div>
+    </div>
+      
+      <div class="comment">
+        <textarea id="comment-text" rows="4" placeholder="Escribe tu comentario aquí..."></textarea>
+      </div>
+      
+      <button id="save-button">Guardar Reseña</button>
+      
+      
+      <div id="saved-reviews">
+        <!-- Aquí se mostrarán las reseñas guardadas -->
+      </div>
+      
+      <script>
+        const stars = document.querySelectorAll(".star");
+        const ratingValue = document.getElementById("rating-value");
+        const commentText = document.getElementById("comment-text");
+        const saveButton = document.getElementById("save-button");
+        const savedReviews = document.getElementById("saved-reviews");
+        
+        stars.forEach((star, index) => {
+          star.addEventListener("mouseover", () => {
+            resetStars();
+            for (let i = 0; i <= index; i++) {
+              stars[i].classList.add("active");
+            }
+          });
+        
+          star.addEventListener("click", () => {
+            const rating = index + 1;
+            ratingValue.innerHTML = `Calificación: ${rating} estrella(s)`;
+            star.parentNode.setAttribute("data-rating", rating);
+          });
+        
+          star.addEventListener("mouseout", resetStars);
+        });
+        
+        function resetStars() {
+          stars.forEach(star => {
+            star.classList.remove("active");
+          });
+        }
+        
+        saveButton.addEventListener("click", () => {
+          const selectedRating = document.querySelector(".stars[data-rating]").getAttribute("data-rating");
+          const comment = commentText.value;
+        
+          if (selectedRating > 0 && comment.trim() !== "") {
+            const review = document.createElement("div");
+            review.innerHTML = `<strong>Calificación:</strong> ${selectedRating} estrella(s)<br><strong>Comentario:</strong> ${comment}`;
+            savedReviews.appendChild(review);
+        
+            // Guarda la reseña en el almacenamiento local (localStorage o cookies) para que persista.
+            localStorage.setItem("lastReview", review.innerHTML);
+        
+            alert("Reseña guardada con éxito.");
+          } else {
+            alert("Por favor, selecciona una calificación y escribe un comentario antes de guardar.");
+          }
+        });
+        
+        // Recuperar la última reseña guardada al cargar la página (si existe).
+        const lastReview = localStorage.getItem("lastReview");
+        if (lastReview) {
+          const review = document.createElement("div");
+          review.innerHTML = lastReview;
+          savedReviews.appendChild(review);
+        }
+      </script>
+    
+     <div class="todo">  
+      <div class="orden1">                          
+    <div class="card">
+        <div class="card-content">
+            <h2>Cristobal Collado</h2>
+            <p>Mi Portafolio.</p>
+           <a href="cristobal.html"><img src="img/20230930_140025.jpg" alt=""></a>
+        </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+          <h2>Vicente Castro</h2>
+          <p>Mi Portafolio.</p>
+         <a href="vicente.html"><img src="img/IMG_20231002_085558_669.jpg" alt=""></a> 
+      </div>
+  </div>
+</div>
+<div class="orden2">
+  <div class="card">
+    <div class="card-content">
+        <h2>Antonia Garrido</h2>
+        <p>Mi Portafolio.</p>
+        <a href="anto.html"><img src="img/717e3f70-1626-45a7-b56b-43d977e56af8.jpg" alt=""></a>
+    </div>
+</div>
+<div class="card">
+  <div class="card-content">
+      <h2>Jorge Figueroa</h2>
+      <p>Mi Portafolio.</p>
+     <a href="jorge.html"><img src="img/IMG_20231017_082439_081.jpg" alt=""></a> 
+  </div>
+</div>
+</div>
+<div class="orden3">
+<div class="card">
+  <div class="card-content">
+      <h2>Nicolás Donoso</h2>
+      <p>Mi Portafolio.</p>
+     <a href="nico.html"><img src="img/IMG_20230315_202457_772 (1).jpg" alt=""></a> 
+  </div>
+</div>
+<div class="card">
+<div class="card-content">
+  <h2>Tomás Recabarren</h2> 
+    <p>Mi Portafolio.</p>
+    <a href="tomas.html"><img src="img/16C64A4E-5D74-4A63-A457-8467DF159BDB.jpeg"  alt="tomass"></a>
+
+</div>
+</div>
+</div>
+</div>
+
+<img src="" alt="">
+      
+</body>
+
+</html>

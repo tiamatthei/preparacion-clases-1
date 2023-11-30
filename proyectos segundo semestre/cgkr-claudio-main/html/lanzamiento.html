@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabezote">
+        <div class="top">
+            <div class="contenedor">
+                <div class="logo">
+                    <h1><a href="inicio.html">CGKR</a></h1>
+                </div>
+                <nav class="bmenu">
+                    <ul>
+                        <li><a href="inicio.html">Inicio</a></li>
+                        <li><a href="lanzamiento.html">Lanzamientos</a></li>
+                        <li><a href="oferta.html">Ofertas</a></li>
+                        <li><a href="conocenos.html">Conocenos</a></li>
+                        <li><a href="cuenta.html">Cuenta</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="caja-video">
+            <video autoplay muted loop poster="/img-fondos/img-lanz-ofert.mp4">
+                <source src="/img-fondos/img-lanz-ofert.mp4">
+            </video>
+        </div>
+        <section class="contenido">
+            <div class="mostrador" id="mostrador">
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img-lanzamiento/zapatilla-5.png" alt=""><!--aca cambias las imagenes-->
+                            <h3 class="description">Nike Mercurial Superfly 9 Club</h3>
+                            <p>Zapatillas Hombre </p>
+                            <span class="precio-lanz">$74.990 </span>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img-lanzamiento/zapatilla-4.png" alt=""><!--aca cambias las imagenes-->
+                            <h3 class="description"> Nike Phantom GX Academy Dynamic Fit MG</h3>
+                            <p>Zapatilla para hombre </p>
+                            <span class="precio-lanz">$99.990 </span>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img-lanzamiento/zapatilla-3.png"><!--aca cambias las imagenes-->
+                            <h3 class="description"> Nike Dunk Low Retro </h3>
+                            <p>Zapatilla Hombre </p>
+                            <span class="precio-lanz">$106.990 </span>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img-lanzamiento/zapatilla-13.png" alt=""><!--aca cambias las imagenes-->
+                            <h3 class="description"> FORUM LOW</h3>
+                            <p>Zapatillas para Mujer</p>
+                            <span class="precio-lanz">$94.990 </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img-lanzamiento/zapatilla-9.png" alt=""><!--aca cambias las imagenes-->
+                            <h3 class="description"> YEEZY BOOST 350 V2</h3>
+                            <p>Zapatillas Hombre</p>
+                            <span class="precio-lanz">$184.990 </span>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img-lanzamiento/zapatilla-2.png" alt=""><!--aca cambias las imagenes-->
+                            <h3 class="description">TENIS CAMPUS 00S </h3>
+                            <p>Zapatillas Hombre</p>
+                            <span class="precio-lanz">$87.990 </span>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img-lanzamiento/zapatilla-10.png" alt=""><!--aca cambias las imagenes-->
+                            <h3 class="description">Nike Air Max Plus EWT</h3>
+                            <p> zapatillas Hombre </p>
+                            <span class="precio-lanz">$179.990</span>
+                        </div>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img-lanzamiento/zapatilla-1.png" alt=""><!--aca cambias las imagenes-->
+                            <h3 class="description"> Zapatilla de Futbol Adidas Predator Accuracy</h3>
+                            <span class="precio-lanz">$97.990 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contenedor del item seleccionado -->
+            <div class="seleccion" id="seleccion">
+                <div class="cerrar" onclick="cerrar()">
+                    &#x2715
+                </div>
+                <div class="info">
+                    <img src="img/1.jpg" alt="" id="img"><!--aca cambias las imagenes-->
+                    <h2 id="modelo">Nike Modelo 1</h2>
+                    <p id="descripcion">Descripcion Modelo 1 </p>
+                    <span class="precio" id="precio">$159.000</span>
+                    <div class="fila">
+                        <div class="SIZE">
+                            <label for="">SIZE</label>
+                            <select name="" id="">
+                                <option value="">35</option>
+                                <option value="">36</option>
+                                <option value="">37</option>
+                                <option value="">38</option>
+                                <option value="">39</option>
+                                <option value="">40</option>
+                                <option value="">41</option>
+                                <option value="">42</option>
+                                <option value="">43</option>
+                                <option value="">44</option>
+                                <option value="">45</option>
+                            </select>
+                        </div>
+                        <button class="AgregarAlCarrito" id="AgregarAlCarrito">Agregar Al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="info-contact">
+        <div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

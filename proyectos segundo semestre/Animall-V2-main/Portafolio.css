@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Chelsea_Market';
+    src: url(Chelsea_Market/ChelseaMarket-Regular.ttf)
+}
+
+#logo {
+    width: 6vw;
+    margin: 2vw;
+}
+
+#arriba-cont {
+    background-image: url(portafolio-img/port-fond.png);
+}
+
+#info-arriba {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 0 8vw 0;
+}
+
+#info-arriba h1 {
+    font-family: 'Chelsea_Market';
+    color: #B4A5A5;
+    font-size: 5vw;
+    padding: 2vw 0 1vw 0;
+}
+
+#info-arriba p {
+    color: #3C415C;
+    font-family: 'Chelsea_Market';
+    font-weight: lighter;
+    font-size: 1.6vw;
+}
+
+#info-arriba>img {
+    width: 20vw;
+    border-radius: 1%;
+}
+
+#info-arriba>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*
+Inicio
+*/
+nav {
+    background-color: #3C415C;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: #B4A5A5;
+    float: right;
+    text-align: center;
+    display: block;
+    padding: 1vw 1vw;
+    font-size: 1.4vw;
+}
+
+nav h3 {
+    color: #B4A5A5;
+    font-family: 'Chelsea_Market';
+    margin-left: 2vw;
+}
+
+nav span {
+    color: #151515;
+    padding-left: 0.3vw;
+}
+
+.nav-links {
+    font-family: 'Chelsea_Market';
+    font-weight: lighter;
+}
+
+/*
+nav bar
+*/
+
+#info-yo {
+    background-color: #B4A5A5;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Chelsea_Market';
+    border-bottom: 5px solid #3C415C;
+    height: 48vw;
+}
+
+#yo {
+    display: flex;
+    flex-direction: column;
+    margin: 10.6vw 10vw 0 5vw;
+    width: 100%;
+}
+
+#yo h1 {
+    color: #301B3F;
+    font-size: 5vw;
+}
+
+#yo p {
+    color: #3C415C;
+    font-size: 1.4vw;
+}
+
+#aspiraciones {
+    display: flex;
+    flex-direction: column;
+    margin: 25vw 5vw 10.6vw 10vw;
+}
+
+#aspiraciones h1 {
+    color: #301B3F;
+    font-size: 5vw;
+}
+
+#aspiraciones p {
+    color: #3C415C;
+    font-size: 1.4vw;
+}
+
+/*
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+#skills {
+    font-family: 'Chelsea_Market';
+    display: flex;
+    flex-direction: column;
+    background-color: #301B3F;
+    border-bottom: 5px solid #3C415C;
+    height: 48vw;
+}
+
+#skills h1 {
+    color: #B4A5A5;
+    font-size: 5vw;
+    text-align: center;
+    margin: 5vw 0 0 0;
+}
+
+#skills p {
+    text-align: center;
+    color: #3C415C;
+    font-weight: lighter;
+    font-size: 1.4vw;
+}
+
+#cont-leng {
+    color: #B4A5A5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 10vw 0 10.5vw 0;
+    font-size: 2vw;
+    font-weight: lighter;
+}
+
+.leng img {
+    width: 10vw;
+}
+
+.leng h3 {
+    margin-bottom: 1vw;
+}
+
+/*
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+#portafolio {
+    background-color: #B4A5A5;
+    font-family: 'Chelsea_Market';
+    display: flex;
+    flex-direction: column;
+    height: 48vw;
+    border-bottom: 5px solid #3C415C;
+}
+
+#portafolio h1 {
+    color: #301B3F;
+    font-size: 5vw;
+    text-align: center;
+    margin: 5vw 0 0 0;
+}
+
+#portafolio p {
+    text-align: center;
+    color: #3C415C;
+    font-size: 1.4vw;
+}
+
+#proyect-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.proyect h3 {
+    margin-top: 2vw;
+    text-align: center;
+}
+.proyect img {
+    width: 100%;
+    height: 20vw;
+    border:#3C415C 2px solid;
+}
+
+/*
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+#contacto {
+    height: 44vw;
+    background-color: #301B3F;
+    border-bottom: 5px solid #3C415C;
+    font-family: 'Chelsea_Market';
+}
+
+#contacto h1 {
+    color: #B4A5A5;
+    font-size: 5vw;
+    text-align: center;
+    padding: 5vw 0 0 0;
+}
+
+#contacto button {
+    background-color: #151515;
+    border-style: none;
+    color: #3C415C;
+    margin: 0 42vw;
+    width: 15vw;
+    height: 2vw;
+    cursor: pointer;
+}
+
+.cont-inp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.cont-inp h4 {
+    color: #B4A5A5;
+}
+
+.cont-inp input {
+    color: #B4A5A5;
+    background-color: #3C415C;
+    border-style: none;
+    outline: none;
+    height: 3vw;
+    padding-left: 1vw;
+    margin: 1vw 22vw 3vw 22vw;
+    font-family: 'Chelsea_Market';
+}

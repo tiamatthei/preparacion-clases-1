@@ -1,0 +1,226 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Sunborn Sans One;
+}
+
+body {
+    background-color: black;
+    font-size: 1em;
+}
+
+.busqueda {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #242424;
+}
+
+.buscar {
+    display: flex;
+    justify-content: start;
+    width: 18em;
+    color: white;
+    padding: 7px;
+    background-color: #242424;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    transition: color 0.3s
+}
+
+.inicio a:hover {
+    transform: translateY(-1.5px);
+    color: #A60000;
+    transition: color 0.5s;
+    text-decoration: underline;
+}
+
+.separador {
+    background-color: white;
+    width: 2px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+.inicio-22 {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.nav-down {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo-pagina {
+    color: white;
+    font-size: 300%;
+}
+
+.span-1 {
+    color: #A60000;
+}
+
+.apartados {
+    display: flex;
+    align-items: center;
+}
+
+.apartados a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.apartados a:hover {
+    color: #A60000;
+    transition: ease-in-out 0.5s;
+    text-decoration: underline;
+}
+
+
+.section-productos {
+    display: flex;
+    justify-content: center;
+}
+
+.div-productos {
+    display: flex;
+}
+
+.producto {
+    background-color: #242424;
+    border-radius: 25px;
+    padding: 20px;
+    width: 320px;
+    height: 320px;
+    margin: 20px;
+}
+
+.producto-alineado-protelevrone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.producto-alineado-protelevrone img {
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 100%;
+}
+
+.producto-alineado-protelevrone img:hover {
+    transform: scale(1.05);
+}
+
+.producto a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 7px 10px;
+    border-radius: 25px;
+}
+
+.color-secundario {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: white;
+    height: 320px;
+}
+
+
+.parte-baja {
+    padding: 4px 20px;
+}
+
+.parte-baja button {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+.parte-baja button:hover {
+    transition: ease-in-out 0.5s;
+    transform: scale(1.05);
+    color: #A60000;
+}
+
+.producto-alineado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3em;
+
+}
+
+.producto-alineado p {
+    cursor: default;
+}
+
+.producto-alineado img {
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 100%;
+}
+
+.producto-alineado img:hover {
+    transform: scale(1.05);
+}
+
+.div-productos {
+    object-fit: cover;
+    transition: transform 1s;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.div-productos:hover {
+    transform: scale(1.05);
+}
+
+.productos-general {
+    margin: 50px 0px;
+}
+
+.barra-todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #A60000;
+    height: 100px;
+    color: white;
+}
+
+.barra a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 15px;
+    transition: color 0.3s ease;
+}
+
+.barra a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.icarus-2023 {
+    padding-top: 10px;
+    font-size: 1.1em;
+    text-decoration: underline;
+}

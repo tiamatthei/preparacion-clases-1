@@ -1,0 +1,78 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 100px;
+}
+
+.flex-container {
+    width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-card {
+    width: 100%;
+    background-color: #585757;
+    border: solid;
+    margin-bottom: 20px;
+    border-radius: 9px;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.cristianosiu {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.card-header {
+    background-color: #00ff15;
+    height: 125px;
+    margin-bottom: 80px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h1, 
+.card-body h2,
+.card-body h3,
+.card-body p {
+    margin: 20px 0px;
+}
+
+.avatar-c {
+    border-radius: 50%;
+    border: solid;
+    background-color: #363636;
+    height: 180px;
+    width: 180px;
+    padding: 5px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.icon-s {
+    height: 20px;
+}
+
+a {
+    color: #3a81e6;
+}
+
+.macarron {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}

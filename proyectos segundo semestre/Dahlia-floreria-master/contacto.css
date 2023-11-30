@@ -1,0 +1,130 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    background-image: url(img/especiales1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 700px;
+    background-size: cover;
+    /*opacity: 0.9;*/
+    animation: imagenes 15s ease infinite ;
+    animation-delay: 2s;
+}
+.barra-navegacion{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    padding: 4vw;
+}
+.lista-primera{
+    display: flex;
+    list-style: none;
+}
+.lista-izquierda{
+    align-items: center;
+    display: flex;
+    margin-left: 0;
+    margin-right: 26px;
+    position: relative;
+}
+.lista-segunda{
+    display: flex;
+    list-style: none;
+}
+.lista-derecha{
+    align-items: center;
+    display: flex;
+    margin-left: 30px;
+    margin-right: 0px;
+    position: relative;
+}
+.listas-letras{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: x-large;
+}
+.listas-letras-comprar{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: x-large;
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+    padding: 12px 16px 14px;
+    transition: all .3s ease;
+}
+
+.listas-letras:hover{
+    border-bottom: 3px solid white;
+}
+.listas-letras-comprar:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/*----------------------------*/
+.contenedor-form{
+font-family: 'Arial', sans-serif;
+background-color: #f4f4f4;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.container {
+width: 400px;
+background-color: #ffffff;
+padding: 40px;
+border-radius: 10px;
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+h2 {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+input, textarea {
+width: 100%;
+padding: 10px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+button {
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 15px 20px;
+font-size: 18px;
+cursor: pointer;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+}
+
+button:hover {
+background-color: #45a049;
+}

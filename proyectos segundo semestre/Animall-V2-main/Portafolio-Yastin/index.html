@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <nav class="nav-superior" id="menu">
+        <div class="aparte">
+            <h2 id="home" class="menu-title">Portafolio</h2>
+            <div id="content">
+                <a href="#home" class="menu" data-target="home">Home</a>
+                <a href="#skills" class="menu" data-target="skills">Habilidades</a>
+                <a href="#works" class="menu" data-target="works">Trabajos</a>
+                <a href="#resume" class="menu" data-target="resume">Resumen</a>
+                <a href="#contact" class="menu" data-target="contact">Contacto</a>
+                <a href="" class="menu">
+                    <a href="https://www.linkedin.com/in/yastin-villarroel-b7a170295/" target="_blank" class="">
+                        <button class="btn-contrato" onmouseover="cambiarColor(this, '#ebb40c')"
+                            onmouseout="restaurarColor(this)">
+                            CONTRATO
+                        </button>
+                    </a>
+                </a>
+            </div>
+        </div>
+        <div class="apartado" >
+            <label for="toggleCheckbox" class="toggle-label">
+                <input type="checkbox" id="toggleCheckbox">
+                <div class="check"></div>
+            </label>
+        </div>
+    </nav>
+
+    <!--SOBRE MI-->
+
+    <div class="borde">
+        <div class="quien-soy">
+            <div class="info">
+                <h1>Hola, Soy Yastin</h1>
+                <h2>Desarrollador web</h2>
+                <p>Soy un estudiante del colegio <span><a href="https://www.arturomattelarrain.cl/"
+                            target="_blank">AML</a></span></p>
+                <div class="btns">
+                    <a href="https://www.linkedin.com/in/yastin-villarroel-b7a170295/" target="_blank"><button
+                            class="btn-otro-contrato" id="btn-hire" onmouseover="cambiarColor('btn-hire', '#ebb40c')"
+                            onmouseout="restaurarColor('btn-hire')">Contrátame</button></a>
+                    <a href=""><button class="btn-resume" id="btn-resume"
+                            onmouseover="cambiarColor('btn-resume', '#ebb40c')"
+                            onmouseout="restaurarColor('btn-resume')">Resumen <img src="" alt=""></button></a>
+                </div>
+                <div class="redes-sociales">
+                    <a href="https://github.com/ElFruuta" target="_blank"><img src="Redes Sociales/github.png"
+                            alt=""></a>
+                    <a href="https://www.linkedin.com/in/yastin-villarroel-b7a170295/" target="_blank"><img
+                            src="Redes Sociales/linkedin.png" alt=""></a>
+                    <a href="https://www.instagram.com/_bye.505/" target="_blank"><img
+                            src="Redes Sociales/instagram.png" alt=""></a>
+                    <a href="" target="_blank"><img src="Redes Sociales/facebook.png" alt=""></a>
+                    <a href="https://wa.me/56922326630?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre..."
+                        target="_blank"><img src="Redes Sociales/whatsapp.png" alt=""></a>
+                </div>
+            </div>
+            <img src="imagenes/yo.jpeg" class="img-yo">
+        </div>
+    </div>
+
+    <!--HABILIDADES-->
+
+    <div class="habilidades-2" id="skills">
+        <div class="info fade-in">
+            <div class="yo">
+                <h4 id="skills">Mis Habilidades</h4>
+                <p>Habilidades.</p>
+            </div>
+            <div class="skills">
+                <div class="lenguajes-aprendidos">
+                    <div class="info-2">
+                        <div class="la-habilidad">
+                            <img class="img-lenguajes" src="Lenguajes/html-5.png" alt="">
+                            <h5>HTML</h5>
+                        </div>
+                        <div class="barra">
+                            <div class="progreso-container">
+                                <div class="progreso" id="miProgreso"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-2">
+                        <div class="la-habilidad">
+                            <img class="img-lenguajes" src="Lenguajes/css-3.png" alt="">
+                            <h5>CSS</h5>
+                        </div>
+                        <div class="barra">
+                            <div class="progreso-container">
+                                <div class="progreso" id="miProgreso-css"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-2">
+                        <div class="la-habilidad">
+                            <img class="img-lenguajes" src="Lenguajes/secuencia-de-comandos-de-java.png" alt="">
+                            <h5>JS</h5>
+                        </div>
+                        <div class="barra">
+                            <div class="progreso-container">
+                                <div class="progreso" id="miProgreso-js"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-2">
+                        <div class="la-habilidad">
+                            <img class="img-lenguajes" src="Lenguajes/logotipo-de-python-language.png" alt="">
+                            <h5>Python</h5>
+                        </div>
+                        <div class="barra">
+                            <div class="progreso-container">
+                                <div class="progreso" id="miProgreso-py"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mas-info">
+                    <button class="aprendi">
+                        <img class="empresas" src="imagenes/nodejs.png" alt="">
+                        Node.js
+                    </button>
+                    <button class="aprenda">
+                        <img class="empresas" src="imagenes/expressjs.png" alt="">
+                        Express.js
+                    </button>
+                    <button class="aprendi">
+                        <img class="empresas" src="imagenes/mongoDB.png" alt="">
+                        MongoDB
+                    </button>
+                    <button class="aprenda">
+                        <img class="empresas" src="imagenes/c++.png" alt="">
+                        Python
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--MIS TRABAJOS-->
+
+
+
+
+    <div class="habilidades-3">
+        <div class="info fade-in" id="works">
+            <div class="yo">
+                <h4>Mis Trabajos</h4>
+                <p>Estos son algunos de mis Trabajos</p>
+            </div>
+            <div class="skills-">
+                <div class="top">
+                    <main class="main">
+                        <div class="center">
+                            <div class="paginas-web">
+                                <a href="https://github.com/fpxx777/nuevo/tree/yatin" target="_blank">
+                                    <img src="imagenes/Animalll.png" alt="">
+                                    <p>Esta es un Ecommerce que utiliza HTML, CSS y JS. La aplicación permite comprar
+                                        productos en general para sus mascotas.</p>
+                                </a>
+                            </div>
+                            <p>ANIMALL</p>
+                        </div>
+                        <div class="center">
+                            <div class="paginas-web">
+                                <a href="https://github.com/fpxx777/Animall-V2/tree/Yastinn" target="_blank">
+                                    <img src="imagenes/Captura de pantalla 2023-10-17 110943.png" alt="">
+                                    <p>Esta es un Ecommerce que utiliza HTML, CSS y JS. La aplicación permite comprar
+                                        productos en general para sus mascotas.</p>
+                                </a>
+                            </div>
+                            <p>ANIMALL Version 2</p>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Resumen-->
+
+    <div class="habilidades-2" id="resume">
+        <div class="info fade-in">
+            <div class="yo">
+                <h4 id="works">Resumen</h4>
+                <p>Aquí están mis experiencias y calificaciones</p>
+            </div>
+            <div class="skills-">
+                <div class="juntar">
+                    <div class="pasantia">
+                        <div>
+                            <h2 id="pasantia">Pasantía</h2>
+                        </div>
+                        <div class="img-parrafo">
+                            <img class="linea" src="imagenes/linea.png" alt="">
+                            <div class="info-pasantia">
+                                <h3 class="h3">Desarrollo Web y Adquisición de Habilidades</h3>
+                                <p class="grey">Desarrollador web</p>
+                                <p class="yellow">2023 - presente</p>
+                                <p class="greyy">Mi pasantía en el Colegio Arturo Matte Larrain, que comenzó en 2023 y
+                                    continúa en la actualidad, tiene como objetivo principal mi formación como
+                                    desarrollador
+                                    web. Durante este tiempo, he colaborado en la construcción exitosa de dos sitios de
+                                    comercio electrónico, desarrollando habilidades clave como trabajo en equipo,
+                                    comunicación efectiva, resolución de problemas y autogestión. Además, he adquirido
+                                    conocimientos en lenguajes de programación. Esta experiencia es fundamental para
+                                    alcanzar mis metas profesionales.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pasantia">
+                        <div>
+                            <h2 id="pasantia">Educación</h2>
+                        </div>
+                        <div class="img-parrafo">
+                            <img class="linea" src="imagenes/linea.png" alt="">
+                            <div class="info-pasantia">
+                                <h3 class="h3">Desarrollo Web en el Colegio <span><a
+                                            href="https://www.arturomattelarrain.cl/" class="yelloww"
+                                            target="_blank">AML</a></span></h3>
+                                <p class="grey">Colegio Arturo Matte Larrain</p>
+                                <p class="yellow">2023 - presente</p>
+                                <p class="greyy">Actualmente estoy estudiando en el Colegio Arturo Matte Larrain. Aunque
+                                    soy
+                                    nuevo en el mundo del desarrollo web, ya tengo conocimientos de HTML y CSS. Estoy
+                                    trabajando en mejorar mis habilidades en JavaScript. Durante mi tiempo en el
+                                    colegio, he
+                                    participado en la creación de dos sitios web como parte de las actividades
+                                    curriculares
+                                    y he adquirido conocimientos básicos en el uso de la terminal. Mi formación actual
+                                    se
+                                    enfoca en HTML, CSS y JavaScript, ya que obtuve mi certificado de desarrollador web
+                                    este
+                                    año. Además, mi colegio me somete a evaluaciones periódicas de JavaScript para
+                                    fortalecer mis habilidades en resolución de problemas y programación.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MI CONTACTO-->
+
+    <div class="habilidades-2" id="contact">
+        <div class="info fade-in">
+            <div class="yo">
+                <h4>Contacto</h4>
+            </div>
+            <div class="skills-">
+                <div class="flexx">
+                    <div class="solicitud">
+                        <div class="info-solicitud">
+                            <h1>¿Me necesitas?</h1>
+                            <h5>Déjame hacer un lindo diseño para tu página web</h5>
+                        </div>
+                        <div class="btn-flecha">
+                            <button class="flecha">→</button>
+                        </div>
+                    </div>
+                    <form class="formulario" id="miFormulario" action="enviar.php" method="post">
+                        <input type="text" id="nombre" class="name" placeholder="Nombre" name="name">
+                        <input type="email" id="email" class="email" placeholder="E-mail" name="email">
+                        <input type="text" id="subjet" class="subjet" placeholder="Numero" name="phone">
+                        <textarea id="comentario" cols="30" rows="10" placeholder="Deja un mensaje" name="message"></textarea>
+                        <button class="send" type="submit" onclick="enviarCorreo()">Enviar<img class="avion" src="imagenes/enviar-correo (1).png"
+                            alt=""></button>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contactame-->
+
+    <div class="contacto">
+        <div class="info fade-in">
+            <div class="centrar">
+                <div class="redes-sociales-dos">
+                    <h2>Hablemos :D</h2>
+                    <div class="redes">
+                        <a href="mailto:yastinvillarroel2005@gmail.com" target="_blank">
+                            <img class="red" src="Redes Sociales/gmail .png" alt="">
+                            <p class="white">Gmail</p>
+                        </a>
+                        <a href="https://wa.me/56922326630?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre..."
+                            target="_blank">
+                            <img class="red" src="Redes Sociales/whatsapp.png" alt="">
+                            <p class="white">Whatsapp</p>
+                        </a>
+                        <a href="" target="_blank">
+                            <img class="red" src="Redes Sociales/instagram.png" alt="">
+                            <p class="white">Instagram</p>
+                        </a>
+                    </div>
+                    <p id="dos-23">| Portafolio 2023 Todos los derechos reservados|</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="modo-nocturno.js"></script>
+
+</body>
+
+</html>

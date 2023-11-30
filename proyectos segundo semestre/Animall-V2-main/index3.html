@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Animall</title>
+</head>
+
+<body>
+    <nav>
+        <div id="search">
+            <h3>Home</h3>
+            <input style="outline: none;" type="text" placeholder="¿Qué buscas?">
+        </div>
+        <div id="cont-logo">
+            <h1>ANI<span>MALL</span></h1>
+            <div id="nav-clicks">
+                <img style="width: 2vw; height: 1.9vw;" src="img/Corazon.png" alt="Error">
+                <img onclick="ClicleameElCarrito()" style="width: 2vw; cursor: pointer;" src="img/Carrito.png"
+                    alt="Error">
+                <img style="width: 2vw;" src="img/Perfil.png" alt="Error">
+            </div>
+        </div>
+    </nav>
+    <div id="carrito-cont">
+        <div style="cursor: pointer;" onclick="borraCarr()" id="carr">
+            <p>X</p>
+        </div>
+        <div id="productos-g">
+            <p id="tusp">Tus Productos</p>
+            <div id="carrito-elements"></div>
+            <p id="nada">Aun no agregaste nada al carrito</p>
+        </div>
+    </div>
+    <div id="cont-cat">
+        <h3 onclick="ClicleameEsta()" id="opcione">Categorias <p id="flecha-op">⮞</p>
+        </h3>
+        <div id="cate">
+            <ul id="active"">
+                <li class=" cont-opc">
+                <div class="cont-text"><a href="#"> Farmacia</a>
+                    <p class="flecha">⮞</p>
+                </div>
+                <ul class="opciones">
+                    <li><a href="#">opcion 1</a></li>
+                    <li><a href="#">opcion 2</a></li>
+                    <li><a href="#">opcion 3</a></li>
+                </ul>
+                </li>
+                <li class="cont-opc">
+                    <div class="cont-text"><a href="#"> Espacial X</a>
+                        <p class="flecha">⮞</p>
+                    </div>
+                    <ul class="opciones">
+                        <li><a href="#">alguna wea 1</a></li>
+                        <li><a href="#">alguna wea 2</a></li>
+                        <li><a href="#">alguna wea 3</a></li>
+                    </ul>
+                </li>
+                <li class="cont-opc">
+                    <div class="cont-text"><a href="#"> Perros</a>
+                        <p class="flecha">⮞</p>
+                    </div>
+                    <ul class="opciones">
+                        <li><a href="#">alguna wea 1</a></li>
+                        <li><a href="#">alguna wea 2</a></li>
+                        <li><a href="#">alguna wea 3</a></li>
+                    </ul>
+                </li>
+                <li class="cont-opc">
+                    <div class="cont-text"><a href="#"> Gatos</a>
+                        <p class="flecha">⮞</p>
+                    </div>
+                    <ul class="opciones">
+                        <li><a href="#">alguna wea 1</a></li>
+                        <li><a href="#">alguna wea 2</a></li>
+                        <li><a href="#">alguna wea 3</a></li>
+                    </ul>
+                    </a>
+                </li>
+                <li class="cont-opc">
+                    <div class="cont-text"><a href="#"> Exoticos</a>
+                        <p class="flecha">⮞</p>
+                    </div>
+                    <ul class="opciones">
+                        <li><a href="#">alguna wea 1</a></li>
+                        <li><a href="#">alguna wea 2</a></li>
+                        <li><a href="#">alguna wea 3</a></li>
+                    </ul>
+                </li>
+                <li class="cont-opc">
+                    <div class="cont-text"><a href="#"> Marcas </a>
+                        <p class="flecha">⮞</p>
+                    </div>
+                    <ul class="opciones">
+                        <li><a href="#">alguna wea 1</a></li>
+                        <li><a href="#">alguna wea 2</a></li>
+                        <li><a href="#">alguna wea 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <img style="width: 100%; opacity: 90%; z-index: 0;" src="img/Animall.png" alt="">
+    <div id="cont-productos">
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+    </div>
+    <div id="cambiar-pagina">
+        <a href="index.html" class="numero-cambio-exepcion">1</a>
+        <a href="index2.html"class="numero-cambio">2</a>
+        <a href="#" class="seleccion">3</a>
+        <a href="" class="numero-cambio">6</a>
+        <a href="" class="numero-cambio">></a>
+    </div>
+    <footer>
+        <div id="parte-abajo-1">
+            <h1>ANI<span>MALL</span></h1>
+        </div>
+        <ul id="parte-abajo-2">
+
+            <li class="superior">Contacto
+                <ul>
+                    <li class="sub-superior">Email
+                        <ul>
+                            <li class="primer-contenido">animall.aml7@gmail.com</li>
+                        </ul>
+                    </li>
+                    <li class="sub-superior">Nuestros Programadores
+                        <ul>
+                            <li class="primer-contenido" href="#">Yastin Villaroel</li>
+                            <li class="contenido" href="#">Renato Fox</li>
+                            <li class="contenido" href="#">Frank Rojas</li>
+                            <li class="contenido" href="#">Benjamin Orellana</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="superior">Empresas
+                <ul>
+                    <li class="sub-superior">Desarrolladora
+                        <ul>
+                            <li class="primer-contenido">O.S Company</li>
+                        </ul>
+                    </li>
+                    <li class="sub-superior">En colaboracion con
+                        <ul>
+                            <li class="primer-contenido">Coding Dojo</li>
+                            <li class="contenido"> Arturo Matte Larraín</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="superior">Categorias
+                <ul>
+                    <li class="primer-contenido">Farmacia</li>
+                    <li class="contenido">Especial x</li>
+                    <li class="contenido">Perros</li>
+                    <li class="contenido">Gatos</li>
+                    <li class="contenido">Exoticos</li>
+                    <li class="contenido">Marcas</li>
+                </ul>
+            </li>
+            <li class="superior">Siguenos</li>
+        </ul>
+        <div id="quiere-ofertas-cont">
+            <img src="img/QuiereOferta.jpeg" alt="Panda-Rojo">
+            <div id="quiere-ofertas">
+                <h1>¿Quieres Recibir Ofertas Especiales?</h1>
+                <p>Recibe ofertas especiales mediante tu email, unete a esta comunidad <br>
+                    que adora tanto los animales como tu!</p>
+                <input type="text" value="" placeholder="Email" name="" id="email">
+                <button onclick="borraEmail()">¡UNETE!</button>
+
+            </div>
+        </div>
+        <div id="parte-abajo-3">
+            <h1>ANI<span>MALL</span></h1>
+            <p>© Animall - Todos los derechos reservados </p>
+            <p>Ayuda</p>
+        </div>
+    </footer>
+    <script src="script3.js"></script>
+</body>
+
+</html>

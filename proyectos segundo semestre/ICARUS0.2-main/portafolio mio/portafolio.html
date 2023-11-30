@@ -1,0 +1,226 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Benjamín</title>
+    <link rel="icon" href="img portafolio/saul goodman.jpeg">
+</head>
+<style>
+    body {
+        background-color: #242424;
+    }
+
+    * {
+        color: rgb(197, 197, 197);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .logo-h1 {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .nav-opciones {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-opciones a {
+        margin: 12px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+    .nav-opciones a:hover {
+        color: rgb(145, 143, 143);
+        transition: ease-in-out 0.3s;
+        text-decoration: underline;
+    }
+
+    .mi-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        flex-wrap: wrap;
+        cursor: default;
+    }
+
+    .foto img {
+        margin: 0 40px;
+        border-radius: 50%;
+        box-shadow: 0 5px 20px black;
+        transition: transform 0.3s, filter 0.3s;
+    }
+
+    .foto img:hover {
+        transform: scale(1.04);
+        filter: brightness(1.08);
+    }
+
+    .name-rrss p {
+        border-radius: 25px;
+        background-color: rgb(0, 0, 0);
+        width: 100px;
+        text-align: center;
+        font-size: 20px;
+        padding: 5px 30px;
+        color: white;
+        box-shadow: 0 5px 20px black;
+        cursor: default;
+    }
+
+    .redes-sociales img {
+        padding: 0px 3px;
+        cursor: pointer;
+        transition: transform 0.3s, filter 0.3s;
+    }
+
+    .redes-sociales img:hover {
+        transform: scale(1.2);
+        filter: brightness(1.2);
+    }
+
+    .span-1 {
+        color: red;
+    }
+
+    .span-2 {
+        color: #A60000;
+    }
+
+    .proyectos-info {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 40px 0;
+        cursor: default;
+    }
+
+    .jamback-proyecto {
+        text-align: center;
+    }
+
+    .contenido-proyectos {
+        height: 400px;
+        border-radius: 20px;
+        background-color: rgb(9, 9, 9);
+        margin: 0 20px;
+        padding: 10px 30px;
+        transition: transform 0.3s, filter 0.3s;
+    }
+
+    .contenido-proyectos:hover {
+        box-shadow: 0 5px 20px black;
+        transform: scale(1.04);
+    }
+
+    .info-mia {
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+        cursor: default;
+    }
+
+    .name-infomia {
+        text-align: center;
+        height: 400px;
+        border-radius: 20px;
+        background-color: rgb(9, 9, 9);
+        margin: 0 20px;
+        padding: 10px 30px;
+        width: 1100px;
+        transition: transform 0.3s, filter 0.3s;
+        font-size: 20px;
+    }
+
+    .informacion p {
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <div class="logo-h1">
+            <img src="img portafolio/logo B.png" alt="" width="100px">
+            <h1>Benjamín</h1>
+        </div>
+        <div class="nav-opciones">
+            <a href="#">Home</a>
+            <a href="#">Trabajos</a>
+            <a href="#">Proyectos</a>
+            <a href="#">Experiencia</a>
+            <a href="#">Contacto</a>
+        </div>
+    </div>
+
+    <div class="mi-info">
+        <div class="name-rrss">
+            <h1>Hola!</h1>
+            <h1>Mi Nombre es Benjamín Ramírez</h1>
+            <h2>Y soy programador Full-Stack Python</h2>
+            <p href="#">Sobre Mi</p>
+            <div class="redes-sociales">
+                <img src="img portafolio/whatsapp.png" alt="" width="50px">
+                <img src="img portafolio/linkedin.png" alt="" width="50px">
+                <img src="img portafolio/instagram.png" alt="" width="50px">
+                <img src="img portafolio/facebook.png" alt="" width="50px">
+                <img src="img portafolio/github.png" alt="" width="50px">
+            </div>
+        </div>
+        <div class="foto">
+            <img src="img portafolio/saul goodman.jpeg" alt="" width="500px">
+        </div>
+    </div>
+
+    <div class="info-mia">
+        <div class="name-infomia">
+            <h1>¿Quien Soy?</h1>
+            <div class="informacion">
+                <p>Me presento, soy Benjamín Ramírez, un programador Full-Stack Python certificado por la</p>
+                <p>academia de programación Coding Dojo, especializado en diseño y programación web.</p>
+                <p>Destaco mucho en diseños web y en mi instinto de querer aprender cada día más en este</p>
+                <p>grandísimo mundo de la programación, para mejorar y superarme cada día más.</p>
+                <p>Por esto, te invito a que veas mis proyectos para poder ser tu primera opción como programador.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="proyectos-info">
+        <div class="contenido-proyectos">
+            <div class="jamback-proyecto">
+                <h1>Proyecto Jam<span class="span-1">Back</span></h1>
+                <div class="info-proyectos">
+                    <p>Proyecto Jamback fue el primero que realicé en conjunto.</p>
+                    <p>Éramos varios programadores, los cuales nos dedicábamos</p>
+                    <p>a la venta de zapatillas de variadas marcas internacionales.</p>
+                </div>
+                <img src="img portafolio/logo jamback xd.png" alt="">
+            </div>
+        </div>
+
+        <div class="contenido-proyectos">
+            <div class="jamback-proyecto">
+                <h1>Proyecto ICA<span class="span-2">RUS</span></h1>
+                <div class="info-proyectos">
+                    <p>El proyecto ICARUS es el que estoy realizando por ahora con mi
+                    <p>equipo de programadores actuales, quienes nos dedicamos a </p>
+                    <p>la venta de suplementos alimenticios y accesorios deportivos.</p>
+                </div>
+                <img src="img portafolio/icarus definitiva logo pagina.png" alt="" width="200px">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

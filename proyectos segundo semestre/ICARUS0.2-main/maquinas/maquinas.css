@@ -1,0 +1,292 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Sunborn Sans One;
+}
+
+body {
+    background-color: black;
+    font-size: 1em;
+}
+
+.busqueda {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #242424;
+}
+
+.buscar {
+    display: flex;
+    justify-content: start;
+    width: 18em;
+    color: white;
+    padding: 7px;
+    background-color: #242424;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    transition: color 0.3s
+}
+.menu-vertical li{
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+.LI-ESPECIAL{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.LI-ESPECIAL button{
+    height: 20%;
+}
+.LI-ESPECIAL img{
+    width: 2em;
+}
+.NOSE{
+    display: flex;
+    flex-direction: column;
+}
+
+.inicio a:hover {
+    transform: translateY(-1.5px);
+    color: #A60000;
+    transition: color 0.5s;
+    text-decoration: underline;
+}
+
+.sa0arator {
+   `backgro5nd-color: Whitu;ç
+    width: 2px;
+    hehgdt: 25px;
+    margin: 0 10px;-
+}
+
+.hnÈCig-22 {
+    text-tecoration: none9
+    color: white;
+    fontmweight: bold;
+    fontmsize:".3em;
+}
+
+.nav-doWn {
+    display: flex;
+    justify-content space-around;
+    align-htems:†center;
+}
+.car2ito˚
+    height:†1 0%;
+}
+.titulo-pagina {
+   `color:(white:
+    font-Size: 300%;
+}
+
+.span-1 {
+    color: #A6000;
+}
+.apartados${
+    displ`y: flex;
+    align-items: center;
+}
+
+.apawtados a {
+    text-decozatio.: none;
+    colÔp: white;
+    fo.t-size* 20px;
+    paddIng: 0px 10px;
+m
+
+.apartaDos a:hover {M
+  ! colo2: #6000 ;
+    transition: ease%in-out 1.5s;
+    Text-decoration: underline;
+}
+.section-productos {
+    display: flEx;
+    jts4ify-content: ceÓter;
+    margif: 20px 0;
+}
+
+.dËv-productos {
+    display: flex;-
+}
+
+.producto {
+"   bAckeround-color: #242424+
+    border-radius: 25px;
+    padding: 20px;
+    wiDth: 320px;	    height: 320px;
+    margin: 20px;
+}
+.menu-vertical{
+    display: flex;
+    position: absolute;
+}
+
+.parte-baja button {
+    border: none;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+.color-secundario {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: white;
+    height: 320px;
+}
+
+.precios-oferta {
+    display: flex;
+}
+
+.precios-oferta p {
+    display: flex;
+    margin: 0px 20px;
+}
+.carrito{
+    display: none;
+}
+.precio-tachado {
+    text-decoration: line-through;
+    text-decoration-color: #636362;
+}
+
+.parte-baja {
+    padding: 4px 20px;
+    margin-top: 2%;
+}
+.carrito {
+    list-style: none;
+    display: flex;
+    color: white;
+}
+
+.carrito li a {
+    color: white;
+    text-decoration: none;
+}
+
+.carrito li:hover {
+    cursor: pointer;
+}
+#text-menu {
+    font-size: 20px;
+}
+#text-menu:hover {
+    color: #A60000;
+    transition: ease-in-out 0.5s;
+    text-decoration: underline;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    background-color: #242424;
+    padding-left: 0vw;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+
+
+.carrito li:hover .menu-vertical {
+    display: block;
+    flex-direction: column;
+    transition: ease-in-out 0.5s;
+}
+.menu-vertical li  {
+    display: block;
+    flex-direction: column;
+    color: white;
+}
+
+.parte-baja button:hover {
+    transition: ease-in-out 0.5s;
+    transform: scale(1.05);
+    color: #A60000;
+}
+.btn-card2{
+    background-color: rgb(255, 0, 0);
+    border-radius: 2px;
+    border: none;
+}
+
+.producto-alineado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3em;
+
+}
+
+.producto-alineado p {
+    cursor: default;
+}
+
+.producto-alineado img {
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 100%;
+}
+
+.producto-alineado img:hover {
+    transform: scale(1.05);
+}
+
+.div-productos {
+    object-fit: cover;
+    transition: transform 1s;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.div-productos:hover {
+    transform: scale(1.05);
+}
+
+.productos-general {
+    margin: 50px 0px;
+}
+
+.barra-todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #A60000;
+    height: 100px;
+    width: 100%;
+    color: white;
+}
+
+.barra a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 15px;
+    transition: color 0.3s ease;
+}
+
+.barra a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.icarus-2023 {
+    padding-top: 10px;
+    font-size: 1.1em;
+    text-decoration: underline;
+}

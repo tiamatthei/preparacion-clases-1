@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="ayuda (1).html">Ayuda</a></li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <input type="text" placeholder="¿Que estas buscando?">
+        </div>
+    </header>
+    <h1>Pagina de ayuda</h1>
+    <nav>
+        <ul>
+            <li><a href="#seccion1">Como empezar </a></li>
+            <li><a href="#seccion2">Preguntas frecuentes</a></li>
+            <li><a href="#seccion3">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="seccion1">
+            <h2>Navegacion por la pagina </h2>
+            <p>- En la página principal del supermercado, encontrarás un menú de navegación en la parte superior de la
+                pantalla.</p>
+            <p>- Haz clic en "Categorías" para ver una lista desplegable con diferentes categorías de productos, como
+                alimentos, productos de limpieza, cuidado personal, etc.</p>
+            <p>- También puedes utilizar el campo de búsqueda ubicado en la parte superior para buscar un producto
+                específico. Simplemente ingresa el nombre del producto y presiona Enter.</p>
+            <p>- Desplázate hacia abajo en la página principal para ver las promociones o productos destacados.</p>
+            <p>- Al hacer clic en una categoría o producto, serás redirigido a una página con más detalles y opciones de
+                compra.</p>
+            <p>- Utiliza los filtros disponibles (precio, marca, etc.) para refinar tu búsqueda y encontrar exactamente
+                lo que necesitas.</p>
+            <p>- Una vez que encuentres un producto que deseas comprar, haz clic en "Agregar al carrito" para añadirlo a
+                tu carrito de compras.</p>
+            <p>- Puedes seguir navegando y agregando más productos al carrito o proceder al proceso de pago haciendo
+                clic en "Ir al carrito" en la parte superior derecha.</p>
+        </section>
+        <section id="seccion2">
+            <h2>Preguntas frecuentes </h2>
+            <h4>¿Cual es el horario de atencion? </h4>
+            <p> Los horarios de atencion son lunes a domingo desde las 9Am a 8Pm. </p>
+            <h4>¿Realizan envios a domicilio?,¿Tienen costo los envios?</h4>
+            <p>Si, se realiza envios a todo santiago, dependiendo del sector es el costo del envio. </p>
+            <h4>¿Cuales son sus metodos de pago?</h4>
+            <p>Nuestros metodos de pago por la pagina web es por tarjeta de credito o debito, en el local fisico se
+                puede cancelar con efectivo, tarjetas de credito o debito y transferencias. </p>
+        </section>
+        <section id="seccion3">
+            <h2>Formulario de servicio al cliente. </h2>
+            <form action="enviar.php" id="formulario" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electronico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" rows="4" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3>Contacto:</h3>
+        <p>+569 1234 5678</p>
+        <p>DonMarcos@contacto.com</p>
+    </footer>
+</body>
+
+</html>
+<script>
+    document.getElementById("formulario").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        var campo1 =
+            document.getElementById = ("campo1").value;
+        var campo2 =
+            document.getElementById = ("campo2").value;
+
+    });
+</script>
+
+<style>
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #555;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px;
+        background-color: #141313;
+    }
+
+
+    .logo img {
+        height: 50px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .menu li {
+        margin: 0 30px;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: #fffbfb;
+    }
+
+    .search input {
+        border-radius: 5px;
+        border: none;
+        width: 200px;
+        height: 30px;
+    }
+
+
+    footer {
+        padding: 20px;
+        background-color: #333;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    footer h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer p {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+    }
+
+    body {
+        margin: 0;
+        font-family: arial, sans-serif;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+
+    h1 {
+        color: #333;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    section {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    section h2 {
+        color: #333;
+    }
+</style>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Daniel Núñez</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <ul class=" collapse navbar-collapse nav-underline" id="navbarNavDropdown">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#sobre-mi">Sobre Mi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#habilidades" onclick="barras()">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#final-s">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#proyectos" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Proyectos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#icarus">icarus</a></li>
+                        <li><a class="dropdown-item" href="#img-g">Los 3 mas grande</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <aside>
+            <article class="ar-aside">
+                <a href="https://github.com/daniel234423?tab=repositories"><img src="aside-img/github.png" alt=""></a>
+                <a href="https://discord.gg/B2XpwgRu"><img src="aside-img/discord.png" alt=""></a>
+                <a href="https://www.instagram.com/daniel_antonio230130/"><img src="aside-img/instagram.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/daniel-nu%C3%B1ez-07422728b"><img src="aside-img/linkedin.png" alt=""></a>
+                <a href="mailto:daniel.nunez.lagos@alumnos.sip.cl"><img src="aside-img/sobre.png" alt=""></a>
+                <a href="#"><img src="aside-img/twitter.png" alt=""></a>
+            </article>
+        </aside>
+        <section class="presentacion">
+            <article class="ar-presentacion">
+                <div class="div-presentacion">
+                    <h3>HOLA SOY DANIEL NUÑEZ</h3>
+                    <p>Un programador full-stack centrado en el front-end centrado en crear el diseño a la pagina o
+                        aplicacion web y dispuesto a llevar el proyecto al éxito</p>
+                    <a href="#final-s"><button>Contato</button></a>
+                </div>
+            </article>
+            <article>
+                <div class="spinner-grow text-dark" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </article>
+        </section>
+        <section class="sobre-mi" id="sobre-mi">
+            <article class="ar-mi">
+                <h1>Sobré MI</h1>
+                <span class="despues"></span>
+                <p>Aquí encontraras mas información sobre mi, lo que hago y mis habilidades actualmente en terminos de
+                    programación y tecnología</p>
+            </article>
+        </section>
+        <section class="duo">
+            <article class="quien-soy">
+                <h1>quien soy</h1>
+                <p>soy un programador ful-stack certificado por la academia de programación coding dojo especializado en
+                    el desarrollo del front-end de los sitios web y aplicaciones web hecha un vistazo a algunos de mis
+                    trabajos en el apartado proyectos.</p>
+                <p>también me gusta apoyar a los demás compartiendo lo que e aprendido en desarrollo web no dudes en
+                    contactar conmigo o seguirme en mi <a href="#">linkedin</a> donde publico temas sobre desarrollo y
+                    la programación web.
+                </p>
+                <p>estoy dispuesto a oportunidades de trabajo donde pueda contribuir al igual que aprender y crecer si
+                    tienen alguna oportunidad laboral adecuada a mis habilidades no dudes en contactarme .</p>
+            </article>
+            <article class="habilidad" id="habilidades">
+                <h1>Mis habilidades</h1>
+                <div class="botones">
+                    <div class="xdd" id="bar1">
+                        <img src="img/html.png" class="lenguaje1" id="html"  onmouseenter="barras()"></img>
+                        <div id="nose1" class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar " style="width: 80%">80%</div>
+                        </div>
+                    </div>
+                    <div class="xdd" id="bar2">
+                        <img src="img/css-3.png" class="lenguaje2"  onmouseenter="barras()" id="cs"></img>
+                        <div id="nose2" class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar " style="width: 70%">70%</div>
+                        </div>
+                    </div>
+                        <div class="xdd" id="bar3">
+                            <img src="img/secuencia-de-comandos-de-java.png" class="lenguaje3"  onmouseenter="barras()" id="java"></img>
+                            <div id="nose3" class="progress " role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar " style="width: 50%; ">50%</div>
+                        </div>
+                        </div>
+                        <div class="xdd" id="bar4">
+                            <img src="img/python.png" id="phyton" class="lenguaje4" onmouseenter="barras()"></img>
+                            <div id="nose4" class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar " style="width: 15%">15%</div>
+                        </div>
+                        </div>
+                        <div class="xdd"id="bar5">
+                            <img src="img/ruby.png" class="lenguaje5"   onmouseenter="barras()" id="ruby"></img>
+                            <div id="nose5" class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 25%">25%</div>
+                        </div>
+                        </div>
+                    </div>
+                    
+            </article>
+        </section>
+        <section class="proyectos" id="proyectos">
+            <article class="ar-mi" id="title-p">
+                <h1>proyectos</h1>
+                <span class="despues"></span>
+                <p>aquí encontraras algunos de mis proyectos principales y de clientes cada proyecto tiene su
+                    descripción especifica y su estudio de caso</p>
+            </article>
+            <article class="proyecto-p">
+                <img id="icarus" src="img/icarus.jpg" alt="">
+                <div class="descriptcion">
+                    <h2>icarus</h2>
+                    <p>icarus es un proyecto en conjunto con otros programadores para crear un carrito de compras
+                        enfocado en productos para deportistas </p>
+                </div>
+            </article>
+            <article class="proyecto-p">
+                <img id="img-g" src="img/los3mas-grande.jpg" alt="">
+                <div class="descriptcion" id="d-3">
+                    <h2>Los 3 mas grandes</h2>
+                    <p id="grandes">los 3 mas grandes es un proyecto donde colabore con otros programadores para crear
+                        una pagina orientada hacia los tres equipos mas reconocidos del pais de chile</p>
+                </div>
+            </article>
+        </section>
+        <section class="contact" id="final-s">
+            <article class="ar-mi" id="final">
+                <h1>Contacto</h1>
+                <p id="final-p">no dude en contactar conmigo enviando este formulario y no dudare en responder lo antes
+                    posible</p>
+            </article>
+            <article class="input-ar">
+                <div>
+                    <h2>name</h2>
+                    <input type="email" placeholder="enter your name">
+                </div>
+                <div>
+                    <h2>email</h2>
+                    <input type="text" placeholder="enter your email">
+                </div>
+                <div>
+                    <h2>message</h2>
+                    <textarea name="" id="text-ar" placeholder="enter your massage"></textarea>
+                </div>
+                <button>submit</button>
+            </article>
+        </section>
+        <footer class="foot">
+            <article>
+                <div class="footer-text">
+                    <h1>daniel nuñez</h1>
+                    <p>Un programador full-stack especialisado en diseño web aplicado en llevar el preducto al exito</p>
+                </div>
+                <div class="icons-final">
+                    <h1>social</h1>
+                    <div class="icon">
+                        <a href="#"><img src="img/git.png" alt=""></a>
+                        <a href="#"><img src="img/discord.png" alt=""></a>
+                        <a href="#"><img src="img/insta.png" alt=""></a>
+                        <a href="#"><img src="img/twiter.png" alt=""></a>
+                        <a href="#"><img src="img/linkedin.png" alt=""></a>
+                        <a href="#"><img src="img/correo.png" alt=""></a>
+                    </div>
+                </div>
+            </article>
+            <article class="p-fot">
+                <p>© Derechos de autor 2023. Hecho por daniel nuñez</p>
+            </article>
+        </footer>
+
+    </main>
+    <script src="scipt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

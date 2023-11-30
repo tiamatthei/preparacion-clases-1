@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="pagina-productos.css">
+    <link rel="website icon" type="png" href="img/Dahlia-img.png">
+    <script src="https://kit.fontawesome.com/d0d5e1d231.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="barra-navegacion">
+            <ul class="lista-primera">
+                <li class="lista-izquierda">
+                    <a class="listas-letras" href="pagina-principal.html">Inicio</a>
+                </li>
+                <li class="lista-izquierda">
+                    <a class="listas-letras" href="pagina-productos.html">Productos</a>
+                </li>
+                <li class="lista-izquierda">
+                    <a class="listas-letras" href="#">Especiales</a>
+                </li>
+                <li class="lista-izquierda">
+                    <a class="listas-letras" href="#nav-nosotros">Sobre nosotros</a>
+                </li>
+            </ul>
+            <ul class="lista-segunda">
+                <li class="lista-derecha">
+                    <a onclick="agregarRipley()" id="verCarrito" class="listas-letras-comprar" href="#">Comprar 🛒</a>
+                </li>
+                <li class="lista-derecha">
+                    <a class="listas-letras" href="contacto.html">Contacto</a>
+                </li>
+
+            </ul>
+        </nav>
+        <a href="pagina-principal.html"><img src="img/Dahlia-img.png" alt=""></a>
+    </header>
+    <nav class="nav-menu">
+        <ul class="lista-nav-menu">
+            <li class="listas-menu">
+                <a class="page-menu" href="#">
+                    Flores
+                </a>
+            </li>
+            <li class="listas-menu">
+                <a class="page-menu" href="#">
+                    Ramos
+                </a>
+            </li>
+            <li class="listas-menu">
+                <a class="page-menu" href="#">
+                    Especiales
+                </a>
+            </li>
+            <!--
+            <li class="listas-menu">
+                <a class="page-menu" href="#">
+                    Dahlia
+                </a>
+            </li>
+            <li class="listas-menu">
+                <a class="page-menu" href="#">
+                    Margarita
+                </a>
+            </li>
+        -->
+        </ul>
+    </nav>
+
+    <div id="container-card">
+
+    </div>
+    <div id="carrito-container">
+
+    </div>
+
+    <div id="ripley">
+        <div>
+            <img class="img-carrito" src="img/anadir-a-la-cesta.png" alt="">
+            <p class="p-ripley">
+                tu carro es ta vacio
+            </p>
+        </div>
+        <div class="boton-ripley">
+            <button id="boton-ripley"  onclick="ocultarRipley()">
+                cerrar
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="contenedor-contacto" id="contacto-nav">
+        <div class="contacto-div">
+            <div class="cosas-contacto">
+                <div class="contacto-contenido-uno">
+                    <h3 class="h3">Mantengamonos en Contacto</h3>
+                    <img class="img-dahlia-contacto" src="img/Dahlia-img.png" alt="">
+                </div>
+                <div class="contacto-contenido-dos">
+                    <p class="parrafo-contacto">Los productos de nuestra colección están disponibles al por mayor.
+                        Estamos aquí para ayudar, así que póngase en contacto si tiene alguna pregunta.</p>
+                    <a class="boton-contacto-uno" href="#">
+                        <span class="boton-contacto">Ponerse en contacto</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="flores-productos.js"></script>
+<script src="pagina-productos.js" defer></script>
+
+</html>

@@ -1,0 +1,234 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    display: flex;
+    background-color: #132043;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+#orbe-mouse {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    background: radial-gradient(1000px at 1503px 1041.5px, rgba(29, 78, 216, 0.15), transparent 80%);
+    gap: 1rem;
+}
+
+.seccion-izq {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    width: 50%;
+    max-height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+    max-height: 100%;
+    display: flex;
+    top: 0;
+    position: sticky;
+}
+
+
+
+.titulo-izq {
+    font-size: 3rem;
+    line-height: 1;
+    color: #fff;
+}
+
+.sub-titulo-izq {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #fff;
+}
+
+.parrafo-izq {
+    margin-top: 1rem;
+    max-width: 20rem;
+    line-height: 1.5;
+    color: #6e6e6e;
+    
+}
+
+nav {
+    display: block;
+    padding-top: 5rem;
+
+}
+
+.ul-izq {
+    width: max-content;
+    list-style: none;
+}
+
+.a-izq {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+}
+
+
+.aa-izq {
+    --tw-text-opacity: 1;
+    color: rgb(226 232 240/var(--tw-text-opacity));
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+.span-izq {
+    width: 4rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(226 232 240/var(--tw-bg-opacity));
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+    height: 1px;
+    margin-right: 1rem;
+}
+
+.span-izq2 {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+    --tw-bg-opacity: 1;
+    background-color: rgb(71 85 105/var(--tw-bg-opacity));
+    width: 2rem;
+    height: 1px;
+    margin-right: 1rem;
+}
+
+.aaa-izq {
+    --tw-text-opacity: 1;
+    color: rgb(100 116 139/var(--tw-text-opacity));
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+.avatares {
+    align-items: center;
+    display: flex;
+    margin-top: 2rem;
+    margin-left: .25rem;
+    width: 200px;
+
+}
+i{
+    font-size: .75rem;
+    line-height: 1rem;
+    color: #fff;
+    margin-right: 1.25rem;
+    height: 20px;
+}
+
+
+.seccion-drc{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    width: 50%;
+    max-height: 100vh;
+}
+
+.sobre-mi{
+    scroll-margin-top: 6rem;
+    margin-bottom: 9rem;
+}
+
+.parrafo-drc{
+    color: #cacaca;
+}
+
+ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ul-drc{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: .5rem;
+}
+.li-drc{
+    margin-bottom: 3rem;
+}
+
+.card-proyects{
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(9,minmax(0.1fr));
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+    position: relative;
+    padding-bottom: .25rem;
+    list-style: none;
+    color: #fff;
+
+}
+
+.header-drc{
+    grid-column: span 2/span 2;
+    --tw-text-opacity: 1;
+    color: rgb(100 116 139/var(--tw-text-opacity));
+    letter-spacing: .025em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .75rem;
+    line-height: 1rem;
+    margin-top: .25rem;
+    margin-bottom: .5rem;
+    z-index: 10;
+}
+.card-proyects .h2:hover{
+    --tw-text-opacity: 1;
+    color: rgb(94 234 212/var(--tw-text-opacity));
+    
+}
+
+.div-drc{
+    --tw-text-opacity: 1;
+    color: rgb(94 234 212/var(--tw-text-opacity));
+    line-height: 1.25rem;
+    font-weight: 500;
+    font-size: .75rem;
+    line-height: 1rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    background-color: rgba(45,212,191,.1);
+    border-radius: 9999px;
+    align-items: center;
+    display: flex;
+    margin: 5px;
+}
+
+
+
+
+

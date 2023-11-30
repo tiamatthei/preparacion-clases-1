@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #ececd8;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px;
+        background-color: #141313;
+    }
+
+
+    .logo img {
+        height: 50px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .menu li {
+        margin: 0 30px;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .search input {
+        border-radius: 5px;
+        border: none;
+        width: 200px;
+        height: 30px;
+    }
+
+    .sobre {
+        font-size: 20px;
+    }
+
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    section {
+        padding: 50px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .perfil img {
+        border-radius: 200px;
+        width: 170px;
+    }
+
+    .vid {
+        margin-left: 9px;
+        display: flex;
+        align-items: center;
+        background-color: #c5bbab;
+        gap: 100px;
+    }
+
+    video {
+        margin-bottom: 20px;
+        width: 500px;
+        margin-left: 30px;
+    }
+
+    .titulo {
+        font-size: 35px;
+        text-decoration: underline;
+    }
+
+.redes{
+    width: 80px;
+    border-radius: 100%;
+}
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="ayuda (1).html">Ayuda</a></li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <input type="text" placeholder="¿Que estas buscando?">
+        </div>
+    </header>
+    <div class="perfil">
+        <img src="img/IMG.jpg" alt="">
+    </div>
+    <section id="about">
+        <h1 class="titulo">Sobre mí</h1>
+
+        <p class="sobre">¡Hola! Soy Jorge Figueroa Estidiante en tecnico nivel medio en programacion, En el primer
+            semestre me sentia un poco arrepentido por haber elegido TP ya que no sabia nada sobre esta carrera y me
+            estresaba un poco no entender
+            sobre de lo que se trataba todo esto, no sabia como funcionaba la plataforma en la que empezariamos a
+            programar</p>
+
+        <p class="sobre">
+            Unos meses despues de practica empeze a entender mas y nos toco como grupo crear una pagina web la cual
+            tuvimos que aprender a trabajar en grupo y a organizarnos
+            de primera nos costo pero nos fuimos acostumbrando y a organizarnos mejor
+        </p>
+        <p class="sobre">
+            Ya ahora en esta segunda presentacion siento que me ha costado menos avanzar en cosas que hace un par de
+            meses me costaba o no entendia
+        </p>
+    </section>
+
+    <section id="projects">
+        <h1 class="titulo">Proyectos</h1>
+
+        <h2>Vista previa de video</h2>
+        <div class="vid">
+            <video src="img/video1111.mp4" height="400" muted loop onmouseover="playVideo(this)"
+                onmouseout="pauseVideo(this)"></video>
+            <div>
+                <h1>Este es uno de los trabajos de coding dojo</h1>
+                <h2>Desafios:
+                </h2>
+                <ul>
+                    <li>
+                        Utilizamos js y no tengo mucho conocimiento
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <h2>Examen cinturon amarillo</h2>
+        </div>
+        <div class="vid">
+            <video src="img/video-cinturon.mp4" height="400" muted loop onmouseover="playVideo(this)"
+                onmouseout="pauseVideo(this)"></video>
+
+            <div>
+                <h1>Este es el examen de certificacion</h1>
+                <h2>Desafios:
+                </h2>
+                <ul>
+                    <li>
+                        Aca usamos js y me costo ya que tenia poco conocimiento
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h2>Prueba demo</h2>
+        <div class="vid">
+
+            <video src="img/video-demo.mp4" height="400" muted loop onmouseover="playVideo(this)"
+                onmouseout="pauseVideo(this)"></video>
+
+            <div>
+                <h1>Esta prueba era una preparacion para el examen cinturon amarillo</h1>
+                <h2>Desafios:
+                </h2>
+                <ul>
+                    <li>
+                        La prueba era muy larga y me enredaba en los codigos
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact">
+
+        <h1 class="titulo">Contacto</h1>
+        <p>Correo electronico: Jorge.figueroa.vargas@alumnos.sip.cl </p>
+        <a href="https://github.com/Jorgee123"> <img class="redes" src="img/git.png" alt=""></a>
+        <a href="
+        https://instagram.com/joorgitoo.16?igshid=OGQ5ZDc2ODk2ZA=="> <img class="redes" src="https://img.freepik.com/vector-premium/icono-instagram-logotipo-insignia-moderna_578229-124.jpg" alt=""></a>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Jorge Figueroa</p>
+    </footer>
+
+
+
+
+<script>
+    console.log("page loaded...");
+
+
+function playVideo(vid) {
+    vid.play();
+}
+
+function pauseVideo(vid) {
+    vid.pause();
+    vid.currentTime = 0;
+}
+</script>
+</body>
+
+</html>

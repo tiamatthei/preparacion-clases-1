@@ -1,0 +1,170 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Sunborn Sans One;
+}
+
+body {
+    background-color: black;
+    font-size: 1em;
+}
+
+.busqueda {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #242424;
+}
+
+.buscar {
+    display: flex;
+    justify-content: start;
+    width: 18em;
+    color: white;
+    padding: 7px;
+    background-color: #242424;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    transition: color 0.3s
+}
+
+.inicio a:hover {
+    transform: translateY(-1.5px);
+    color: #A60000;
+    transition: color 0.5s;
+    text-decoration: underline;
+}
+
+.separador {
+    background-color: white;
+    width: 2px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+.inicio-22 {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.nav-down {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo-pagina {
+    color: white;
+    font-size: 300%;
+}
+
+.span-1 {
+    color: #A60000;
+}
+
+.apartados {
+    display: flex;
+    align-items: center;
+}
+
+.apartados a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.apartados a:hover {
+    color: #A60000;
+    transition: ease-in-out 0.5s;
+    text-decoration: underline;
+}
+
+.titulo-texto {
+    padding: 30px 0;
+}
+
+.titulo-texto h1 {
+    text-align: center;
+    color: #A60000;
+    cursor: default;
+}
+
+.texto {
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    cursor: default;
+}
+
+.flex-todos-portafolios {
+    display: flex;
+    justify-content: center;
+}
+
+.portafolios-general {
+    padding: 20px;
+    background-color: white;
+    width: 250px;
+    height: 400px;
+    border-radius: 10%;
+    text-align: center;
+    margin: 0px 50px;
+    transition: box-shadow 0.5s ease;
+}
+
+.portafolios-general:hover {
+    box-shadow: 0px 5px 12px white;
+}
+
+.portafolios-general img {
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.portafolios-general img:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+.info-name {
+    cursor: default;
+    padding: 20px 0px;
+}
+
+.info-name a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+.info-name a:hover {
+    transition: 0.4s ease-in-out;
+    color: #A60000;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales img {
+    margin: 0 5px;
+    transition: transform 0.3s, filter 0.3s;
+    border: none;
+    border-radius: 50%;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+    background-color: #A60000;
+}

@@ -1,0 +1,439 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.cabezote {
+    height: 100vh;
+    position: relative;
+}
+.card h2{
+    color: black;
+}
+
+.top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+    box-shadow: 0 0 8px black;
+    /*background-color: transparent;*/
+}
+.card h2{
+    color: black;
+}
+.contenedor {
+    height: 90px;
+    width: 75%;
+    margin: auto;
+}
+
+.top .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500px;
+}
+
+.logo h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.bmenu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bmenu ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.bmenu ul li a {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.bmenu ul li a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+
+.caja-video video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+/* FONDO OSCURO */
+.caja-video::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 140vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.caja-video h2 {
+    margin: 0 0 20px;
+    font-family: "Montserrat", sans-serif;
+}
+.info {
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 500px) {
+    .contenedor {
+        width: 95%;
+    }
+
+    .top {
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+
+    video {
+        display: none;
+    }
+
+    .caja-video::after {
+        background-image: url(/img-fondo/video-inicio.png);
+    }
+}
+
+/**CUENTA**/
+.containerD {
+    color: white;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.containerD form p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.containerD form p a{
+    text-decoration: underline;
+    color: blue;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #f81515;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #f81515;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/**CONOCENOS ESTILOS**/
+.contenido {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+}
+
+.mostrador {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.mostrador .fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.fila {
+    margin-top: 20px;
+}
+
+.item {
+    background-color: #f7f7f7;
+}
+
+.mostrador .fila .item {
+    flex-basis: 30%;
+    max-width: 210px;
+    padding: 30px;
+    height: 360px;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.mostrador .fila .item:hover {
+    background-color: #fff;
+}
+
+.mostrador .fila .item img {
+    width: 95%;
+    margin: 30px 0;
+}
+
+.mostrador .fila .item .descripcion {
+    color: #707070;
+    font-weight: bold;
+}
+
+.mostrador .fila .item .precio {
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.seleccion {
+    transition: .5s ease;
+    opacity: 0;
+    width: 0%;
+    border: 1px solid #cccc;
+    /*Color de la linea al seleccionar*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cerrar {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    /*tamano de la x(cerrar)*/
+    cursor: pointer;
+}
+
+.info {
+    padding: 20px;
+    /*Borde de precio y talla*/
+}
+
+.info img {
+    display: block;
+    margin: 40px;
+    /*lugar donde se posiciona la zapatilla(derecha o izquirda) */
+    width: 85%;
+    /*Tamano de la zapatilla al entrar a la seleccion */
+}
+
+.info h2 {
+    color: #707070;
+    /*Color de letras Modelos*/
+    margin-bottom: 0px;
+    /*separacion de letras "Modelos"*/
+}
+
+.info p {
+    font-size: 15px;
+    /*tamano de (descripcion del modelo)*/
+    color: #707070;
+    /*Color de letras "descripcion del modelo"*/
+    margin-bottom: 0px;
+    /*lugar para colocar el "Agregar al carrito"*/
+}
+
+.info .precio {
+    font-size: 20px;
+    /*tamano del precio*/
+    font-weight: bold;
+    /*estilo de letra*/
+    color: #707070;
+    /*Color de letras "precio"*/
+    margin-bottom: 0px;
+    display: block;
+}
+
+.info .fila {
+    display: flex;
+    align-items: flex-end;
+}
+
+.info .fila label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.info .fila select {
+    width: 100px;
+    /*Tamano(ancho) de la talla*/
+    font-size: 19px;
+    /*Tamano del numero de la talla*/
+    padding: 6px;
+    /*Tamano(alto) de la talla*/
+    margin-right: 30px;
+}
+
+.info .fila button {
+    height: 30px;
+    /*Tamano de "agregar al carrito"*/
+    border: none;
+    width: 100%;
+    padding: 0px;
+    color: #ffff;
+    background-color: #f81515;
+}
+
+
+/**CONOCENOSSSSSSSSSSSSSSSSS**/
+main {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+
+.card {
+    width: 350px;
+    padding: 25px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    transition: transform 1s;
+    margin: 20px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #666;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 90%;
+    }
+}
+.precio {
+    text-decoration: line-through;
+}
+
+.precio-descuento {
+    color: #f81515;
+}
+.precio-lanz {
+    font-size: 20px;
+    /*tamano del precio*/
+    font-weight: bold;
+    /*estilo de letra*/
+    color: black;
+    /*Color de letras "precio"*/
+    margin-bottom: 0px;
+    display: block;
+}
+.slider-box {
+    width: 100%;
+    height: 500px;
+    margin:  50px auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+.slider-box img {
+    width: 100%;
+}
+@keyframes slide {
+    0% {margin-left: 0px;}
+    20% {margin-left: 0px;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="compra.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="nav-superior">
+        <h3>Home</h3>
+        <input id="buscar" type="text" placeholder="Que busca pe">
+        <h1>ANI<span>MALL</span></h1>
+        <div class="opciones">
+            <a href=""><img src="img/Corazon.png" alt="Error"></a>
+            <a href=""><img src="img/Carrito.png" alt="Error"></a>
+            <a href=""><img src="img/Perfil.png" alt="Error"></a>
+        </div>
+    </nav>
+    <div class="fondo">
+        <div class="list">
+            <ul class="menus">
+                <div class="menu-desplegable">
+                    <button class="boton-menu">Categorías</button>
+                    <ul class="lista-categorias">
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)" class="categoria">
+                            Categoria 1</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)" class="categoria">
+                            Categoria 2</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)" class="categoria">
+                            Categoria 3</li>
+                    </ul>
+                </div>
+                <div class="menu-desplegable">
+                    <button class="boton-menu">Farmacia</button>
+                    <ul class="lista-categorias">
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 1</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 2</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 3</li>
+                    </ul>
+                </div>
+                <div class="menu-desplegable">
+                    <button class="boton-menu">Especial</button>
+                    <ul class="lista-categorias">
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 1</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 2</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 3</li>
+                    </ul>
+                </div>
+                <div class="menu-desplegable">
+                    <button class="boton-menu">Perros</button>
+                    <ul class="lista-categorias">
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 1</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 2</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 3</li>
+                    </ul>
+                </div>
+                <div class="menu-desplegable">
+                    <button class="boton-menu">Gatos</button>
+                    <ul class="lista-categorias">
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 1</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 2</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 3</li>
+                    </ul>
+                </div>
+                <div class="menu-desplegable">
+                    <button class="boton-menu">Exoticos</button>
+                    <ul class="lista-categorias">
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 1</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 2</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 3</li>
+                    </ul>
+                </div>
+                <div class="menu-desplegable">
+                    <button class="boton-menu">Marcas</button>
+                    <ul class="lista-categorias">
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 1</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 2</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 3</li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <div class="borde">
+            <div class="info-producto">
+                <img src="productos/golden-fishless-filet-94288_2000x.webp" alt="">
+                <div class="info">
+                    <h2>Protteina Foods
+                    </h2>
+                    <h1>GARDEIN GOLDEN FISHLESS FILETS</h1>
+                    <h2>9g protein 200calories
+                    </h2>
+                    <div class="botones">
+                        <div id="un-btn">
+                            <button class="btn-resta" onclick="resta()">
+                                <h2 id="resta">-</h2>
+                            </button>
+
+                            <h2 id="numero">0</h2>
+                            
+                            <button class="btn-suma" onclick="suma()">
+                                <h2 id="suma">+</h2>
+                            </button>
+                        </div>
+                        <button class="añadir-carrito">
+                            <h2>Añadir</h2>
+                        </button>
+                    </div>
+                    <div class="cuadrao">
+                    <p>$7.990</p>
+                    <p>Horno: Precalentar el Horno a 418ºC, hornear los filetes sin pescado en un papel para hornear no adherente durante 10-12 min (en el horno) o 12-14 min (Horno eléctrico), por lado hasta que estén dorados, crujientes y sin pedazos fríos.
+                    </p>
+                    <p>Freidora: Precalentar el aceite a 180ºC hasta que este dorado, crujiente y sin pedazos fríos.
+                    </p>
+                    <p>
+                    </p>
+                    </div>
+                    <a href="" class="mas-info">
+                        <h3>Mas info +</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="otro-borde">
+            <div class="productos">
+                <div class="menu-productos">
+                    <a href="">
+                        <div class="linea">
+                            <img src="productos/Captura de pantalla 2023-10-03 090346.png" alt="" class="img-producto">
+                        </div>
+                        <div class="borde-2">
+                            <p id="marca">Marca</p>
+                            <h4>Nombre Del Producto</h4>
+                            <div class="precio-oferta">
+                                <h4>$ 0.000</h4><img src="img/Captura de pantalla 2023-10-13 123403.png" alt="">
+                            </div>
+                            <div class="corazones">
+                                <img class="corazon" src="productos/corazon.png" alt="">
+                                <img class="corazon" src="img/corazon2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="contenedor">
+                            <div class="centrar">
+                                <button class="agregar-al-carrito">
+                                    <h3>Agregar al carro</h3>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="menu-productos">
+                    <a href="">
+                        <div class="linea">
+                            <img src="productos/Captura de pantalla 2023-10-03 090346.png" alt="" class="img-producto">
+                        </div>
+                        <div class="borde-2">
+                            <p id="marca">Marca</p>
+                            <h4>Nombre Del Producto</h4>
+                            <div class="precio-oferta">
+                                <h4>$ 0.000</h4><img src="img/Captura de pantalla 2023-10-13 123403.png" alt="">
+                            </div>
+                            <div class="corazones">
+                                <img class="corazon" src="productos/corazon.png" alt="">
+                                <img class="corazon" src="img/corazon2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="contenedor">
+                            <div class="centrar">
+                                <button class="agregar-al-carrito">
+                                    <h3>Agregar al carro</h3>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="menu-productos">
+                    <a href="">
+                        <div class="linea">
+                            <img src="productos/Captura de pantalla 2023-10-03 090346.png" alt="" class="img-producto">
+                        </div>
+                        <div class="borde-2">
+                            <p id="marca">Marca</p>
+                            <h4>Nombre Del Producto</h4>
+                            <div class="precio-oferta">
+                                <h4>$ 0.000</h4><img src="img/Captura de pantalla 2023-10-13 123403.png" alt="">
+                            </div>
+                            <div class="corazones">
+                                <img class="corazon" src="productos/corazon.png" alt="">
+                                <img class="corazon" src="img/corazon2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="contenedor">
+                            <div class="centrar">
+                                <button class="agregar-al-carrito">
+                                    <h3>Agregar al carro</h3>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="menu-productos">
+                    <a href="">
+                        <div class="linea">
+                            <img src="productos/Captura de pantalla 2023-10-03 090346.png" alt="" class="img-producto">
+                        </div>
+                        <div class="borde-2">
+                            <p id="marca">Marca</p>
+                            <h4>Nombre Del Producto</h4>
+                            <div class="precio-oferta">
+                                <h4>$ 0.000</h4><img src="img/Captura de pantalla 2023-10-13 123403.png" alt="">
+                            </div>
+                            <div class="corazones">
+                                <img class="corazon" src="productos/corazon.png" alt="">
+                                <img class="corazon" src="img/corazon2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="contenedor">
+                            <div class="centrar">
+                                <button class="agregar-al-carrito">
+                                    <h3>Agregar al carro</h3>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="otro-borde-mas">
+            <img src="img/pandarojo.png" alt="" class="panda-rojo" height="350vw">
+            <div class="ofertas">
+                <h1>¿Quieres Recibir Ofertas Especiales?</h1>
+                <p>Recibe ofertas especiales mediante tu email, unete a esta comunidad que adora tanto los animales como
+                    tu!</p>
+                <input type="email" placeholder="Email" class="input">
+                <button class="unirse">
+                    <h2>¡UNETE!</h2>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
