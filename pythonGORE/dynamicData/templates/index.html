@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <label for="tipos">Tipos:</label>
+        <select name="tipos" id="tipos" onchange="traerCategorias(event)">
+            <option value="1">Deportes</option>
+            <option value="2">E-Sports</option>
+        </select>
+    </div>
+    <div>
+        <label for="categorias">Categorias:</label>
+        <select name="categorias" id="categorias">
+        </select>
+    </div>
+
+</body>
+<script src="{{url_for('static', filename='script.js')}}"></script>
+
+</html>
