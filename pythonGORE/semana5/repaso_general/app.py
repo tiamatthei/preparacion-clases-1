@@ -1,5 +1,7 @@
 from flask import Flask, render_template, flash, session, get_flashed_messages, request
 import pymysql.cursors
+from controladores.controlador_eventos import eventos_bp
+from controladores.controlador_categorias import categorias_bp
 
 
 
@@ -54,7 +56,15 @@ def connectToMySQL(db):
 
 app = Flask(__name__)
 
+app.register_blueprint(eventos_bp)
+app.register_blueprint(categorias_bp)
+
+
+
 app.secret_key = "algun secreto"
+
+
+
 
 
 @app.route("/")
