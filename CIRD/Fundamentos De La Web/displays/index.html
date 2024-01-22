@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displays</title>
+
+    <style>
+        .bloque {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            color: white;
+
+            text-align: center;
+            line-height: 100px;
+
+            display: none;
+        }
+
+        .linea {
+            background-color: greenyellow;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+
+            display: none;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .linea-bloque {
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+
+            color: white;
+            display: none;
+            text-align: center;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .flex div {
+            height: 100px;
+
+            background-color: blueviolet;
+            color: white;
+
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="bloque">En bloque</div>
+        <div class="bloque">En bloque</div>
+        <div class="bloque">En bloque</div>
+    </div>
+    <div>
+        <div class="linea">En linea</div>
+        <div class="linea">En linea</div>
+        <div class="linea">En linea</div>
+    </div>
+    <div>
+        <div class="linea-bloque">En lineas-bloque</div>
+        <div class="linea-bloque">En lineas-bloque</div>
+        <div class="linea-bloque">En lineas-bloque</div>
+    </div>
+    <div class="flex">
+        <div>En flex</div>
+        <div>En flex</div>
+        <div>En flex</div>
+        <div>En flex</div>
+        <div>En flex</div>
+        <div>En flex</div>
+        <div>En flex</div>
+        <div>En flex</div>
+        <div>En flex</div>
+        <div>En flex</div>
+        <div>En flex</div>
+        <div>En flex</div>
+    </div>
+
+</body>
+
+</html>
