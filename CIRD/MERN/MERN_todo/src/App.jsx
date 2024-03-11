@@ -48,87 +48,11 @@ import React, { useState } from "react";
 import PersonCard from "./components/PersonCard";
 
 import "./App.css";
+import "./Caja.jsx";
+import Caja from "./Caja.jsx";
 
 function App() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [validatePassword, setValidatePassword] = useState(false);
-
-  const changeUsernameHandler = (e) => {
-    setUsername(e.target.value);
-    console.log(username);
-  };
-
-  const changePasswordHandler = (e) => {
-    setPassword(e.target.value);
-    console.log(password);
-  };
-
-  const submitHandler = (e) => {
-    setIsSubmitted(true);
-    e.preventDefault();
-    console.log("username: " + username);
-    console.log("e.target.username.value: " + e.target.username.value);
-    if (password.length < 4 || password.length > 9) {
-      setValidatePassword(false);
-    } else {
-      setValidatePassword(true);
-    }
-  };
-
-  const formStyle = {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "100%",
-    height: "100vh",
-    backgroundColor: "lightgray",
-  };
-
-  return (
-    <>
-      <form action="" onSubmit={(e) => submitHandler(e)} id="form-registro">
-        <div>
-          <label htmlFor="username" style={{ color: "black" }}>
-            Nombre de usuario
-          </label>
-          <input
-            type="text"
-            id="username"
-            onChange={(e) => changeUsernameHandler(e)}
-          />
-        </div>
-        <div>
-          <label htmlFor="contra" style={{ color: "black" }}>Contraseña</label>
-          <input
-            type="password"
-            id="contra"
-            onChange={(e) => changePasswordHandler(e)}
-          />
-        </div>
-        <div>
-          <input type="submit" id="submitForm" value={"Registrarse"} />
-        </div>
-      </form>
-      {password.length < 4 || password.length > 9 ? (
-        <h4>La contraseña debe tener entre 4 y 8 caracteres</h4>
-      ) : (
-        <></>
-      )}
-      {isSubmitted ? (
-        validatePassword ? (
-          <></>
-        ) : (
-          <h4>Error en el submit!!!</h4>
-        )
-      ) : (
-        <></>
-      )}
-    </>
-  );
+  return <Caja />;
 }
 
 export default App;
