@@ -4,93 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Displays</title>
-
+    <title>Perfil</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
-        .bloque {
-            background-color: red;
-            height: 100px;
-            width: 100px;
-            margin: 10px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        a {
             color: white;
-
-            text-align: center;
-            line-height: 100px;
-
-            display: none;
         }
 
-        .linea {
-            background-color: greenyellow;
-            height: 100px;
-            width: 100px;
-            margin: 10px;
-
-            display: none;
-            text-align: center;
-            line-height: 100px;
-        }
-
-        .linea-bloque {
-            background-color: blue;
-            height: 100px;
-            width: 100px;
-            margin: 10px;
-
-            color: white;
-            display: none;
-            text-align: center;
-        }
-
-        .flex {
+        nav {
             display: flex;
-            justify-content: center;
-            gap: 10px;
+            justify-content: space-between;
+            color: white;
+            background-color: black;
+            padding: 20px 10%;
         }
 
-        .flex div {
-            height: 100px;
-
-            background-color: blueviolet;
-            color: white;
-
-            justify-content: center;
+        .nav-links {
+            display: flex;
+            gap: 20px;
             align-items: center;
         }
+
+        button {
+            background-color: teal;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 2px;
+
+        }
     </style>
+
 </head>
 
-<body>
-    <div>
-        <div class="bloque">En bloque</div>
-        <div class="bloque">En bloque</div>
-        <div class="bloque">En bloque</div>
-    </div>
-    <div>
-        <div class="linea">En linea</div>
-        <div class="linea">En linea</div>
-        <div class="linea">En linea</div>
-    </div>
-    <div>
-        <div class="linea-bloque">En lineas-bloque</div>
-        <div class="linea-bloque">En lineas-bloque</div>
-        <div class="linea-bloque">En lineas-bloque</div>
-    </div>
-    <div class="flex">
-        <div>En flex</div>
-        <div>En flex</div>
-        <div>En flex</div>
-        <div>En flex</div>
-        <div>En flex</div>
-        <div>En flex</div>
-        <div>En flex</div>
-        <div>En flex</div>
-        <div>En flex</div>
-        <div>En flex</div>
-        <div>En flex</div>
-        <div>En flex</div>
-    </div>
 
+
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li>
+                <h1 class="nav-title">Perfil</h1>
+            </li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#" class="active">My Profile</a></li>
+            <li><a href="#">Encontrar conexiones</a></li>
+            <li></li>
+        </ul>
+        <button class="btn">Cerrar sesión</button>
+    </nav>
 </body>
 
 </html>

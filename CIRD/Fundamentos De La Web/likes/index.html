@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .likes {
+            color: green;
+        }
+
+        .usuario {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 5px;
+            width: fit-content;
+        }
+
+        .your-connections {
+            width: 400px;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="connection-requests">
+        <div class="usuario">
+            <p>Juanito</p>
+            <span>Tienes <span class="likes">10</span> likes</span>
+            <button onclick="connect(this)">Conectar</button>
+        </div>
+        <div class="usuario">
+            <p>Pepito</p>
+            <span>Tienes <span class="likes">1</span> likes</span>
+            <button onclick="connect(this)">Conectar</button>
+        </div>
+        <div class="usuario">
+            <p>Pepita</p>
+            <span>Tienes <span class="likes">5</span> likes</span>
+            <button onclick="connect(this)">Conectar</button>
+        </div>
+    </div>
+
+
+    <div class="your-connections">
+
+    </div>
+
+
+    <script>
+
+        function connect(elemento) {
+            //elemento.parentNode.querySelector(".likes").innerHTML++;
+            document.querySelector(".your-connections").appendChild(elemento.parentNode);
+        }
+
+    </script>
+</body>
+
+</html>

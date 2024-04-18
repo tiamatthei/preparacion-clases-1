@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: black;
+        align-items: center;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+      }
+      .item-nav {
+        margin: 15px;
+        color: white;
+      }
+      button {
+        background-color: deepskyblue;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+      }
+      .logo {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px;
+      }
+      main {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        padding-left: 30%;
+        padding-right: 30%;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .columna-izq {
+        background-color: orange;
+        height: 100%;
+        flex: 5;
+      }
+      .columna-der {
+        height: 100%;
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .requests {
+        flex: 2;
+        border: 2px solid grey;
+      }
+
+      .header-requests {
+        display: flex;
+        background-color: grey;
+        padding: 15px;
+        color: white;
+        align-items: center;
+        gap: 10px;
+      }
+      .numerito {
+        color: black;
+        border-radius: 50%;
+        border: none;
+        background-color: #ccc;
+        padding: 5px 10px;
+        font-weight: bold;
+      }
+      .title {
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .connections {
+        flex: 3;
+      }
+      .list-item {
+        display: flex;
+        padding: 10px 5px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .account-details {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .account-details > img {
+        height: 30px;
+        width: 30px;
+      }
+      .account-details span {
+        font-weight: bold;
+      }
+      .actions img {
+        height: 30px;
+        width: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="logo">Profile</li>
+        <li class="item-nav">Home</li>
+        <li class="item-nav">My Profile</li>
+        <li class="item-nav">Find Connections</li>
+      </ul>
+      <button>Sign Out</button>
+    </nav>
+    <main>
+      <div class="columna-izq">
+        <div class="tarjeta-usuario"></div>
+        <div class="education"></div>
+      </div>
+      <div class="columna-der">
+        <div class="requests">
+          <div class="header-requests">
+            <span class="numerito">2</span>
+            <span class="title">Connection Requests</span>
+          </div>
+          <div class="list-item">
+            <div class="account-details">
+              <img src="img/user-circle.png" alt="" />
+              <span>Todd E</span>
+            </div>
+
+            <div class="actions">
+              <img src="img/accept-circle.png" alt="" />
+              <img src="img/close-circle.png" alt="" />
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="account-details">
+              <img src="img/user-circle.png" alt="" />
+              <span>Phil K</span>
+            </div>
+            <div class="actions">
+              <img src="img/accept-circle.png" alt="" />
+              <img src="img/close-circle.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="connections"></div>
+      </div>
+    </main>
+  </body>
+</html>

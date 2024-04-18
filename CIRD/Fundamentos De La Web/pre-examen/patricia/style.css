@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: #9fc5f8;
+  justify-content: space-between;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.elemenTitulo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.elemenTitulo li a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.ancho {
+  display: flex;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+}
+
+.ciudad {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.temperatura {
+  display: flex;
+}
+
+.pronosticos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.clima {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #eeeeee;
+  padding: 10px;
+  height: 180px;
+  margin-top: 10px;
+}
+
+.numeros {
+  display: flex;
+  gap: 40px;
+}
+
+.alto {
+  font-weight: 900;
+  color: red;
+}
+
+.bajo {
+  font-weight: 900;
+  color: blue;
+}
+
+#cookie {
+  width: 70px;
+}
+
+.alerta {
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.alerta button {
+  background-color: lightskyblue;
+  padding: 5px 20px;
+}
+.alerta img {
+  height: 70px;
+  width: 50px;
+}
+
+.alerta div {
+  flex: 5;
+}
+
+main {
+  padding-left: 10%;
+  padding-right: 10%;
+}
