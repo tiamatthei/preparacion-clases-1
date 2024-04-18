@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La tienda del donoso</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+    <h1>Bienvenido!</h1>
+    {% for i in range(cantidad) %}
+    <div class="caja" style="background-color:{{color}}">
+        <img src="{{url_for('static', filename = 'img/imagen.png')}}" alt="imagen">
+    </div>
+    {% endfor %}
+</body>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</html>
